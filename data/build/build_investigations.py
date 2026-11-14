@@ -33,6 +33,12 @@ PILLARS = {"prevent", "detect", "suppress"}
 FUEL_STATES = {"solid", "liquid", "gas", "none", NS}
 FACILITIES = {"CIR", "MSG", "Cygnus", "ground", NS}
 
+# PSI-98 (Saffire-I) carries the exact start and end dates of PSI-102 (SAME),
+# 03-02-2001 to 02-28-2008. Its own Approach says it ran on Cygnus after it left
+# the ISS, and Cygnus did not exist in 2001-2008, so the dates are a PSI copy
+# error. No saved source gives the real dates, so the card says "not stated".
+YEARS_OVERRIDE = {"PSI-98": NS}
+
 
 def split_list(value: str) -> list[str]:
     """PSI joins list items with runs of spaces (and sometimes a newline)."""
@@ -135,7 +141,7 @@ def main() -> int:
                 "measurements": card["measurements"],
                 "hardware": card["hardware"],
                 "platform": platform(src),
-                "years": years(src),
+                "years": YEARS_OVERRIDE.get(pid, years(src)),
                 "related": related,
                 "publications": split_list(src.get("Publication Title", "")),
                 "psiUrl": PSI_URL.format(id=pid),
