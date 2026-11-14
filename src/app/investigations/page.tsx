@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function InvestigationsIndex() {
   const groups = hardwareGroups();
   return (
-    <Page>
+    <Page current="investigations">
       <TopNav />
       <header className="flex flex-col gap-4">
         <p className="font-mono text-[13px] text-ink-muted">NASA Physical Sciences Informatics · Combustion science</p>

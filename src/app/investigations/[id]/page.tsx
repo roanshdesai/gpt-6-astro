@@ -49,7 +49,7 @@ export default async function InvestigationPage({ params }: PageProps<"/investig
   const related = inv.related.map(getInvestigation).filter((r) => r !== undefined);
 
   return (
-    <Page>
+    <Page current="investigations">
       <TopNav />
 
       <header className="flex flex-col gap-4">

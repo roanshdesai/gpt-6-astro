@@ -1,12 +1,15 @@
 "use client";
 
 import { AnimatePresence, motion } from "motion/react";
+import Link from "next/link";
 
 import { useGravity } from "@/components/scene/gravity";
+import { SiteHeader } from "@/components/shell/site-header";
+
+import landing from "../../../data/landing.json";
 import GravityLetters from "@/components/smoothui/gravity-letters";
 import { ScrollProgress } from "@/components/ui/scroll-progress";
 
-import { GravitySwitch } from "./gravity-switch";
 
 const HEADLINE = ["Fire has", "no up", "in space."];
 
@@ -78,20 +81,7 @@ export function Hero() {
         )}
       </AnimatePresence>
 
-      <header className="relative z-20 flex items-center justify-between px-[3vw] py-5 font-mono text-[13px] text-ink">
-        <span>Question Board</span>
-        <span className="hidden text-ink-subtle md:inline">
-          NASA Space Apps 2026 · Flame in Freefall
-        </span>
-        <a
-          href="https://psi.nasa.gov/physci/repo/search?q=combustion"
-          target="_blank"
-          rel="noreferrer"
-          className="link-draw py-3"
-        >
-          NASA PSI data
-        </a>
-      </header>
+      <SiteHeader current="home" />
 
       <div className="absolute bottom-[15svh] left-[3vw] z-20 flex max-w-[22rem] flex-col gap-5">
         <div className="min-h-[6.5rem]">
@@ -110,22 +100,19 @@ export function Hero() {
           </AnimatePresence>
         </div>
         <motion.div {...rise(0.3)} className="flex flex-wrap items-center gap-3">
-          <button
-            type="button"
-            className="h-11 rounded-[2px] bg-ink px-5 text-[15px] font-medium text-canvas transition-[transform,background-color] duration-150 hover:bg-ink-muted active:scale-[0.98]"
-            onClick={() =>
-              document.getElementById("happened")?.scrollIntoView({ behavior: "smooth" })
-            }
+          <Link
+            href="/dashboard"
+            className="inline-flex h-11 items-center rounded-[2px] bg-ink px-5 text-[15px] font-medium text-canvas transition-[transform,background-color] duration-150 hover:bg-ink-muted active:scale-[0.98]"
           >
-            See what went wrong
-          </button>
+            Open the dashboard
+          </Link>
           <a
-            href="https://www.youtube.com/watch?v=W1oXykoz9zg"
+            href={landing.video.url}
             target="_blank"
             rel="noreferrer"
             className="link-draw py-3 text-[15px] font-medium text-ink"
           >
-            Watch NASA&apos;s 3-minute intro
+            Watch NASA&apos;s {landing.video.title}
           </a>
         </motion.div>
         <p className="font-mono text-[13px] text-ink-subtle">
@@ -133,7 +120,6 @@ export function Hero() {
         </p>
       </div>
 
-      <GravitySwitch />
     </section>
   );
 }

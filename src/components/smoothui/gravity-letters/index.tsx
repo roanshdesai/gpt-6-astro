@@ -313,9 +313,8 @@ const GravityLetters = ({
       return;
     }
 
-    for (const p of physicsRef.current) {
-      p.settled = false;
-    }
+    // The loop reads physicsRef.current afresh each frame, so a new array is safe.
+    physicsRef.current = physicsRef.current.map((p) => ({ ...p, settled: false }));
 
     phaseRef.current = "reforming";
     startLoop();

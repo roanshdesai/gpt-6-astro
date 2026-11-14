@@ -20,6 +20,12 @@
   --color-tag-found: #9be5b4;
   --color-tag-tested: #5dbbc6;
   --color-tag-expected: #d98a8b;
+  /* Chart marks for the three kinds of evidence. Deeper than the tag text
+     colours so they hold as filled shapes; checked for colour-blind separation
+     against the black canvas. */
+  --color-mark-tested: #0097ac;
+  --color-mark-expected: #b5414d;
+  --color-mark-found: #40ad60;
   --font-display: var(--font-sans);
   --font-mono: var(--font-b612-mono);
 }

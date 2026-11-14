@@ -45,6 +45,10 @@ const WAYPOINTS = [
   { x: 0.3, y: 1.15, size: 0.7 }, // 08 the board
 ];
 
+// On the board and answer pages the chamber parks in the lower right corner,
+// small, so it keeps the reader company without sitting on the evidence.
+const INNER_WAYPOINT = { x: 0.4, y: -1.75, size: 0.5 };
+
 function waypointAt(screens: number) {
   const last = WAYPOINTS.length - 1;
   const f = THREE.MathUtils.clamp(screens, 0, last);
@@ -80,7 +84,7 @@ function useEasedGravity() {
   return current;
 }
 
-function Sky({ gravity }: { gravity: React.RefObject<number> }) {
+function Sky({ gravity, inner }: { gravity: React.RefObject<number>; inner: boolean }) {
   const texture = useTexture(SKY);
   const mesh = useRef<THREE.Mesh>(null);
   const { camera, viewport } = useThree();
@@ -105,7 +109,7 @@ function Sky({ gravity }: { gravity: React.RefObject<number> }) {
     const pan = (height - viewH) / 2;
     const g = gravity.current ?? 0;
     // Scrolling the page slowly carries the view from the galaxy down toward the planet.
-    const travel = THREE.MathUtils.clamp(scrollScreens() / (WAYPOINTS.length - 1), 0, 1);
+    const travel = inner ? 0.3 : THREE.MathUtils.clamp(scrollScreens() / (WAYPOINTS.length - 1), 0, 1);
     const freefallY = THREE.MathUtils.lerp(-pan * 0.9, pan * 0.35, travel);
     const y = THREE.MathUtils.lerp(freefallY, pan * 0.9, g);
     plane.position.y = THREE.MathUtils.damp(plane.position.y, y - state.pointer.y * 0.25, 2.5, delta);
@@ -127,7 +131,7 @@ function Sky({ gravity }: { gravity: React.RefObject<number> }) {
   );
 }
 
-function Chamber({ gravity }: { gravity: React.RefObject<number> }) {
+function Chamber({ gravity, inner }: { gravity: React.RefObject<number>; inner: boolean }) {
   const { scene } = useGLTF(MODEL);
   const { viewport, size } = useThree();
   const rig = useRef<THREE.Group>(null);
@@ -192,12 +196,15 @@ function Chamber({ gravity }: { gravity: React.RefObject<number> }) {
     if (!root || !tumble) return;
 
     // The chamber travels with the reader: one waypoint per screen of the page.
-    const way = waypointAt(scrollScreens());
-    const scale = (wide ? way.size : 0.62) * (viewport.height / 6.43);
-    const x = wide ? viewport.width * way.x : 0;
+    const way = inner ? INNER_WAYPOINT : waypointAt(scrollScreens());
+    // On a narrow inner page it parks small in the lower right, clear of the text.
+    const tucked = inner && !wide;
+    const scale = (wide ? way.size : tucked ? 0.34 : 0.62) * (viewport.height / 6.43);
+    const x = wide ? viewport.width * way.x : tucked ? viewport.width * 0.28 : 0;
     // In freefall the chamber drifts. On Earth it drops and stands on the floor
     // of the page, where the headline letters land too.
-    const floatY = (wide ? way.y : viewport.height * 0.2) + 0.1 * Math.sin(t * 0.5);
+    const floatY =
+      (wide ? way.y : tucked ? -viewport.height * 0.27 : viewport.height * 0.2) + 0.1 * Math.sin(t * 0.5);
     const restY = -viewport.height / 2 + HALF_HEIGHT * scale + viewport.height * 0.1;
     const y = THREE.MathUtils.lerp(floatY, restY, g);
 
@@ -212,7 +219,7 @@ function Chamber({ gravity }: { gravity: React.RefObject<number> }) {
 
     // It turns as it travels, so every section shows a different side of it.
     spin.current += delta * (0.1 + 0.12 * floating);
-    const turn = scrollScreens() * 0.9;
+    const turn = inner ? 0 : scrollScreens() * 0.9;
     tumble.rotation.y = spin.current + turn + state.pointer.x * 0.25;
     tumble.rotation.z = THREE.MathUtils.damp(
       tumble.rotation.z,
@@ -277,13 +284,13 @@ function Chamber({ gravity }: { gravity: React.RefObject<number> }) {
   );
 }
 
-function Scene() {
+function Scene({ inner }: { inner: boolean }) {
   const gravity = useEasedGravity();
   return (
     <>
-      <Sky gravity={gravity} />
+      <Sky gravity={gravity} inner={inner} />
       <Stars radius={16} depth={8} count={900} factor={1.6} saturation={0} fade speed={0.5} />
-      <Chamber gravity={gravity} />
+      <Chamber gravity={gravity} inner={inner} />
     </>
   );
 }
@@ -291,7 +298,7 @@ function Scene() {
 useGLTF.preload(MODEL);
 useTexture.preload(SKY);
 
-export default function FlameCanvas() {
+export default function FlameCanvas({ inner = false }: { inner?: boolean }) {
   return (
     <Canvas
       flat
@@ -314,7 +321,7 @@ export default function FlameCanvas() {
       </Environment>
       <directionalLight position={[-6, 6, 7]} intensity={3.2} />
       <Suspense fallback={null}>
-        <Scene />
+        <Scene inner={inner} />
       </Suspense>
       {/* Photographic finish: highlights bloom like a lens, then a filmic curve, vignette and grain. */}
       <EffectComposer multisampling={0}>

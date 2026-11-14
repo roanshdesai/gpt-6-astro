@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { ReactNode } from "react";
 import type { QuoteKind } from "../../../data/questions.types";
 import { cn } from "@/lib/utils";
+import { SiteHeader, type Tab } from "@/components/shell/site-header";
 import { isNotStated } from "@/lib/investigations";
 
 /*
@@ -57,12 +58,10 @@ export function SectionTitle({ children }: { children: ReactNode }) {
   return <h2 className="mb-2 text-2xl tracking-[-0.02em]">{children}</h2>;
 }
 
+/** Links between the investigation pages. The site-wide tabs sit above, in Page. */
 export function TopNav({ children }: { children?: ReactNode }) {
   return (
-    <nav className="flex flex-wrap items-center gap-x-6 gap-y-2 font-mono text-[13px] text-ink-muted">
-      <Link href="/" className="link-draw hover:text-ink">
-        Home
-      </Link>
+    <nav aria-label="Investigations" className="flex flex-wrap items-center gap-x-6 gap-y-2 font-mono text-[13px] text-ink-muted">
       <Link href="/investigations" className="link-draw hover:text-ink">
         All 24 investigations
       </Link>
@@ -74,8 +73,13 @@ export function TopNav({ children }: { children?: ReactNode }) {
   );
 }
 
-export function Page({ children }: { children: ReactNode }) {
-  return <main className="mx-auto flex w-full min-w-0 max-w-5xl flex-col [&>*]:min-w-0 gap-12 px-4 py-10 sm:px-8 sm:py-14">{children}</main>;
+export function Page({ children, current }: { children: ReactNode; current?: Tab }) {
+  return (
+    <div className="relative z-20 min-h-svh">
+      <SiteHeader current={current} />
+      <main className="mx-auto flex w-full min-w-0 max-w-5xl flex-col [&>*]:min-w-0 gap-12 px-4 py-10 sm:px-8 sm:py-14">{children}</main>
+    </div>
+  );
 }
 
 export function pillarLabel(p: string): string {
