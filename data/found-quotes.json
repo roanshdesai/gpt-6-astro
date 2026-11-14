@@ -261,6 +261,30 @@
       "source": "https://www.nasa.gov/sites/default/files/atoms/files/np-2015-10-034-jsc_combustion_in_reduced_gravity-iss-mini-book-011116-508.pdf",
       "page": "26",
       "note": "Mist experiment (STS-107); not one of the 24. Useful for the suppress column or the Earth line."
+    },
+    {
+      "investigation": null,
+      "kind": "found",
+      "text": "One of the achievements in this area is a new device that monitors particulates and chemical species simultaneously to better detect the onset of a fire.",
+      "source": "https://www.nasa.gov/sites/default/files/atoms/files/np-2015-10-034-jsc_combustion_in_reduced_gravity-iss-mini-book-011116-508.pdf",
+      "page": "35",
+      "note": "Fire detection. The Guide does not tie the device to one of the 24."
+    },
+    {
+      "investigation": null,
+      "kind": "found",
+      "text": "The new device can be “tuned” to examine particulates and species characteristics associated with fires in microgravity.",
+      "source": "https://www.nasa.gov/sites/default/files/atoms/files/np-2015-10-034-jsc_combustion_in_reduced_gravity-iss-mini-book-011116-508.pdf",
+      "page": "35",
+      "note": "Same device as the line above."
+    },
+    {
+      "investigation": null,
+      "kind": "found",
+      "text": "This resulted in several critical misconceptions about potential fires in spacecraft: 1. A steady fire cannot exist in a quiescent microgravity environment. 2. A fire will self-extinguish if ventilation is shut off.",
+      "source": "https://www.nasa.gov/sites/default/files/atoms/files/np-2015-10-034-jsc_combustion_in_reduced_gravity-iss-mini-book-011116-508.pdf",
+      "page": "35",
+      "note": "Lists the misconceptions; the stated result is the next sentence (\"demonstrates the fallacy of these assumptions\"). Use the two together."
     }
   ]
 }

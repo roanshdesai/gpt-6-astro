@@ -67,7 +67,7 @@ CARDS = {
     ),
     "PSI-98": dict(
         pillars=["prevent"],
-        summary="Saffire-I set a large sheet of cotton-fiberglass fabric alight inside an empty Cygnus cargo ship after it left the space station, the first look at how a big fire grows in low gravity. No crew were at risk.",
+        summary="Saffire-I set a large sheet of cotton-fiberglass fabric alight inside an empty Cygnus cargo ship after it left the space station, to see how rapidly a large fire grows in low gravity. No crew were at risk.",
         objective="determine how rapidly a large scale fire grows in low-gravity",
         fuel=dict(state="solid", detail="a composite fabric called Sibal consisting of cotton on a fiberglass substrate (75% cotton, 25% fiberglass by weight)", size="approximately 0.94 meters long and 0.4 meters wide"),
         conditions=dict(oxygen=NS, airflow="air flow velocity of 20 cm/s", pressure=NS),
@@ -167,7 +167,7 @@ CARDS = {
     ),
     "PSI-99": dict(
         pillars=["prevent"],
-        summary="Saffire-II burned nine different spacecraft materials inside an empty Cygnus cargo ship after it left the space station, to compare how each burns in low gravity against NASA's Earth screening test.",
+        summary="Saffire-II burned nine samples of spacecraft materials, among them SIBAL fabric, silicone and several kinds of PMMA, inside an empty Cygnus cargo ship after it left the space station, to compare low-gravity flammability limits with NASA's Earth screening test.",
         objective="The objectives of SAFFIRE-II are to determine how rapidly a large scale fire grows in low-gravity and to investigate the low-g flammability limits compared to those obtained in NASA’s normal gravity material flammability screening test.",
         fuel=dict(state="solid", detail="SIBAL, silicone, structure PMMA, flat PMMA, and PMMA with Nomex", size="9 samples, each 5 cm x 29 cm"),
         conditions=dict(oxygen=NS, airflow="air flow velocity of either 20 or 30 cm/s", pressure=NS),

@@ -170,7 +170,6 @@
       "Constrained-temperature solutions of coflow laminar diffusion flames",
       "Effects of pressure and fuel dilution on coflow laminar methane–air diffusion flames: A computational and experimental study",
       "Effect of soot self-absorption on color-ratio pyrometry in laminar coflow diffusion flames",
-      "A computational and experimental study of coflow laminar methane/air diffusion flames: Effects of fuel dilution, inlet velocity, and gravity",
       "An experimental and computational study of soot formation in a coflow jet flame under microgravity and normal gravity",
       "Absolute light calibration using S-type thermocouples",
       "A comparison of Raman signatures and laser-induced incandescence with direct numerical simulation of soot growth in non-premixed ethylene/air flames",
@@ -792,7 +791,7 @@
     "pillars": [
       "prevent"
     ],
-    "summary": "Saffire-I set a large sheet of cotton-fiberglass fabric alight inside an empty Cygnus cargo ship after it left the space station, the first look at how a big fire grows in low gravity. No crew were at risk.",
+    "summary": "Saffire-I set a large sheet of cotton-fiberglass fabric alight inside an empty Cygnus cargo ship after it left the space station, to see how rapidly a large fire grows in low gravity. No crew were at risk.",
     "objective": "determine how rapidly a large scale fire grows in low-gravity",
     "fuel": {
       "state": "solid",
@@ -842,7 +841,7 @@
     "pillars": [
       "prevent"
     ],
-    "summary": "Saffire-II burned nine different spacecraft materials inside an empty Cygnus cargo ship after it left the space station, to compare how each burns in low gravity against NASA's Earth screening test.",
+    "summary": "Saffire-II burned nine samples of spacecraft materials, among them SIBAL fabric, silicone and several kinds of PMMA, inside an empty Cygnus cargo ship after it left the space station, to compare low-gravity flammability limits with NASA's Earth screening test.",
     "objective": "The objectives of SAFFIRE-II are to determine how rapidly a large scale fire grows in low-gravity and to investigate the low-g flammability limits compared to those obtained in NASA’s normal gravity material flammability screening test.",
     "fuel": {
       "state": "solid",
@@ -1248,8 +1247,6 @@
       "Dynamics and burning limits of near-limit hot, warm, and cool diffusion flames of dimethyl ether at elevated pressures",
       "On the chemical characteristics and dynamics of n-alkane low-temperature multistage diffusion flames",
       "Quantitative measurements of HO 2 /H 2 O 2 and intermediate species in low and intermediate temperature oxidation of dimethyl ether",
-      "SUPPLEMENTARY MATERIAL",
-      "The radical index and the effect of oxygen concentration on non-premixed cool flame extinction of large n-alkanes",
       "Pressure and Radiation Effects on the Dynamics of Hot and Cool Diffusion Flames",
       "Transient interactions between a premixed double flame and a vortex"
     ],
