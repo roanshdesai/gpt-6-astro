@@ -1,5 +1,5 @@
 {
-  "_about": "Stated-result ('found') quotes for questions.json. 'quotes' are tied to one of the 24 PSI investigations; 'general' are stated results not tied to any of the 24 (usable in answer text, unknown lines or the Earth line, not as ranked evidence). Page numbers are the Guide's printed page numbers. Checked word for word by data/build/check_found_quotes.py.",
+  "_about": "Stated-result ('found') quotes for questions.json. 'quotes' are tied to one of the 24 PSI investigations ('alsoAbout' lists others the same text covers, when the source does not separate them); 'general' are stated results not tied to any of the 24 (usable in answer text, unknown lines or the Earth line, not as ranked evidence). Page numbers are the Guide's printed page numbers. Checked word for word by data/build/check_found_quotes.py.",
   "quotes": [
     {
       "investigation": "PSI-69",
@@ -73,7 +73,10 @@
       "text": "The tests have yielded useful results on the flow-velocity effect and flame suppression (by nitrogen), and the quick return of the test results has helped to guide the next, more complete flight experiments.",
       "source": "https://www.nasa.gov/sites/default/files/atoms/files/np-2015-10-034-jsc_combustion_in_reduced_gravity-iss-mini-book-011116-508.pdf",
       "page": "19",
-      "note": "The Guide says 'BASS' throughout and describes the 2012 glovebox runs; it does not separate BASS from BASS-II (PSI-25)."
+      "note": "The Guide's 'BASS' covers the whole glovebox series run since March 2012, including the nitrogen-diluted tests down to 17 percent oxygen that the PSI records describe for BASS-II (PSI-25: 'oxygen varied below 21% by adding nitrogen'). Cite on both rows, or word the answer as 'the BASS experiments'.",
+      "alsoAbout": [
+        "PSI-25"
+      ]
     },
     {
       "investigation": "PSI-26",
@@ -81,7 +84,7 @@
       "text": "Early results have demonstrated that nitrogen applied to the flame can actually strengthen it because of this effect.",
       "source": "https://www.nasa.gov/sites/default/files/atoms/files/np-2015-10-034-jsc_combustion_in_reduced_gravity-iss-mini-book-011116-508.pdf",
       "page": "22",
-      "note": "'this effect' is entrainment of oxygen by the suppressant stream, explained in the sentence before."
+      "note": "'this effect' is entrainment of oxygen by the suppressant stream, explained in the sentence before. Nitrogen suppression is a stated BASS (PSI-26) objective."
     },
     {
       "investigation": "PSI-26",
@@ -89,7 +92,10 @@
       "text": "Recent results from the BASS experiment currently running on the ISS indicate that NASA-STD-6001 Test 1 is not conservative, and materials can burn at lower oxygen levels in microgravity than on Earth.",
       "source": "https://www.nasa.gov/sites/default/files/atoms/files/np-2015-10-034-jsc_combustion_in_reduced_gravity-iss-mini-book-011116-508.pdf",
       "page": "31",
-      "note": "Same BASS / BASS-II caveat as above."
+      "note": "The Guide's 'BASS' covers the whole glovebox series run since March 2012, including the nitrogen-diluted tests down to 17 percent oxygen that the PSI records describe for BASS-II (PSI-25: 'oxygen varied below 21% by adding nitrogen'). Cite on both rows, or word the answer as 'the BASS experiments'.",
+      "alsoAbout": [
+        "PSI-25"
+      ]
     },
     {
       "investigation": "PSI-26",
@@ -97,7 +103,10 @@
       "text": "Also, current findings show that local application of suppressant is not adequate for flame extinguishment. The local jet entrains air and sustains the flame even when the ambient airflow is turned off.",
       "source": "https://www.nasa.gov/sites/default/files/atoms/files/np-2015-10-034-jsc_combustion_in_reduced_gravity-iss-mini-book-011116-508.pdf",
       "page": "31",
-      "note": "Same BASS / BASS-II caveat as above."
+      "note": "The Guide's 'BASS' covers the whole glovebox series run since March 2012, including the nitrogen-diluted tests down to 17 percent oxygen that the PSI records describe for BASS-II (PSI-25: 'oxygen varied below 21% by adding nitrogen'). Cite on both rows, or word the answer as 'the BASS experiments'.",
+      "alsoAbout": [
+        "PSI-25"
+      ]
     },
     {
       "investigation": "PSI-142",
@@ -144,13 +153,6 @@
       "text": "In outer space, fuels burn as oval balls rather than with an upward pointed cone flame as they do on Earth.",
       "source": "Research Impacts/Earth Benefits",
       "note": "A general statement in the BASS-II record, not phrased as BASS-II's own result. Fine for the 'what does a space fire look like' answer; weak as BASS-II evidence."
-    },
-    {
-      "investigation": "PSI-101",
-      "kind": "found",
-      "text": "One of the problems encountered during the SAME investigation was that after the thermal precipitators were returned to the ground, it was found that all the TEM grids were severely contaminated with some unidentified foreign particles, making these grids unusable although some of them showed shapes of certain types of smoke particles.",
-      "source": "Objectives",
-      "note": "A hardware problem in SAME (PSI-102), not a fire-behaviour result. Probably not usable as an answer."
     }
   ],
   "general": [

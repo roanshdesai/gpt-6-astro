@@ -39,6 +39,9 @@ def main():
             print(f"[{i}] general quote needs a URL source"); bad += 1; continue
         if inv is not None and inv not in psi:
             print(f"[{i}] unknown investigation {inv}"); bad += 1; continue
+        also = [a for a in q.get("alsoAbout", []) if a not in psi or a == inv]
+        if also or (inv is None and q.get("alsoAbout")):
+            print(f"[{i}] bad alsoAbout {q.get('alsoAbout')}"); bad += 1; continue
         if src.startswith("http"):
             f = SOURCE_FILES.get(src)
             hay = page_text(f) if f else None
