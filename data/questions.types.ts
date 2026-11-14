@@ -55,6 +55,7 @@ export interface Question {
   /** Written lines on what the NASA text does not answer. */
   unknown: string[];
   habitats: Habitat[];
-  /** null for now: the Earth line comes from the spinoff pages (backend part 6). */
-  earth: { text: string; quote: string; source: string } | null;
+  /** The "on Earth" line, from a NASA Spinoff page (backend part 6). Not ranked
+   *  evidence, not counted in strength. null when there is nothing to say. */
+  earth: { text: string; quote: string; source: string; sourceTitle: string } | null;
 }

@@ -1,0 +1,74 @@
+Saved 2026-11-14 from http://web.archive.org/web/20230602193621id_/https://science.nasa.gov/science-news/science-at-nasa/2013/18jun_strangeflames/
+(text of data/raw/sources/html/sciencecasts.html, made by data/build/html_to_text.py)
+
+Strange Flames on the ISS | Science Mission Directorate
+
+ Skip to main content
+
+Disclaimer: This page is kept for historical purposes, but the content is no longer actively updated. For more on NASA Science, visit https://science.nasa.gov.
+
+Published: 
+
+Jun 18, 2013
+
+Strange Flames on the ISS
+
+June 18, 2013: Fire, it is often said, is mankind's oldest chemistry experiment.
+
+ For thousands of years, people have been mixing the oxygen-rich air of Earth with an almost endless variety of fuels to produce hot luminous flame. There's an arc of learning about combustion that stretches from the earliest campfires of primitive humans to the most advanced automobiles racing down the superhighways of the 21st century. Engineers study burning to produce better internal combustion engines; chemists peer into flames looking for exotic reactions; chefs experiment with fire to cook better food.
+
+ You would think there's not much more to learn. Dr. Forman A. Williams, a professor of physics at UC San Diego, would disagree. "When it comes to fire," he says, "we're just getting started."
+
+ A new ScienceCast video explores the surprising behavior of "cool flames" on the International Space Station. Play it
+
+ Flames are hard to understand because they are complicated. In an ordinary candle flame, thousands of chemical reactions take place. Hydrocarbon molecules from the wick are vaporized and cracked apart by heat. They combine with oxygen to produce light, heat, CO2 and water. Some of the hydrocarbon fragments form ring-shaped molecules called polycyclic aromatic hydrocarbons and, eventually, soot. Soot particles can themselves burn or simply drift away as smoke. The familiar teardrop shape of the flame is an effect caused by gravity. Hot air rises and draws fresh cool air behind it. This is called buoyancy and is what makes the flame shoot up and flicker.
+
+ But what happens when you light a candle, say, on the International Space Station (ISS)?
+
+ "In microgravity, flames burn differently—they form little spheres," says Williams.
+
+ Flaming spheres on the ISS turn out to be wonderful mini-labs for combustion research. Unlike flames on Earth, which expand greedily when they need more fuel, flame balls let the oxygen come to them. Oxygen and fuel combine in a narrow zone at the surface of the sphere, not hither and yon throughout the flame. It’s a much simpler system.
+
+ Recently, Williams and colleagues were doing an ISS experiment called "FLEX" to learn how to put out fires in microgravity when they came across something odd. Small droplets of heptane were burning inside the FLEX combustion chamber. As planned, the flames went out, but unexpectedly the droplets of fuel continued burning.
+
+ "That's right—they seemed to be burning without flames," says Williams. "At first we didn't believe it ourselves."
+
+ A color image of a burning fuel droplet. More
+
+ In fact, Williams believes the flames are there, just too faint to see. "These are cool flames," he explains.
+
+ Ordinary, visible fire burns at a high temperature between 1500K and 2000K. Heptane flame balls on the ISS started out in this "hot fire" regime. But as the flame balls cooled and began to go out, a different kind of burning took over.
+
+ "Cool flames burn at the relatively low temperature of 500K to 800K," says Williams. "And their chemistry is completely different. Normal flames produce soot, CO2 and water. Cool flames produce carbon monoxide and formaldehyde."
+
+ Similar cool flames have been produced on Earth, but they flicker out almost immediately. On the ISS, however, cool flames can burn for long minutes.
+
+ "There are practical implications of these results," notes Williams. "For instance, they could lead to cleaner auto ignitions."
+
+ One of the ideas that auto companies have worked on for years is HCCI--short for "homogeneous charge compression ignition." In the automobile cylinder instead of a spark there would be a gentler, less polluting combustion process throughout the chamber.
+
+ "The chemistry of HCCI involves cool flame chemistry," says Williams. "The extra control we get from steady-state burning on the ISS will give us more accurate chemistry values for this type of research."
+
+ Just getting started, indeed.
+
+ Credits:
+
+ Author: Dr. Tony Phillips | Production editor: Dr. Tony Phillips | Credit: Science@NASA
+
+ More information:
+
+ Flame Extinguishment Experiment -- FLEX home page
+
+ More information about FLEX -- from the Glenn Research Center
+
+More Stories
+
+A Fiery Success 
+
+Micro-fireballs Lighting the Way to Better Engine Designs 
+
+NASA/July 17, 1997 MSL-1 Science Wrapup - Combustion 
+
+Discovery in a Drop of Water 
+
+Fires in Space and Test-Tube Planets: Shuttle Science Mission Results

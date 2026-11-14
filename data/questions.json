@@ -456,7 +456,12 @@
       "mars-base",
       "rover"
     ],
-    "earth": null
+    "earth": {
+      "text": "On Earth, fire-resistant materials first made for astronauts' suits and spacecraft went into firefighters' gear through NASA's Project FIRES.",
+      "quote": "A major focus of the effort involves application to the FIRES ensemble of lightweight, fire-resistant, heat-protective materials originally developed for use in astronauts' space suits or in spacecraft components which require thermal protection.",
+      "source": "https://spinoff.nasa.gov/node/9918",
+      "sourceTitle": "NASA Spinoff: New Technology for the Fire Attire (1982)"
+    }
   },
   {
     "id": "alarm-no-rising-smoke",
@@ -575,7 +580,12 @@
       "mars-base",
       "rover"
     ],
-    "earth": null
+    "earth": {
+      "text": "On Earth, a fire detector from the space shuttle works by sampling the air for combustion particles.",
+      "quote": "Sensor operates by sampling air to determine the presence of combustion particles",
+      "source": "https://spinoff.nasa.gov/node/9407",
+      "sourceTitle": "NASA Spinoff: Fire Detector (1978)"
+    }
   },
   {
     "id": "smoke-or-dust",
@@ -683,7 +693,12 @@
       "mars-base",
       "rover"
     ],
-    "earth": null
+    "earth": {
+      "text": "On Earth, a fire detector first used in space shuttle orbiters can tell combustion particles from dust.",
+      "quote": "the Brunswick Incipient Fire Detector, originally used in space shuttle orbiters, can discriminate between combustion particles and extraneous matters such as dust.",
+      "source": "https://spinoff.nasa.gov/node/9407",
+      "sourceTitle": "NASA Spinoff: Fire Detector (1978)"
+    }
   },
   {
     "id": "early-fire-look",
@@ -805,7 +820,12 @@
       "mars-base",
       "rover"
     ],
-    "earth": null
+    "earth": {
+      "text": "On Earth, that shuttle fire detector signals a fire before any flame or smoke appears.",
+      "quote": "Fire detector represents an advancement over commercially available smoke detectors in that it senses and signals the presence of a fire condition before appearance of flame and smoke.",
+      "source": "https://spinoff.nasa.gov/node/9407",
+      "sourceTitle": "NASA Spinoff: Fire Detector (1978)"
+    }
   },
   {
     "id": "put-it-out",
@@ -1456,6 +1476,11 @@
       "mars-base",
       "rover"
     ],
-    "earth": null
+    "earth": {
+      "text": "Beyond these 24 investigations, NASA's Johnson Space Center helped make firefighters' air tanks lighter: 20 pounds for 30 minutes of air, 13 pounds less than before.",
+      "quote": "Together with NASA's Johnson Space Center, A-T-O Inc.'s Scott Aviation has developed light-weight firefighter's air tanks. New backpack system weighs only 20 pounds for 30 minute air supply, 13 pounds less than conventional firefighting tanks.",
+      "source": "https://spinoff.nasa.gov/node/9582",
+      "sourceTitle": "NASA Spinoff: Fireman's Air Tanks (1976)"
+    }
   }
 ]
