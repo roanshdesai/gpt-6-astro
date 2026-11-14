@@ -26,9 +26,8 @@ ROOT = Path(__file__).resolve().parents[2]
 RAW = ROOT / "data" / "raw" / "psi-combustion-2026-11-14.json"
 OUT = ROOT / "data" / "investigations.json"
 
-# Public page pattern. The path loads on psi.nasa.gov, but its content is
-# rendered client-side, so it has not been confirmed to show the investigation.
-PSI_URL = "https://psi.nasa.gov/physci/repo/investigation/{id}"
+# Public page pattern, confirmed by opening PSI-117 in a browser (Nov 14).
+PSI_URL = "https://psi.nasa.gov/physci/repo/data/investigations/{id}"
 
 PILLARS = {"prevent", "detect", "suppress"}
 FUEL_STATES = {"solid", "liquid", "gas", "none", NS}

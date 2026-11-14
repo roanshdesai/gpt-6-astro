@@ -50,6 +50,6 @@ export interface Investigation {
   related: string[];
   /** Publication titles as PSI lists them. Can be empty. */
   publications: string[];
-  /** https://psi.nasa.gov/physci/repo/investigation/<id> (pattern not yet confirmed). */
+  /** https://psi.nasa.gov/physci/repo/data/investigations/<id> */
   psiUrl: string;
 }

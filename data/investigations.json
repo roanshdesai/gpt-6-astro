@@ -70,7 +70,7 @@
       "SOOTING LIMITS OF MICROGRAVITY SPHERICAL DIFFUSION FLAMES IN OXYGEN-ENRICHED AIR AND DILUTED FUEL",
       "Effects of structure and hydrodynamics on the sooting behavior of spherical microgravity diffusion flames"
     ],
-    "psiUrl": "https://psi.nasa.gov/physci/repo/investigation/PSI-10"
+    "psiUrl": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-10"
   },
   {
     "id": "PSI-20",
@@ -124,7 +124,7 @@
       "Demonstrating steady burning for small flat materials in microgravity in a quiescent ambient",
       "Theoretical analysis and predictions of burning in microgravity using a burning emulator"
     ],
-    "psiUrl": "https://psi.nasa.gov/physci/repo/investigation/PSI-20"
+    "psiUrl": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-20"
   },
   {
     "id": "PSI-21",
@@ -182,7 +182,7 @@
       "Measurements and calculations of formaldehyde concentrations in a methane/N2/air, non-premixed flame: Implications for heat release rate",
       "Computational and experimental study of a forced, time-dependent, methane–air coflow diffusion flame"
     ],
-    "psiUrl": "https://psi.nasa.gov/physci/repo/investigation/PSI-21"
+    "psiUrl": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-21"
   },
   {
     "id": "PSI-22",
@@ -247,7 +247,7 @@
       "Modeling of Elevated Pressure Diffusion Flames with Water Addition",
       "Electric-field effects on methane coflow flames aboard the international space station (ISS): ACME E-FIELD flames"
     ],
-    "psiUrl": "https://psi.nasa.gov/physci/repo/investigation/PSI-22"
+    "psiUrl": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-22"
   },
   {
     "id": "PSI-23",
@@ -328,7 +328,7 @@
       "Computational Simulation of Spherical Diffusion Flame Dynamics and Extinction in Microgravity",
       "Combustion Science: A Researcher&#x27;s Guide to International Space Station"
     ],
-    "psiUrl": "https://psi.nasa.gov/physci/repo/investigation/PSI-23"
+    "psiUrl": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-23"
   },
   {
     "id": "PSI-25",
@@ -385,7 +385,7 @@
       "Using a Narrow Channel Apparatus to Study Thermally-Intermediate Fuel Combustion in a Simulated 0g Environment",
       "Burning and Suppression of Solids – II Fire Safety Investigation for the Microgravity Science Glovebox"
     ],
-    "psiUrl": "https://psi.nasa.gov/physci/repo/investigation/PSI-25"
+    "psiUrl": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-25"
   },
   {
     "id": "PSI-26",
@@ -438,7 +438,7 @@
       "A novel apparatus for flame spread study",
       "Opposed-Flow Flame Spread in a Narrow Channel Apparatus over Thin PMMA Sheets"
     ],
-    "psiUrl": "https://psi.nasa.gov/physci/repo/investigation/PSI-26"
+    "psiUrl": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-26"
   },
   {
     "id": "PSI-39",
@@ -484,7 +484,7 @@
       "Science in Short: Cool Flames",
       "Low Temperature n-Dodecane Droplet Combustion Experiments Aboard the International Space Station"
     ],
-    "psiUrl": "https://psi.nasa.gov/physci/repo/investigation/PSI-39"
+    "psiUrl": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-39"
   },
   {
     "id": "PSI-47",
@@ -523,7 +523,7 @@
       "A Research Plan for Fire Prevention, Detection and Suppression in Crewed Exploration Systems",
       "Detection of Smoke from Microgravity Fires"
     ],
-    "psiUrl": "https://psi.nasa.gov/physci/repo/investigation/PSI-47"
+    "psiUrl": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-47"
   },
   {
     "id": "PSI-60",
@@ -562,7 +562,7 @@
     "publications": [
       "A Combined Experimental and Computational Study of Soot Formation in Normal and Microgravity Conditions (2022)"
     ],
-    "psiUrl": "https://psi.nasa.gov/physci/repo/investigation/PSI-60"
+    "psiUrl": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-60"
   },
   {
     "id": "PSI-62",
@@ -607,7 +607,7 @@
       "Theoretical estimates of flammability bounds for thin condensed fuel diffusion flames in microgravity using detailed models of chemistry and radiation (2023)",
       "Two-color pyrometry based flame to fuel surface radiative heat flux diagnostic using flamelets"
     ],
-    "psiUrl": "https://psi.nasa.gov/physci/repo/investigation/PSI-62"
+    "psiUrl": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-62"
   },
   {
     "id": "PSI-68",
@@ -692,7 +692,7 @@
       "Dynamic Differential Image Circle Diameter Measurement Precision Assessment: Application to Burning Droplets",
       "Interpretation of Backlit Droplet Images from ISS Droplet Combustion Experiments"
     ],
-    "psiUrl": "https://psi.nasa.gov/physci/repo/investigation/PSI-68"
+    "psiUrl": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-68"
   },
   {
     "id": "PSI-69",
@@ -782,7 +782,7 @@
       "Developing Surrogates for Liquid Transportation Fuels: The Role of Spherically Symmetric Droplet Combustion",
       "Detailed results from the flame extinugishment experiment (FLEX) - March 2009 to December 2011"
     ],
-    "psiUrl": "https://psi.nasa.gov/physci/repo/investigation/PSI-69"
+    "psiUrl": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-69"
   },
   {
     "id": "PSI-98",
@@ -832,7 +832,7 @@
       "Fire safety in space – beyond flammability testing of small samples",
       "Operation and Development Status of the Spacecraft Fire Experiments (Saffire)"
     ],
-    "psiUrl": "https://psi.nasa.gov/physci/repo/investigation/PSI-98"
+    "psiUrl": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98"
   },
   {
     "id": "PSI-99",
@@ -879,7 +879,7 @@
       "Transient flame growth and spread processes over a large solid fabric in concurrent low-speed flows in microgravity – Model versus experiment",
       "Evaluation of gas and particle sensors for detecting spacecraft-relevant fire emissions"
     ],
-    "psiUrl": "https://psi.nasa.gov/physci/repo/investigation/PSI-99"
+    "psiUrl": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-99"
   },
   {
     "id": "PSI-100",
@@ -925,7 +925,7 @@
       "The Spacecraft Fire Experiment (Saffire) - Objectives, Development and Status",
       "Operation and Development Status of the Spacecraft Fire Experiments (Saffire), 46th International Conference on Environmental Systems (ICES), July 2016"
     ],
-    "psiUrl": "https://psi.nasa.gov/physci/repo/investigation/PSI-100"
+    "psiUrl": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-100"
   },
   {
     "id": "PSI-101",
@@ -969,7 +969,7 @@
       "Detection of Smoke from Microgravity Fires",
       "Evaluation of spacecraft smoke detector performance in the low-gravity environment"
     ],
-    "psiUrl": "https://psi.nasa.gov/physci/repo/investigation/PSI-101"
+    "psiUrl": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101"
   },
   {
     "id": "PSI-102",
@@ -1024,7 +1024,7 @@
       "The Microgravity Science Glovebox (MSG), a Resource for Gravity-Dependent Phenomena Research on the International Space Station (ISS)",
       "AN OVERVIEW OF THE MICROGRAVITY SCIENCE GLOVEBOX (MSG) FACILITY, AND THE GRAVITY-DEPENDENT PHENOMENARESEARCH PERFORMED IN THE MSG ON THE INTERNATIONAL SPACE STATION (ISS)"
     ],
-    "psiUrl": "https://psi.nasa.gov/physci/repo/investigation/PSI-102"
+    "psiUrl": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-102"
   },
   {
     "id": "PSI-106",
@@ -1068,7 +1068,7 @@
       "An experimental and computational study of soot formation in a coflow jet flame under microgravity and normal gravity",
       "Analysis of CH* concentration and flame heat release rate in laminar coflow diffusion flames under microgravity and normal gravity"
     ],
-    "psiUrl": "https://psi.nasa.gov/physci/repo/investigation/PSI-106"
+    "psiUrl": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-106"
   },
   {
     "id": "PSI-107",
@@ -1114,7 +1114,7 @@
       "Smoke Points of Microgravity and Normal Gravity Coflow Diffusion",
       "Laminar smoke points of coflowing flames in microgravity"
     ],
-    "psiUrl": "https://psi.nasa.gov/physci/repo/investigation/PSI-107"
+    "psiUrl": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-107"
   },
   {
     "id": "PSI-115",
@@ -1150,7 +1150,7 @@
       "PSI-102"
     ],
     "publications": [],
-    "psiUrl": "https://psi.nasa.gov/physci/repo/investigation/PSI-115"
+    "psiUrl": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-115"
   },
   {
     "id": "PSI-117",
@@ -1201,7 +1201,7 @@
       "Oscillatory Cool Flame Combustion Behavior of Submillimeter Sized n-Alkane Droplet under Near Limit Conditions (2018)",
       "Dynamics of cool flames (2019)"
     ],
-    "psiUrl": "https://psi.nasa.gov/physci/repo/investigation/PSI-117"
+    "psiUrl": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117"
   },
   {
     "id": "PSI-142",
@@ -1253,7 +1253,7 @@
       "Pressure and Radiation Effects on the Dynamics of Hot and Cool Diffusion Flames",
       "Transient interactions between a premixed double flame and a vortex"
     ],
-    "psiUrl": "https://psi.nasa.gov/physci/repo/investigation/PSI-142"
+    "psiUrl": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-142"
   },
   {
     "id": "PSI-159",
@@ -1293,6 +1293,6 @@
       "Spherical gas-fueled cool diffusion flames",
       "Cool diffusion flames in a stably stratified stagnation flow"
     ],
-    "psiUrl": "https://psi.nasa.gov/physci/repo/investigation/PSI-159"
+    "psiUrl": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-159"
   }
 ]
