@@ -1,5 +1,11 @@
 # Context: gpt-6-astro
 
+> **Superseded on 2026-11-14.** The "Mission Fire Check" idea below is
+> dropped. The current plan is **The Question Board**: see
+> [SPLIT.md](SPLIT.md) for who does what and
+> [the design](docs/superpowers/specs/2026-11-14-question-board-design.md)
+> for the detail. This file is kept only as a record of the old draft.
+
 Shared notes for Roansh and Rehaan. This is a **draft while we're still brainstorming**, not a final plan.
 Last updated: 2026-10-26.
 
