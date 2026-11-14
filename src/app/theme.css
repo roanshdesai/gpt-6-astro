@@ -1,0 +1,84 @@
+/*
+ * Question Board theme, third pass: space.
+ *
+ * The page is black because the subject is. The backdrop is a real photograph
+ * of the Milky Way over Earth's horizon, taken from the space station, and the
+ * type is white over it. There is no accent colour in the interface: the only
+ * colour on screen comes from the flame, the sky and NASA's photographs.
+ */
+
+@theme inline {
+  --color-canvas: #030304;
+  --color-surface-1: #0c0c0e;
+  --color-surface-2: #151517;
+  --color-hairline: #26262a;
+  --color-hairline-strong: #5e5e64;
+  --color-ink: #f2f0ea;
+  --color-ink-muted: #bcb9b0;
+  --color-ink-subtle: #8c8981;
+  --color-accent: #f2f0ea;
+  --color-tag-found: #9be5b4;
+  --color-tag-tested: #5dbbc6;
+  --color-tag-expected: #d98a8b;
+  --font-display: var(--font-sans);
+  --font-mono: var(--font-b612-mono);
+}
+
+html {
+  --background: #030304;
+  --foreground: #f2f0ea;
+  --card: #0c0c0e;
+  --card-foreground: #f2f0ea;
+  --popover: #0c0c0e;
+  --popover-foreground: #f2f0ea;
+  --primary: #f2f0ea;
+  --primary-foreground: #030304;
+  --secondary: #151517;
+  --secondary-foreground: #f2f0ea;
+  --muted: #151517;
+  --muted-foreground: #8c8981;
+  --accent: #151517;
+  --accent-foreground: #f2f0ea;
+  --border: #26262a;
+  --input: #5e5e64;
+  --ring: #f2f0ea;
+  /* SmoothUI components read these; without them they default to pink. */
+  --brand: #f2f0ea;
+  --brand-light: #f2f0ea;
+  --brand-lighter: #bcb9b0;
+  --brand-secondary: #f2f0ea;
+  --on-brand: #030304;
+}
+
+html,
+body {
+  background: #030304;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  text-wrap: balance;
+}
+
+/* Underline that draws in from the left on hover. */
+.link-draw {
+  background-image: linear-gradient(currentColor, currentColor);
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  background-size: 0% 1px;
+  transition:
+    background-size 0.15s ease-out,
+    color 0.15s;
+}
+.link-draw:hover,
+.group:hover .link-draw {
+  background-size: 100% 1px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .link-draw {
+    transition: none;
+  }
+}
