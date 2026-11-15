@@ -39,6 +39,29 @@ SOURCE_FILES = {
         "data/raw/sources/researchers-guide-combustion.txt",
     "https://www.nasa.gov/glenn/glenn-expertise-space-exploration/physical-sciences-program/combustion-science/":
         "data/raw/sources/nasa-combustion-science-page.txt",
+    # Part 6 pages (see data/raw/sources/html/SOURCES.txt).
+    "https://www.nasa.gov/mission/apollo-1/":
+        "data/raw/sources/apollo-1.txt",
+    "https://www.nasa.gov/history/55-years-ago-the-apollo-1-fire-and-its-aftermath/":
+        "data/raw/sources/apollo-1-fire-aftermath.txt",
+    "https://www.nasa.gov/mission/apollo-13/":
+        "data/raw/sources/apollo-13.txt",
+    "https://www.nasa.gov/history/houston-weve-had-a-problem/":
+        "data/raw/sources/apollo-13-problem.txt",
+    "https://www.nasa.gov/history/50-years-ago-apollo-13-review-board-report/":
+        "data/raw/sources/apollo-13-review-board.txt",
+    "https://www.nasa.gov/history/25-years-ago-fire-aboard-space-station-mir/":
+        "data/raw/sources/mir-fire.txt",
+    "https://spinoff.nasa.gov/node/9582":
+        "data/raw/sources/spinoff-air-tanks.txt",
+    "https://spinoff.nasa.gov/node/9407":
+        "data/raw/sources/spinoff-fire-detector.txt",
+    "https://spinoff.nasa.gov/node/9918":
+        "data/raw/sources/spinoff-fire-attire.txt",
+    "http://web.archive.org/web/20230602193621id_/https://science.nasa.gov/science-news/science-at-nasa/2013/18jun_strangeflames/":
+        "data/raw/sources/sciencecasts.txt",
+    "https://www.nasa.gov/humans-in-space/space-stations-quest-for-the-secrets-of-fire/":
+        "data/raw/sources/sciencecasts-related-quest-for-fire.txt",
 }
 PSI_FIELDS = {"Objectives", "Approach", "Hypothesis", "Research Impacts/Earth Benefits", "Experiment Hardware"}
 PILLARS = {"prevent", "detect", "suppress", "across"}
@@ -53,7 +76,7 @@ def norm(s):
 def page_text(path):
     # Same rule as check_found_quotes.py: drop lines that are only a printed
     # page number so a sentence across a page break still matches.
-    lines = (ROOT / path).read_text().splitlines()
+    lines = (ROOT / path).read_text(encoding="utf-8").splitlines()
     return norm("\n".join(l for l in lines if not re.fullmatch(r"\s*\d+\s*", l)))
 
 

@@ -15,7 +15,9 @@
 //   - an answer sentence cites an id with no evidence row;
 //   - an answer sentence says "found" without resting on a Found quote;
 //   - ranks are not 1..n with stated-result (Found) rows first;
-//   - a stored strength count differs from the count recomputed here.
+//   - a stored strength count differs from the count recomputed here;
+//   - an incident card or the video link in data/landing.json has a quote or
+//     support line that is not word for word in its saved NASA page.
 // Warns (does not fail) when a Found quote from a NASA resource is word for
 // word in the source but not listed in data/found-quotes.json.
 //
@@ -40,6 +42,7 @@ export const FILES = {
   investigations: "data/investigations.json",
   questions: "data/questions.json",
   foundQuotes: "data/found-quotes.json",
+  landing: "data/landing.json",
 };
 
 export const SOURCE_FILES = {
@@ -47,6 +50,30 @@ export const SOURCE_FILES = {
     "data/raw/sources/researchers-guide-combustion.txt",
   "https://www.nasa.gov/glenn/glenn-expertise-space-exploration/physical-sciences-program/combustion-science/":
     "data/raw/sources/nasa-combustion-science-page.txt",
+  // Part 6: incident cards, ScienceCasts video and "on Earth" lines (HTML saved Nov 14,
+  // turned into text by data/build/html_to_text.py; see data/raw/sources/html/SOURCES.txt).
+  "https://www.nasa.gov/mission/apollo-1/":
+    "data/raw/sources/apollo-1.txt",
+  "https://www.nasa.gov/history/55-years-ago-the-apollo-1-fire-and-its-aftermath/":
+    "data/raw/sources/apollo-1-fire-aftermath.txt",
+  "https://www.nasa.gov/mission/apollo-13/":
+    "data/raw/sources/apollo-13.txt",
+  "https://www.nasa.gov/history/houston-weve-had-a-problem/":
+    "data/raw/sources/apollo-13-problem.txt",
+  "https://www.nasa.gov/history/50-years-ago-apollo-13-review-board-report/":
+    "data/raw/sources/apollo-13-review-board.txt",
+  "https://www.nasa.gov/history/25-years-ago-fire-aboard-space-station-mir/":
+    "data/raw/sources/mir-fire.txt",
+  "https://spinoff.nasa.gov/node/9582":
+    "data/raw/sources/spinoff-air-tanks.txt",
+  "https://spinoff.nasa.gov/node/9407":
+    "data/raw/sources/spinoff-fire-detector.txt",
+  "https://spinoff.nasa.gov/node/9918":
+    "data/raw/sources/spinoff-fire-attire.txt",
+  "http://web.archive.org/web/20230602193621id_/https://science.nasa.gov/science-news/science-at-nasa/2013/18jun_strangeflames/":
+    "data/raw/sources/sciencecasts.txt",
+  "https://www.nasa.gov/humans-in-space/space-stations-quest-for-the-secrets-of-fire/":
+    "data/raw/sources/sciencecasts-related-quest-for-fire.txt",
 };
 
 const PSI_FIELDS = new Set([
@@ -105,6 +132,7 @@ export function load(root = ROOT) {
     investigations: json(FILES.investigations),
     questions: json(FILES.questions),
     foundQuotes: json(FILES.foundQuotes),
+    landing: json(FILES.landing),
     pages,
   };
 }
@@ -180,7 +208,7 @@ export function check(d, warnings = []) {
       const hay = d.pages[source];
       if (hay === undefined) err(`${where}: no saved copy of ${source}`);
       else if (!hay.includes(text)) err(`${where}: not word for word in ${source}: "${text.slice(0, 70)}"`);
-      else if (q.kind === "found" && d.foundQuotes && !curatedFound.has(`${source}\n${text}`))
+      else if (q.kind === "found" && !where.endsWith(" earth") && d.foundQuotes && !curatedFound.has(`${source}\n${text}`))
         warn(`${where}: Found quote is not listed in data/found-quotes.json: "${text.slice(0, 70)}"`);
     } else {
       if (!inv) err(`${where}: a quote outside an evidence row needs a URL source`);
@@ -266,6 +294,33 @@ export function check(d, warnings = []) {
       err(`${qid}: strength is ${JSON.stringify(got)}, recomputed ${JSON.stringify(want)}`);
   }
 
+  // ---------- landing.json (incident cards and video link) ----------
+  if (d.landing) {
+    const urlQuote = (where, text, source) => {
+      const t = norm(text);
+      if (!t) return err(`${where}: empty quote`);
+      if (!String(source ?? "").startsWith("http")) return err(`${where}: needs a URL source`);
+      const hay = d.pages[source];
+      if (hay === undefined) err(`${where}: no saved copy of ${source}`);
+      else if (!hay.includes(t)) err(`${where}: not word for word in ${source}: "${t.slice(0, 70)}"`);
+    };
+    const seenInc = new Set();
+    for (const c of d.landing.incidents ?? []) {
+      const where = `landing incident ${c.id}`;
+      if (seenInc.has(c.id)) err(`${where}: listed twice`);
+      seenInc.add(c.id);
+      for (const f of ["year", "name", "text", "sourceTitle"]) if (!norm(c[f])) err(`${where}: empty ${f}`);
+      urlQuote(`${where} quote`, c.quote, c.source);
+      (c.support ?? []).forEach((s, k) => urlQuote(`${where} support ${k}`, s, c.source));
+    }
+    if (!(d.landing.incidents ?? []).length) err("landing: no incident cards");
+    const v = d.landing.video;
+    if (v) {
+      for (const f of ["title", "url", "sourceTitle"]) if (!norm(v[f])) err(`landing video: empty ${f}`);
+      urlQuote("landing video quote", v.quote, v.source);
+    }
+  }
+
   return errors;
 }
 
@@ -310,7 +365,11 @@ function main() {
         q.answer.reduce((m, s) => m + (s.basis?.length ?? 0), 0) +
         (q.earth ? 1 : 0),
       0,
-    ) + (d.foundQuotes ? d.foundQuotes.quotes.length + d.foundQuotes.general.length : 0);
+    ) +
+    (d.foundQuotes ? d.foundQuotes.quotes.length + d.foundQuotes.general.length : 0) +
+    (d.landing
+      ? d.landing.incidents.reduce((n, c) => n + 1 + (c.support?.length ?? 0), 0) + (d.landing.video ? 1 : 0)
+      : 0);
   if (!quiet) {
     const { perQuestion } = strengthReport(d);
     console.log("Evidence strength (investigations with a quote / of them with a stated result):");
@@ -318,7 +377,8 @@ function main() {
       console.log(`  ${s.id.padEnd(24)} ${String(s.count).padStart(2)} of ${s.of}, ${s.withFindings} with stated results`);
   }
   console.log(
-    `Honesty check OK: ${d.investigations.length} investigations, ${d.questions.length} questions, ${nQuotes} quotes word for word.`,
+    `Honesty check OK: ${d.investigations.length} investigations, ${d.questions.length} questions, ` +
+      `${d.landing?.incidents.length ?? 0} incident cards, ${nQuotes} quotes word for word.`,
   );
   return 0;
 }

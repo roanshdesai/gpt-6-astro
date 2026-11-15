@@ -93,3 +93,35 @@ test("an Earth line with a made-up quote fails", () => {
   };
   fails(d, /earth: not word for word/);
 });
+
+test("an edited Spinoff Earth quote fails", () => {
+  const d = fresh();
+  const q = d.questions.find((x) => x.earth?.quote?.includes("dust"));
+  q.earth.quote = q.earth.quote.replace("dust", "pollen");
+  fails(d, /earth: not word for word/);
+});
+
+test("an edited incident card quote fails", () => {
+  const d = fresh();
+  d.landing.incidents[0].quote = d.landing.incidents[0].quote.replace("pure oxygen", "normal air");
+  fails(d, /landing incident apollo-1 quote: not word for word/);
+});
+
+test("an incident support line from another page fails", () => {
+  const d = fresh();
+  const [a, b] = d.landing.incidents;
+  a.support.push(b.quote);
+  fails(d, /landing incident apollo-1 support \d+: not word for word/);
+});
+
+test("an incident card with an unsaved source fails", () => {
+  const d = fresh();
+  d.landing.incidents[1].source = "https://www.nasa.gov/not-saved/";
+  fails(d, /no saved copy/);
+});
+
+test("an edited video quote fails", () => {
+  const d = fresh();
+  d.landing.video.quote = d.landing.video.quote.replace("cool", "hot");
+  fails(d, /landing video quote: not word for word/);
+});

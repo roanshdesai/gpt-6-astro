@@ -40,6 +40,23 @@ def GF(page, text): return _q("found", GUIDE, text, page)
 def PAGE_T(text): return _q("tested", CPAGE, text)
 
 
+# "On Earth" lines (backend part 6). Not ranked evidence and not counted in
+# strength. Each quote is word for word in a NASA Spinoff page saved Nov 14
+# (data/raw/sources/spinoff-*.txt). `text` is written; the quote backs it.
+SPINOFF_AIR_TANKS = "https://spinoff.nasa.gov/node/9582"
+SPINOFF_FIRE_DETECTOR = "https://spinoff.nasa.gov/node/9407"
+SPINOFF_FIRE_ATTIRE = "https://spinoff.nasa.gov/node/9918"
+SPINOFF_TITLES = {
+    SPINOFF_AIR_TANKS: "NASA Spinoff: Fireman's Air Tanks (1976)",
+    SPINOFF_FIRE_DETECTOR: "NASA Spinoff: Fire Detector (1978)",
+    SPINOFF_FIRE_ATTIRE: "NASA Spinoff: New Technology for the Fire Attire (1982)",
+}
+
+
+def EARTH(source, text, quote):
+    return {"text": text, "quote": quote, "source": source, "sourceTitle": SPINOFF_TITLES[source]}
+
+
 def S(text, cites=(), basis=(), scope=False):
     s = {"text": text, "cites": list(cites)}
     if basis:
@@ -200,7 +217,11 @@ QUESTIONS = [
             "Whether the BRE result holds for real PMMA and Nylon, not the gas burner emulating them.",
         ],
         "habitats": ["spacecraft", "station", "moon-base", "mars-base", "rover"],
-        "earth": None,
+        "earth": EARTH(
+            SPINOFF_FIRE_ATTIRE,
+            "On Earth, fire-resistant materials first made for astronauts' suits and spacecraft went into firefighters' gear through NASA's Project FIRES.",
+            "A major focus of the effort involves application to the FIRES ensemble of lightweight, fire-resistant, heat-protective materials originally developed for use in astronauts' space suits or in spacecraft components which require thermal protection.",
+        ),
     },
     # ------------------------------------------------------------------- DETECT
     {
@@ -230,7 +251,11 @@ QUESTIONS = [
             "How smoke behaves at Moon or Mars gravity, which none of the 24 tested.",
         ],
         "habitats": ["spacecraft", "station", "moon-base", "mars-base", "rover"],
-        "earth": None,
+        "earth": EARTH(
+            SPINOFF_FIRE_DETECTOR,
+            'On Earth, a fire detector from the space shuttle works by sampling the air for combustion particles.',
+            'Sensor operates by sampling air to determine the presence of combustion particles',
+        ),
     },
     {
         "id": "smoke-or-dust",
@@ -257,7 +282,11 @@ QUESTIONS = [
             "Lunar or Martian dust, which none of the 24 used.",
         ],
         "habitats": ["spacecraft", "station", "moon-base", "mars-base", "rover"],
-        "earth": None,
+        "earth": EARTH(
+            SPINOFF_FIRE_DETECTOR,
+            'On Earth, a fire detector first used in space shuttle orbiters can tell combustion particles from dust.',
+            'the Brunswick Incipient Fire Detector, originally used in space shuttle orbiters, can discriminate between combustion particles and extraneous matters such as dust.',
+        ),
     },
     {
         "id": "early-fire-look",
@@ -286,7 +315,11 @@ QUESTIONS = [
             "Flame shape at Moon or Mars gravity, which none of the 24 tested.",
         ],
         "habitats": ["spacecraft", "station", "moon-base", "mars-base", "rover"],
-        "earth": None,
+        "earth": EARTH(
+            SPINOFF_FIRE_DETECTOR,
+            'On Earth, that shuttle fire detector signals a fire before any flame or smoke appears.',
+            'Fire detector represents an advancement over commercially available smoke detectors in that it senses and signals the presence of a fire condition before appearance of flame and smoke.',
+        ),
     },
     # ----------------------------------------------------------------- SUPPRESS
     {
@@ -435,6 +468,10 @@ QUESTIONS = [
             "Products already on the market from these 24: the PSI records describe expected benefits, not delivered ones (the spinoff pages come in a later step).",
         ],
         "habitats": ["spacecraft", "station", "moon-base", "mars-base", "rover"],
-        "earth": None,
+        "earth": EARTH(
+            SPINOFF_AIR_TANKS,
+            "Beyond these 24 investigations, NASA's Johnson Space Center helped make firefighters' air tanks lighter: 20 pounds for 30 minutes of air, 13 pounds less than before.",
+            "Together with NASA's Johnson Space Center, A-T-O Inc.'s Scott Aviation has developed light-weight firefighter's air tanks. New backpack system weighs only 20 pounds for 30 minute air supply, 13 pounds less than conventional firefighting tanks.",
+        ),
     },
 ]

@@ -1,0 +1,784 @@
+Saved 2026-11-14 from https://www.nasa.gov/mission/apollo-1/
+(text of data/raw/sources/html/apollo-1.html, made by data/build/html_to_text.py)
+
+Apollo 1 - NASA
+
+ Search 
+
+Suggested Searches
+
+ Artemis
+
+ ISS
+
+ Roman
+
+ Webb
+
+ Quesst
+
+ Moon Base
+
+ View All Topics A-Z
+
+Home
+
+Missions
+
+Humans in Space
+
+Earth
+
+The Solar System
+
+The Universe
+
+Science
+
+Aeronautics
+
+Technology
+
+Learning Resources
+
+About NASA
+
+Español
+
+ News & Events
+
+ Multimedia
+
+ NASA+
+
+Featured
+
+3 min read
+
+NASA Invites Media, Public to Join Voyager 1 One-Light Day Activities
+
+article4 days ago
+
+5 min read
+
+NASA’s ESCAPADE Completes Powered Earth Flybys, Now En Route to Mars
+
+article5 days ago
+
+4 min read
+
+What’s Up: November 2026 Skywatching Tips from NASA
+
+article2 weeks ago
+
+ Back
+
+Missions
+
+Search All NASA Missions
+
+A to Z List of Missions
+
+Upcoming Launches and Landings
+
+Spaceships and Rockets
+
+Communicating with Missions
+
+Artemis
+
+James Webb Space Telescope
+
+Hubble Space Telescope
+
+International Space Station
+
+OSIRIS-Rex
+
+Humans in Space
+
+Why Go to Space
+
+Astronauts
+
+Commercial Space
+
+Destinations
+
+Spaceships and Rockets
+
+Living in Space
+
+Earth
+
+Explore Earth Science
+
+Climate Change
+
+Earth, Our Planet
+
+Earth Science in Action
+
+Earth Multimedia
+
+Earth Data
+
+Earth Science Researchers
+
+The Solar System
+
+The Sun
+
+Mercury
+
+Venus
+
+Earth
+
+The Moon
+
+Mars
+
+Jupiter
+
+Saturn
+
+Uranus
+
+Neptune
+
+Pluto & Dwarf Planets
+
+Asteroids, Comets & Meteors
+
+The Kuiper Belt
+
+The Oort Cloud
+
+Skywatching
+
+The Universe
+
+Exoplanets
+
+The Search for Life in the Universe
+
+Stars
+
+Galaxies
+
+Black Holes
+
+The Big Bang
+
+Dark Energy
+
+Dark Matter
+
+Science
+
+Earth Science
+
+Planetary Science
+
+Astrophysics & Space Science
+
+The Sun & Heliophysics
+
+Biological & Physical Sciences
+
+Lunar Science
+
+Citizen Science
+
+Astromaterials
+
+Aeronautics Research
+
+Human Space Travel Research
+
+Aeronautics
+
+Science in the Air
+
+NASA Aircraft
+
+Flight Research Innovation
+
+Supersonic Flight
+
+Air Traffic Solutions
+
+Green Aviation Tech
+
+Drones & You
+
+Technology
+
+Technology Transfer & Spinoffs
+
+Space Travel
+
+Living in Space
+
+Lunar Surface Technology
+
+Manufacturing and Materials
+
+Robotics
+
+Science Instruments
+
+Computing
+
+Learning Resources
+
+For Students
+
+For Educators
+
+For Colleges and Universities
+
+For Professionals
+
+Science for Everyone
+
+Requests for Exhibits, Artifacts, Speakers & Flyovers
+
+STEM Engagement at NASA
+
+About NASA
+
+NASA's Impacts
+
+Centers and Facilities
+
+Directorates
+
+Organizations
+
+People of NASA
+
+Careers
+
+Internships
+
+Our History
+
+Doing Business with NASA
+
+Get Involved
+
+Contact
+
+NASA en Español
+
+Ciencia
+
+Aeronáutica
+
+Ciencias Terrestres
+
+Sistema Solar
+
+Universo
+
+News & Events
+
+News Releases
+
+Recently Published
+
+Video Series on NASA+
+
+Podcasts & Audio
+
+Blogs
+
+Newsletters
+
+Social Media
+
+Media Resources
+
+Events
+
+Upcoming Launches & Landings
+
+Virtual Guest Program
+
+Multimedia
+
+NASA+
+
+Images
+
+NASA Live
+
+NASA Apps
+
+Podcasts
+
+Image of the Day
+
+e-Books
+
+3D Resources
+
+Interactives
+
+STEM Multimedia
+
+NASA Brand & Usage Guidelines
+
+Featured
+
+3 min read
+
+NASA Invites Media, Public to Join Voyager 1 One-Light Day Activities
+
+ article
+
+ 4 days ago
+
+6 min read
+
+NASA’s Chandra Finds Source of Star’s Mysterious Outbursts
+
+ article
+
+ 5 days ago
+
+5 min read
+
+NASA’s Hubble Offers Cosmic Sampler of Targets for Roman
+
+ article
+
+ 2 days ago
+
+Highlights
+
+2 min read
+
+NASA Astronauts to Answer Questions from Florida Students
+
+ article
+
+ 1 week ago
+
+2 min read
+
+NASA Astronaut, STEM Creator Connect with Students for STEM Day
+
+ article
+
+ 2 weeks ago
+
+3 min read
+
+NASA’s ISAM State of Play: The Industry Standard for Space Servicing, Assembly, and Manufacturing
+
+ article
+
+ 2 weeks ago
+
+Highlights
+
+5 min read
+
+A Global Rebound for Mangroves
+
+ article
+
+ 1 day ago
+
+3 min read
+
+Scotland’s Flow Country
+
+ article
+
+ 2 days ago
+
+3 min read
+
+STRIVE
+
+ article
+
+ 2 days ago
+
+Highlights
+
+5 min read
+
+NASA’s ESCAPADE Completes Powered Earth Flybys, Now En Route to Mars
+
+ article
+
+ 5 days ago
+
+5 min read
+
+PROMISE
+
+ article
+
+ 7 days ago
+
+4 min read
+
+What’s Up: November 2026 Skywatching Tips from NASA
+
+ article
+
+ 2 weeks ago
+
+Highlights
+
+5 min read
+
+NASA’s Hubble Offers Cosmic Sampler of Targets for Roman
+
+ article
+
+ 2 days ago
+
+5 min read
+
+NASA Scientists Show How Gravitational Waves Can Reveal New Worlds
+
+ article
+
+ 4 days ago
+
+6 min read
+
+NASA’s Chandra Finds Source of Star’s Mysterious Outbursts
+
+ article
+
+ 5 days ago
+
+Highlights
+
+5 min read
+
+A Global Rebound for Mangroves
+
+ article
+
+ 1 day ago
+
+5 min read
+
+NASA’s Hubble Offers Cosmic Sampler of Targets for Roman
+
+ article
+
+ 2 days ago
+
+3 min read
+
+Scotland’s Flow Country
+
+ article
+
+ 2 days ago
+
+Highlights
+
+3 min read
+
+Through NASA’s Lens: Capturing Space Shuttle Endeavour’s Move to LA
+
+ article
+
+ 2 days ago
+
+4 min read
+
+MAX POWER: NASA’s Inaugural Aerospace Expo Ignites America’s Future
+
+ article
+
+ 5 days ago
+
+3 min read
+
+NASA Navigation Experiment Shows Promise for Planetary Landings
+
+ article
+
+ 1 week ago
+
+Highlights
+
+3 min read
+
+NASA Navigation Experiment Shows Promise for Planetary Landings
+
+ article
+
+ 1 week ago
+
+2 min read
+
+High-speed Intelligent Robust Autonomous Terrain Exploration
+
+ article
+
+ 1 week ago
+
+5 min read
+
+The Pacific’s Busy Storm Season
+
+ article
+
+ 2 weeks ago
+
+Featured
+
+2 min read
+
+NASA Astronauts to Answer Questions from Florida Students
+
+ article
+
+ 1 week ago
+
+4 min read
+
+NASA Space Grant Students Fuel Agency’s Inspiration Tour
+
+ article
+
+ 1 week ago
+
+2 min read
+
+NASA Astronaut, STEM Creator Connect with Students for STEM Day
+
+ article
+
+ 2 weeks ago
+
+Featured
+
+3 min read
+
+NASA Invites Media, Public to Join Voyager 1 One-Light Day Activities
+
+ article
+
+ 4 days ago
+
+3 min read
+
+NASA Announces $1 Million to Students for Moon Base Challenge
+
+ article
+
+ 6 days ago
+
+1 min read
+
+TIME Best Inventions of 2026
+
+ article
+
+ 4 weeks ago
+
+Highlights
+
+11 min read
+
+La NASA anuncia la cobertura de la misión lunar Artemis II
+
+ article
+
+ 8 months ago
+
+15 min read
+
+Agenda diaria de la misión a la Luna de Artemis II de la NASA
+
+ article
+
+ 8 months ago
+
+6 min read
+
+La NASA refuerza Artemis: añade una misión y perfecciona su arquitectura general
+
+ article
+
+ 9 months ago
+
+Apollo Program
+
+Apollo 1
+
+On Jan. 27, 1967, tragedy struck on the launch pad at Cape Kennedy during a preflight test for Apollo 204 (AS-204). The mission was to be the first crewed flight of Apollo, and was scheduled to launch Feb. 21, 1967. Astronauts Virgil Grissom, Edward White and Roger Chaffee lost their lives when a fire swept through the command module.
+
+Mission Type
+
+Human Space Flight
+
+SCHEDULED TO LAUNCH
+
+Feb. 21, 1967
+
+The Apollo 1 crew of Virgil I. “Gus” Grissom, left, Edward H. White, and Roger B. Chaffee
+
+NASA
+
+Portrait of astronaut Virgil I. (Gus) Grissom (1964)
+
+NASA
+
+Portrait of astronaut Edward H. White II. (10 Sept. 1964) 
+
+NASA
+
+Portrait of astronaut Roger B. Chaffee. (10 Sept. 1964)
+
+NASA
+
+Apollo 1 Tragedy
+
+Jan. 27, 1967, tragedy struck on the launch pad at Cape Kennedy during a preflight test for Apollo 204 (AS-204). The mission was to be the first crewed flight of Apollo, and was scheduled to launch Feb. 21, 1967. Astronauts Virgil Grissom, Edward White and Roger Chaffee lost their lives when a fire swept through the command module, or CM.
+
+The exhaustive investigation of the fire and extensive reworking of the Apollo command modules postponed crewed launches until NASA officials cleared them for flight. Saturn IB schedules were suspended for nearly a year, and the launch vehicle that finally bore the designation AS-204 carried a lunar module, or LM, as the payload, instead of a CM. The missions of AS-201 and AS-202 with Apollo spacecraft aboard had been unofficially known as Apollo 1 and Apollo 2 missions. AS-203 carried only the aerodynamic nose cone.
+
+In the spring of 1967, NASA’s Associate Administrator for Manned Space Flight, Dr. George E. Mueller, announced that the mission originally scheduled for Grissom, White and Chaffee would be known as Apollo 1, and said that the first Saturn V launch, scheduled for November 1967, would be known as Apollo 4. The eventual launch of AS-204 became known as the Apollo 5 mission. No missions or flights were ever designated Apollo 2 or 3.
+ The second launch of a Saturn V took place on schedule in the early morning of April 4, 1968. Known as AS-502, or Apollo 6, the flight was a success, though two first-stage engines shut down prematurely, and the third-stage engine failed to reignite after reaching orbit.
+
+NASA History
+
+Remembering Apollo 1
+
+Read detailed biographies, reports, bibliographies, and other resources relating to the Apollo 1 tragedy that took the lives of Gus Grissom, Ed White, and Roger Chaffee.
+
+ Learn More
+
+Manned Spacecraft Center Director Robert R. Gilruth (far right) introduces the Apollo 1 crew during press conference in Houston. Sitting next to Gilruth are (from left) astronauts Roger Chaffee, Edward H. White II, and Gus Grissom. (1966)
+
+NASA
+
+Insignia for the NASA Apollo 1 mission, the first manned Apollo flight. Crew members were astronauts Virgil I. u0022Gusu0022 Grissom, Edward H. White II, and Roger B. Chaffee. (1966)
+
+NASA
+
+Crew
+Virgil I. Grissom
+Edward H. White
+Roger B. Chaffee
+
+Backup Crew
+Walter M. Schirra Jr.
+Donn F. Eisele
+Walter Cunningham
+
+Payload
+Spacecraft-012
+
+Apollo Pad Fire
+Emergency Transmission: Jan. 27, 1967; 6:31:05 p.m. EST
+Launch Complex 34
+Saturn-IB AS-204
+CSM-012
+
+Houston We Have a Podcast: Apollo 1 Fire
+
+Expert guests from the Apollo program reveal more behind the challenges faced to successfully land humans on the Moon in less than three years after the tragic Apollo 1 fire. The panel was recorded on January 24, 2017.
+
+Apollo 1 Content
+
+55 Years Ago: The Apollo 1 Fire and its Aftermath
+
+ 14 min read 
+
+“Three valiant young men have given their lives in the nation’s service. We mourn this great loss and our hearts…
+
+ February 3, 2022 
+
+Article
+
+55 Years Ago: Tragedy on the Launch Pad
+
+ 10 min read 
+
+On Jan. 27, 1967, with the planned launch of the first Apollo mission to carry a crew just 25 days…
+
+ January 27, 2022 
+
+Article
+
+55 Years Ago: Final Preparations for the Planned Launch of Apollo 1
+
+ 15 min read 
+
+With President John F. Kennedy’s end-of-the-decade target of landing a man on the Moon approaching, NASA set ambitious goals for…
+
+ January 19, 2022 
+
+Article
+
+55 Years Ago: Two Months Until Apollo 1
+
+ 6 min read 
+
+In December 1966, preparations continued for the first crewed Apollo mission, officially designated as AS-204 but better known as Apollo…
+
+ December 20, 2021 
+
+Article
+
+55 Years Ago: Three Months Until Apollo 1
+
+ 9 min read 
+
+In November 1966, with the Gemini program successfully completed, NASA set its sights on the first Apollo mission to carry…
+
+ November 22, 2021 
+
+Article
+
+Kennedy Space Center Honors Fallen Heroes of Human Spaceflight
+
+ 2 min read 
+
+Leerlo en español aquí. The crews of Apollo 1 and space shuttles Challenger and Columbia, as well as other fallen…
+
+ January 21, 2021 
+
+Article
+
+ Detailed Historical Resources 
+
+Apollo 204 Biographies, History, and Reports
+
+Read detailed biographies of the crew, learn more about the accident and the investigation that followed, and explore an annotated bibliography for further reading. This site includes the final report of the Investigation Board and the report to the Senate.
+
+Apollo 1
+
+ 30 Images 
+
+ Go To Gallery
+
+ Go To Gallery
+
+Keep Exploring
+
+Discover More Topics From NASA
+
+ Explore NASA’s History
+
+ Humans In Space
+
+ The Apollo Program
+
+ Astronauts

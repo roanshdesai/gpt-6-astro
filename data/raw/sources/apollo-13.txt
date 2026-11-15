@@ -1,0 +1,802 @@
+Saved 2026-11-14 from https://www.nasa.gov/mission/apollo-13/
+(text of data/raw/sources/html/apollo-13.html, made by data/build/html_to_text.py)
+
+Apollo 13 - NASA
+
+ Search 
+
+Suggested Searches
+
+ Artemis
+
+ ISS
+
+ Roman
+
+ Webb
+
+ Quesst
+
+ Moon Base
+
+ View All Topics A-Z
+
+Home
+
+Missions
+
+Humans in Space
+
+Earth
+
+The Solar System
+
+The Universe
+
+Science
+
+Aeronautics
+
+Technology
+
+Learning Resources
+
+About NASA
+
+Español
+
+ News & Events
+
+ Multimedia
+
+ NASA+
+
+Featured
+
+3 min read
+
+NASA Invites Media, Public to Join Voyager 1 One-Light Day Activities
+
+article4 days ago
+
+5 min read
+
+NASA’s ESCAPADE Completes Powered Earth Flybys, Now En Route to Mars
+
+article5 days ago
+
+4 min read
+
+What’s Up: November 2026 Skywatching Tips from NASA
+
+article2 weeks ago
+
+ Back
+
+Missions
+
+Search All NASA Missions
+
+A to Z List of Missions
+
+Upcoming Launches and Landings
+
+Spaceships and Rockets
+
+Communicating with Missions
+
+Artemis
+
+James Webb Space Telescope
+
+Hubble Space Telescope
+
+International Space Station
+
+OSIRIS-Rex
+
+Humans in Space
+
+Why Go to Space
+
+Astronauts
+
+Commercial Space
+
+Destinations
+
+Spaceships and Rockets
+
+Living in Space
+
+Earth
+
+Explore Earth Science
+
+Climate Change
+
+Earth, Our Planet
+
+Earth Science in Action
+
+Earth Multimedia
+
+Earth Data
+
+Earth Science Researchers
+
+The Solar System
+
+The Sun
+
+Mercury
+
+Venus
+
+Earth
+
+The Moon
+
+Mars
+
+Jupiter
+
+Saturn
+
+Uranus
+
+Neptune
+
+Pluto & Dwarf Planets
+
+Asteroids, Comets & Meteors
+
+The Kuiper Belt
+
+The Oort Cloud
+
+Skywatching
+
+The Universe
+
+Exoplanets
+
+The Search for Life in the Universe
+
+Stars
+
+Galaxies
+
+Black Holes
+
+The Big Bang
+
+Dark Energy
+
+Dark Matter
+
+Science
+
+Earth Science
+
+Planetary Science
+
+Astrophysics & Space Science
+
+The Sun & Heliophysics
+
+Biological & Physical Sciences
+
+Lunar Science
+
+Citizen Science
+
+Astromaterials
+
+Aeronautics Research
+
+Human Space Travel Research
+
+Aeronautics
+
+Science in the Air
+
+NASA Aircraft
+
+Flight Research Innovation
+
+Supersonic Flight
+
+Air Traffic Solutions
+
+Green Aviation Tech
+
+Drones & You
+
+Technology
+
+Technology Transfer & Spinoffs
+
+Space Travel
+
+Living in Space
+
+Lunar Surface Technology
+
+Manufacturing and Materials
+
+Robotics
+
+Science Instruments
+
+Computing
+
+Learning Resources
+
+For Students
+
+For Educators
+
+For Colleges and Universities
+
+For Professionals
+
+Science for Everyone
+
+Requests for Exhibits, Artifacts, Speakers & Flyovers
+
+STEM Engagement at NASA
+
+About NASA
+
+NASA's Impacts
+
+Centers and Facilities
+
+Directorates
+
+Organizations
+
+People of NASA
+
+Careers
+
+Internships
+
+Our History
+
+Doing Business with NASA
+
+Get Involved
+
+Contact
+
+NASA en Español
+
+Ciencia
+
+Aeronáutica
+
+Ciencias Terrestres
+
+Sistema Solar
+
+Universo
+
+News & Events
+
+News Releases
+
+Recently Published
+
+Video Series on NASA+
+
+Podcasts & Audio
+
+Blogs
+
+Newsletters
+
+Social Media
+
+Media Resources
+
+Events
+
+Upcoming Launches & Landings
+
+Virtual Guest Program
+
+Multimedia
+
+NASA+
+
+Images
+
+NASA Live
+
+NASA Apps
+
+Podcasts
+
+Image of the Day
+
+e-Books
+
+3D Resources
+
+Interactives
+
+STEM Multimedia
+
+NASA Brand & Usage Guidelines
+
+Featured
+
+3 min read
+
+NASA Invites Media, Public to Join Voyager 1 One-Light Day Activities
+
+ article
+
+ 4 days ago
+
+6 min read
+
+NASA’s Chandra Finds Source of Star’s Mysterious Outbursts
+
+ article
+
+ 5 days ago
+
+5 min read
+
+NASA’s Hubble Offers Cosmic Sampler of Targets for Roman
+
+ article
+
+ 2 days ago
+
+Highlights
+
+2 min read
+
+NASA Astronauts to Answer Questions from Florida Students
+
+ article
+
+ 1 week ago
+
+2 min read
+
+NASA Astronaut, STEM Creator Connect with Students for STEM Day
+
+ article
+
+ 2 weeks ago
+
+3 min read
+
+NASA’s ISAM State of Play: The Industry Standard for Space Servicing, Assembly, and Manufacturing
+
+ article
+
+ 2 weeks ago
+
+Highlights
+
+5 min read
+
+A Global Rebound for Mangroves
+
+ article
+
+ 1 day ago
+
+3 min read
+
+Scotland’s Flow Country
+
+ article
+
+ 2 days ago
+
+3 min read
+
+STRIVE
+
+ article
+
+ 2 days ago
+
+Highlights
+
+5 min read
+
+NASA’s ESCAPADE Completes Powered Earth Flybys, Now En Route to Mars
+
+ article
+
+ 5 days ago
+
+5 min read
+
+PROMISE
+
+ article
+
+ 7 days ago
+
+4 min read
+
+What’s Up: November 2026 Skywatching Tips from NASA
+
+ article
+
+ 2 weeks ago
+
+Highlights
+
+5 min read
+
+NASA’s Hubble Offers Cosmic Sampler of Targets for Roman
+
+ article
+
+ 2 days ago
+
+5 min read
+
+NASA Scientists Show How Gravitational Waves Can Reveal New Worlds
+
+ article
+
+ 4 days ago
+
+6 min read
+
+NASA’s Chandra Finds Source of Star’s Mysterious Outbursts
+
+ article
+
+ 5 days ago
+
+Highlights
+
+5 min read
+
+A Global Rebound for Mangroves
+
+ article
+
+ 1 day ago
+
+5 min read
+
+NASA’s Hubble Offers Cosmic Sampler of Targets for Roman
+
+ article
+
+ 2 days ago
+
+3 min read
+
+Scotland’s Flow Country
+
+ article
+
+ 2 days ago
+
+Highlights
+
+3 min read
+
+Through NASA’s Lens: Capturing Space Shuttle Endeavour’s Move to LA
+
+ article
+
+ 2 days ago
+
+4 min read
+
+MAX POWER: NASA’s Inaugural Aerospace Expo Ignites America’s Future
+
+ article
+
+ 5 days ago
+
+3 min read
+
+NASA Navigation Experiment Shows Promise for Planetary Landings
+
+ article
+
+ 1 week ago
+
+Highlights
+
+3 min read
+
+NASA Navigation Experiment Shows Promise for Planetary Landings
+
+ article
+
+ 1 week ago
+
+2 min read
+
+High-speed Intelligent Robust Autonomous Terrain Exploration
+
+ article
+
+ 1 week ago
+
+5 min read
+
+The Pacific’s Busy Storm Season
+
+ article
+
+ 2 weeks ago
+
+Featured
+
+2 min read
+
+NASA Astronauts to Answer Questions from Florida Students
+
+ article
+
+ 1 week ago
+
+4 min read
+
+NASA Space Grant Students Fuel Agency’s Inspiration Tour
+
+ article
+
+ 1 week ago
+
+2 min read
+
+NASA Astronaut, STEM Creator Connect with Students for STEM Day
+
+ article
+
+ 2 weeks ago
+
+Featured
+
+3 min read
+
+NASA Invites Media, Public to Join Voyager 1 One-Light Day Activities
+
+ article
+
+ 4 days ago
+
+3 min read
+
+NASA Announces $1 Million to Students for Moon Base Challenge
+
+ article
+
+ 6 days ago
+
+1 min read
+
+TIME Best Inventions of 2026
+
+ article
+
+ 4 weeks ago
+
+Highlights
+
+11 min read
+
+La NASA anuncia la cobertura de la misión lunar Artemis II
+
+ article
+
+ 8 months ago
+
+15 min read
+
+Agenda diaria de la misión a la Luna de Artemis II de la NASA
+
+ article
+
+ 8 months ago
+
+6 min read
+
+La NASA refuerza Artemis: añade una misión y perfecciona su arquitectura general
+
+ article
+
+ 9 months ago
+
+Apollo Program
+
+Apollo 13
+
+"Houston, we've had a problem…"
+
+Mission Type
+
+Lunar Landing
+
+crew
+
+James Lovell, John "Jack" Swigert, Fred Haise
+
+Launch
+
+April 11, 1970
+
+SPLASHDOWN
+
+April 17, 1970
+
+Apollo 13
+
+Apollo 13 was supposed to land in the Fra Mauro area of the Moon. But at 5 1/2 minutes after liftoff, the crew felt a little vibration…
+
+ Learn More about Apollo 13
+
+ James A. Lovell, Jr. 
+
+ John “Jack” Swigert 
+
+ Fred Haise 
+
+James A. Lovell, Jr. 
+
+Commander
+
+Captain Lovell was selected as an astronaut by NASA in September 1962. He has since served as backup pilot for the Gemini 4 flight and backup commander for the Gemini 9 flight, as well as backup commander to Neil Armstrong for the Apollo 11 lunar landing mission. On March 1, 1973, Captain Lovell retired from the Navy and from the space program.
+
+ More About James A. Lovell 
+
+Astronaut James A. Lovell.
+
+NASA
+
+John “Jack” Swigert 
+
+Command Module Pilot
+
+Mr. Swigert was one of the 19 astronauts selected by NASA in April 1966. He served as a member of the astronaut support crew for the Apollo 7 mission. Mr. Swigert was next assigned to the Apollo 13 backup crew and subsequently called upon to replace prime crewman Thomas K. Mattingly as command module pilot. In completing his first space flight, Mr. Swigert logged a total of 142 hours, 54 minutes in space.
+
+ More About John Swigert 
+
+Astronaut John L. Swigert Jr.
+
+NASA
+
+Fred Haise 
+
+Lunar Module Pilot
+
+Mr. Haise was one of the 19 astronauts selected by NASA in April 1966. He served as backup lunar module pilot for the Apollo 8 and 11 missions, and backup spacecraft commander for the Apollo 16 mission. Haise was the lunar module pilot on Apollo 13 and has logged 142 hours and 54 minutes in space.
+
+ More About Fred Haise 
+
+Astronaut Fred W. Haise Jr.
+
+NASA
+
+Apollo 13: The Successful Failure
+
+On April 11, 1970, the powerful Saturn V rocket carrying the Apollo 13 mission launched from Kennedy Space Center propelling astronauts Jim Lovell, Fred Haise, and Jack Swigert on what was intended to be humanity’s third lunar landing. Unfortunately, the mission to explore the Fra Mauro region of the Moon did not go as planned. What many viewed as a now “routine” mission soon had millions around the globe glued to television sets watching and hoping for a positive outcome for one of the most intense episodes in the history of space exploration.
+
+ Learn More
+
+ Featured Story
+
+50 Years Ago: “Houston, We’ve Had a Problem”
+
+During their third day in space, the crew of Apollo 13, Commander James A. Lovell, Command Module Pilot John L.…
+
+ Read the Story
+
+Apollo 13 Articles
+
+The Hard-won Triumph of the Apollo 13 Mission – 45 Years Later
+
+ 5 min read 
+
+When their spaceship was severely damaged 200,000 miles from Earth – 45 years ago this week, it was like a…
+
+ May 3, 2023 
+
+Article
+
+Arturo Campos: A Key Player in Bringing Apollo 13 Home
+
+ 5 min read 
+
+Leerlo en español aquí. Editor’s Note: A previous version of this article incorrectly listed the year Campos died. He passed away…
+
+ June 15, 2021 
+
+Article
+
+50 Years Ago: Apollo 13 Aquarius European Goodwill Tour
+
+ 7 min read 
+
+Six months after their return from the harrowing Apollo 13 mission, astronauts James A. Lovell, John L. Swigert, and Fred…
+
+ October 1, 2020 
+
+Article
+
+50 Years Ago: Apollo 13 Review Board Report
+
+ 8 min read 
+
+During a press conference on June 15, 1970, at NASA Headquarters in Washington, DC, Apollo 13 Review Board Chair Edgar…
+
+ June 15, 2020 
+
+Article
+
+Apollo 13 Crew Returns to Houston
+
+ 7 min read 
+
+On April 17, 1970, Apollo 13 astronauts James A. Lovell, John L. “Jack” Swigert and Fred W. Haise splashed down…
+
+ April 20, 2020 
+
+Article
+
+Apollo 13 Crew Returns Safely to Earth
+
+ 11 min read 
+
+The crew of Apollo 13, Commander James A. Lovell, Command Module Pilot (CMP) John L. “Jack” Swigert and Lunar Module…
+
+ April 17, 2020 
+
+Article
+
+ More Resources 
+
+NASA’s Apollo 13 Mission Challenged Crew, Launch Team
+
+NASA’s Apollo 13 mission would have been the agency’s third Moon landing and lunar exploration mission. A movie and several books relate the story of this challenging mission which has been described as a “successful failure.”
+
+The Hard-won Triumph of the Apollo 13 Mission
+
+When their spaceship was severely damaged 200,000 miles from Earth – 45 years ago this week, it was like a bad dream from which the Apollo 13 crew could not wake.
+
+Apollo 13 Mission Report
+
+Read the Apollo 13 Mission Report prepared by the Mission Evaluation Team
+
+The Apollo 13 Flight Journal
+
+Air-to-ground transcripts for NASA’s Apollo missions are supplemented with commentaries, photos, videos, audio clips, diagrams, maps, and other documents, to delve deep into the details of Apollo 13.
+
+Apollo 13
+
+ 22 Images 
+
+ Go To Gallery
+
+ Go To Gallery
+
+Keep Exploring
+
+Discover More Topics From NASA
+
+ Overview of NASA’s Missions
+
+ Humans In Space
+
+ Project Gemini
+
+ The Apollo Program
