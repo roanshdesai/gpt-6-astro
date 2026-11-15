@@ -55,6 +55,17 @@ def record_text(src: dict) -> str:
     return "\n".join(parts)
 
 
+def publications(src: dict) -> list:
+    """Publication titles in PSI order, without repeats or the stray
+    "SUPPLEMENTARY MATERIAL" entry PSI lists as a title (PSI-21, PSI-142)."""
+    out = []
+    for t in split_list(src.get("Publication Title", "")):
+        if t.upper() == "SUPPLEMENTARY MATERIAL" or t in out:
+            continue
+        out.append(t)
+    return out
+
+
 def platform(src: dict) -> str:
     project = src.get("Project Type", "")
     if project == "Ground Investigation":
@@ -143,7 +154,7 @@ def main() -> int:
                 "platform": platform(src),
                 "years": YEARS_OVERRIDE.get(pid, years(src)),
                 "related": related,
-                "publications": split_list(src.get("Publication Title", "")),
+                "publications": publications(src),
                 "psiUrl": PSI_URL.format(id=pid),
             }
         )

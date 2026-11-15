@@ -166,7 +166,7 @@
         ]
       },
       {
-        "text": "BASS, BASS-II and the three SAFFIRE fires burned materials in airflows of 20 to 40 cm/s to study this.",
+        "text": "BASS and BASS-II burned materials in airflows of up to 40 cm/s, and the three SAFFIRE fires at 20 or 30 cm/s, to study this.",
         "cites": [
           "PSI-26",
           "PSI-25",
@@ -313,7 +313,7 @@
         ]
       },
       {
-        "text": "NASA also found materials are easier to ignite in low gravity, with the heat needed for ignition as low as half the Earth value.",
+        "text": "NASA also found materials are easier to ignite in low gravity. A NASA model, still to be checked against flight data, puts the heat flux needed for ignition as low as half the Earth value.",
         "cites": [],
         "basis": [
           {
@@ -1467,7 +1467,7 @@
       "of": 24
     },
     "unknown": [
-      "Products already on the market from these 24: the PSI records describe expected benefits, not delivered ones (the spinoff pages come in a later step)."
+      "Products already on the market from these 24: the PSI records describe expected benefits, not delivered ones. The \"On Earth\" line below is a NASA spinoff from other NASA work, not from these 24."
     ],
     "habitats": [
       "spacecraft",

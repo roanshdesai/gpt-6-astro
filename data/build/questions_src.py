@@ -165,7 +165,7 @@ QUESTIONS = [
         "answer": [
             S("Yes: NASA found that the safety margin seen in still air may not hold in spacecraft, where ventilation flow strongly enhances flames.", basis=[G_VENT_MARGIN]),
             S("NASA found that flames over solids can survive at the lowest oxygen, and spread fastest, at an airflow of about 10 cm/s, which is typical of spacecraft ventilation.", basis=[G_10CMS]),
-            S("BASS, BASS-II and the three SAFFIRE fires burned materials in airflows of 20 to 40 cm/s to study this.", ["PSI-26", "PSI-25", "PSI-98", "PSI-99", "PSI-100"]),
+            S("BASS and BASS-II burned materials in airflows of up to 40 cm/s, and the three SAFFIRE fires at 20 or 30 cm/s, to study this.", ["PSI-26", "PSI-25", "PSI-98", "PSI-99", "PSI-100"]),
         ],
         "evidence": [
             R("PSI-26", "Burned fabrics and plastics in a fan-driven flow up to 40 cm/s, with stated results on the flow effect.",
@@ -194,7 +194,7 @@ QUESTIONS = [
         "question": "Which materials burn differently up there?",
         "answer": [
             S("NASA found that materials can burn at lower oxygen levels in microgravity than on Earth, so the upward-burning Earth screening test is not conservative.", ["PSI-26", "PSI-25"]),
-            S("NASA also found materials are easier to ignite in low gravity, with the heat needed for ignition as low as half the Earth value.", basis=[G_EASIER_IGNITE, G_HALF_FLUX]),
+            S("NASA also found materials are easier to ignite in low gravity. A NASA model, still to be checked against flight data, puts the heat flux needed for ignition as low as half the Earth value.", basis=[G_EASIER_IGNITE, G_HALF_FLUX]),
             S("A gas burner set up to behave like PMMA and Nylon kept burning steadily in microgravity with no airflow.", ["PSI-20"]),
             S("Materials burned in orbit include a cotton and fiberglass fabric, Nomex, Ultem, silicone and several forms of PMMA.", ["PSI-26", "PSI-99"]),
         ],
@@ -465,7 +465,7 @@ QUESTIONS = [
               E(IMP, "These models can then be used to more accurately study flames on Earth, such as in wildfires, building fires, energy recapture from waste recycling, and other combustion problems.")),
         ],
         "unknown": [
-            "Products already on the market from these 24: the PSI records describe expected benefits, not delivered ones (the spinoff pages come in a later step).",
+            "Products already on the market from these 24: the PSI records describe expected benefits, not delivered ones. The \"On Earth\" line below is a NASA spinoff from other NASA work, not from these 24.",
         ],
         "habitats": ["spacecraft", "station", "moon-base", "mars-base", "rover"],
         "earth": EARTH(
