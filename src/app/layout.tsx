@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Archivo, B612_Mono } from "next/font/google";
 import "./globals.css";
 
+import { SiteShell } from "@/components/shell/site-shell";
+
 // Archivo is a grotesque built for headlines at very large sizes; B612 Mono was
 // drawn for aircraft cockpit displays and sets the small labels and readouts.
 const archivo = Archivo({
@@ -28,7 +30,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       lang="en"
       className={`${archivo.variable} ${b612Mono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-canvas text-ink">{children}</body>
+      <body className="min-h-full flex flex-col bg-canvas text-ink">
+        <SiteShell>{children}</SiteShell>
+      </body>
     </html>
   );
 }

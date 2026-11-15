@@ -1,5 +1,9 @@
 "use client";
 
+import Link from "next/link";
+
+import landing from "../../../data/landing.json";
+
 import LineByLineSlide from "@/components/smoothui/line-by-line-slide";
 import { BlurFade } from "@/components/ui/blur-fade";
 import { ScrollVelocityContainer, ScrollVelocityRow } from "@/components/ui/scroll-based-velocity";
@@ -10,7 +14,9 @@ import { cn } from "@/lib/utils";
  * the chamber keep running behind the text, and the chamber moves to the free
  * side of each one (see WAYPOINTS in scene/flame-canvas.tsx, one per section).
  *
- * Statements follow the challenge brief and NASA's own descriptions.
+ * The chapter statements follow NASA's challenge brief for "Flame in Freefall"
+ * and the saved NASA pages. Names and question wording arrive as props from the
+ * checked data files (see app/page.tsx).
  */
 
 const SHADOW = "[text-shadow:0_1px_18px_rgb(3_3_4/0.95)]";
@@ -51,17 +57,17 @@ const CHAPTERS: Chapter[] = [
     side: "right",
     readout: [
       { value: "BASS-II", label: "Solids in airflow" },
-      { value: "Saffire", label: "Fabric, inside a cargo ship" },
+      { value: "SAFFIRE", label: "Materials, inside a cargo ship" },
     ],
   },
   {
     label: "04 · Oxygen",
     title: "The Moon Base will\nhold more oxygen.",
-    body: "To make moonwalks easier, the Moon Base is expected to run at 30% oxygen or more. The air on Earth is 21%. Materials catch and burn far more readily in that.",
+    body: "To make moonwalks easier, NASA expects the Moon Base to hold more oxygen at lower pressure: likely 30% or more. The air on Earth is 21%. NASA's brief for this challenge says that makes materials much more flammable.",
     side: "left",
     readout: [
       { value: "21%", label: "Oxygen on Earth" },
-      { value: "30%+", label: "Oxygen on the Moon Base" },
+      { value: "30%+", label: "Likely on the Moon Base" },
     ],
   },
   {
@@ -76,49 +82,22 @@ const CHAPTERS: Chapter[] = [
   },
 ];
 
-const INCIDENTS = [
-  { year: "1967", name: "Apollo 1", text: "Fire in an oxygen-filled cabin during a test on the pad. The crew died." },
-  { year: "1970", name: "Apollo 13", text: "An oxygen tank exploded on the way to the Moon. The crew made it home." },
-  { year: "1997", name: "Mir", text: "An oxygen generator failed and started a fire on the station. The crew survived." },
-  { year: "2026", name: "Artemis II", text: "A smoke alarm went off about 80,000 miles from home." },
-];
+// The incident cards are the data track's: each one is checked word for word
+// against a saved NASA page before the site builds.
+const INCIDENTS = landing.incidents;
 
-const INVESTIGATIONS = [
-  ["PSI-26", "BASS", "Burning and Suppression of Solids"],
-  ["PSI-25", "BASS-II", "Burning and Suppression of Solids II"],
-  ["PSI-98", "Saffire-I", "Spacecraft Fire Safety Experiment I"],
-  ["PSI-99", "Saffire-II", "Spacecraft Fire Experiment II"],
-  ["PSI-100", "Saffire-III", "Spacecraft Fire Experiment III"],
-  ["PSI-69", "FLEX", "Flame Extinguishment Experiment"],
-  ["PSI-68", "FLEX-2", "Flame Extinguishment Experiment 2"],
-  ["PSI-39", "CFI", "Cool Flames Investigation"],
-  ["PSI-102", "SAME", "Smoke and Aerosol Measurement Experiment"],
-  ["PSI-101", "SAME-R", "Smoke Aerosol Measurement Experiment, Reflight"],
-  ["PSI-47", "DAFT", "Dust and Aerosol Measurement Feasibility Test"],
-  ["PSI-107", "SPICE", "Smoke Point In Co-flow Experiment"],
-  ["PSI-106", "SLICE", "Structure and Liftoff In Combustion Experiment"],
-  ["PSI-20", "ACME BRE", "Burning Rate Emulator"],
-  ["PSI-159", "ACME CFI-G", "Cool Flames Investigation with Gases"],
-  ["PSI-21", "ACME CLD Flame", "Coflow Laminar Diffusion Flame"],
-  ["PSI-22", "ACME E-FIELD", "Electric-Field Effects on Laminar Diffusion Flames"],
-  ["PSI-23", "ACME s-Flame", "Structure and Response of Spherical Diffusion Flames"],
-  ["PSI-10", "ACME Flame Design", "Flame Design"],
-];
+type Flight = { id: string; name: string; title: string };
+type PillarColumn = { name: string; questions: { id: string; text: string }[] };
 
-const PILLARS = [
-  {
-    name: "Prevent",
-    questions: ["Is a 30% oxygen Moon Base safe?", "Does cabin airflow feed a fire?", "Which materials burn differently up there?"],
-  },
-  {
-    name: "Detect",
-    questions: ["Will an alarm catch a fire with no rising smoke?", "Can a detector tell smoke from dust?", "What does an early space fire look like?"],
-  },
-  {
-    name: "Suppress",
-    questions: ["What puts a fire out without gravity?", "Does switching off the fans stop it?", "Can a fire come back after it looks out?"],
-  },
-];
+type StoryProps = {
+  /** The flight investigations, as NASA names them. */
+  flights: Flight[];
+  /** The three pillars with their questions. */
+  pillars: PillarColumn[];
+  /** How many investigations there are in all, and how many are ground studies. */
+  total: number;
+  ground: number;
+};
 
 function ChapterSection({ chapter }: { chapter: Chapter }) {
   return (
@@ -156,7 +135,7 @@ function ChapterSection({ chapter }: { chapter: Chapter }) {
   );
 }
 
-export function Story() {
+export function Story({ flights, pillars, total, ground }: StoryProps) {
   return (
     <>
       {CHAPTERS.map((chapter) => (
@@ -201,30 +180,36 @@ export function Story() {
           className={cn("text-[clamp(3rem,9vw,9rem)] font-bold leading-none tracking-[-0.045em]", SHADOW)}
         >
           <ScrollVelocityRow baseVelocity={3} direction={1}>
-            <span className="mx-[3vw]">24 investigations.</span>
+            <span className="mx-[3vw]">{total} investigations.</span>
             <span className="mx-[3vw] text-ink-subtle">One board.</span>
           </ScrollVelocityRow>
         </ScrollVelocityContainer>
         <div className="px-[3vw]">
           <ul className="grid max-w-[46rem] grid-cols-1 gap-x-10 md:grid-cols-2">
-            {INVESTIGATIONS.map(([id, acronym, title]) => (
-              <li
-                key={id}
-                className="group grid grid-cols-[4.25rem_1fr] items-baseline gap-x-4 border-t border-hairline-strong py-3 transition-colors duration-150"
-              >
-                <span className={cn("font-mono text-[12px] tabular-nums text-ink-muted", SHADOW)}>{id}</span>
-                <span className="flex flex-col">
-                  <span className={cn("text-lg font-semibold tracking-[-0.02em] text-ink", SHADOW)}>
-                    {acronym}
+            {flights.map((flight) => (
+              <li key={flight.id} className="border-t border-hairline-strong">
+                <Link
+                  href={`/investigations/${flight.id}`}
+                  className="group grid grid-cols-[4.25rem_1fr] items-baseline gap-x-4 py-3"
+                >
+                  <span className={cn("font-mono text-[12px] tabular-nums text-ink-muted", SHADOW)}>
+                    {flight.id}
                   </span>
-                  <span className={cn("text-[14px] leading-snug text-ink-muted", SHADOW)}>{title}</span>
-                </span>
+                  <span className="flex flex-col">
+                    <span className={cn("text-lg font-semibold tracking-[-0.02em] text-ink", SHADOW)}>
+                      <span className="link-draw">{flight.name}</span>
+                    </span>
+                    <span className={cn("text-[14px] leading-snug text-ink-muted", SHADOW)}>
+                      {flight.title}
+                    </span>
+                  </span>
+                </Link>
               </li>
             ))}
           </ul>
           <p className={cn("mt-6 max-w-[36rem] font-mono text-[13px] text-ink-muted", SHADOW)}>
-            Flight investigations in NASA&apos;s Physical Sciences Informatics repository. Five
-            ground studies make up the rest of the 24.
+            The {flights.length} flight investigations in NASA&apos;s Physical Sciences Informatics
+            repository. {ground} ground studies make up the rest of the {total}.
           </p>
         </div>
       </section>
@@ -246,8 +231,14 @@ export function Story() {
             own words: what was tested, what was expected, and what was found.
           </p>
         </div>
+        <Link
+          href="/board"
+          className="inline-flex h-11 w-fit items-center rounded-[2px] bg-ink px-5 text-[15px] font-medium text-canvas transition-[transform,background-color] duration-150 hover:bg-ink-muted active:scale-[0.98]"
+        >
+          Open the questions
+        </Link>
         <div className="grid grid-cols-1 gap-x-10 gap-y-8 md:grid-cols-3">
-          {PILLARS.map((pillar, index) => (
+          {pillars.map((pillar, index) => (
             <BlurFade key={pillar.name} inView blur="0px" offset={12} delay={index * 0.1}>
               <div className="flex flex-col border-t border-ink">
                 <h3 className={cn("py-4 font-mono text-[13px] text-ink", SHADOW)}>
@@ -255,14 +246,16 @@ export function Story() {
                 </h3>
                 <ul className="flex flex-col">
                   {pillar.questions.map((question) => (
-                    <li
-                      key={question}
-                      className={cn(
-                        "border-t border-hairline-strong py-4 text-xl font-semibold leading-tight tracking-[-0.02em]",
-                        SHADOW,
-                      )}
-                    >
-                      {question}
+                    <li key={question.id} className="border-t border-hairline-strong">
+                      <Link
+                        href={`/board/${question.id}`}
+                        className={cn(
+                          "group block py-4 text-xl font-semibold leading-tight tracking-[-0.02em]",
+                          SHADOW,
+                        )}
+                      >
+                        <span className="link-draw">{question.text}</span>
+                      </Link>
                     </li>
                   ))}
                 </ul>

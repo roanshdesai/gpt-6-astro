@@ -122,6 +122,6 @@ test("an incident card with an unsaved source fails", () => {
 
 test("an edited video quote fails", () => {
   const d = fresh();
-  d.landing.video.quote = d.landing.video.quote.replace("cool", "hot");
+  d.landing.video.quote = d.landing.video.quote.replace("combustion", "cooking");
   fails(d, /landing video quote: not word for word/);
 });

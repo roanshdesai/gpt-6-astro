@@ -27,7 +27,7 @@ function first(v: string | string[] | undefined): string | undefined {
 
 export default function ComparePage({ searchParams }: { searchParams: SearchParams }) {
   return (
-    <Page>
+    <Page current="investigations">
       <TopNav />
       <header className="flex flex-col gap-4">
         <h1 className="text-[clamp(2.2rem,5vw,4rem)] leading-[0.95] tracking-[-0.04em]">Compare two investigations</h1>

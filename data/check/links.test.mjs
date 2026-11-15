@@ -8,7 +8,7 @@ test("every psiUrl and every quote source is collected", () => {
   const urls = new Set(collectSourceLinks().map((r) => r.url));
   assert.ok([...urls].filter((u) => u.startsWith("https://psi.nasa.gov/physci/repo/data/investigations/")).length === 24);
   assert.ok(urls.has("https://spinoff.nasa.gov/node/9407"));
-  assert.ok(urls.has("https://www.youtube.com/watch?v=BxxqCLxxY3M"));
+  assert.ok(urls.has("https://www.youtube.com/watch?v=W1oXykoz9zg"));
 });
 
 test("urls are found at any depth of the JSON", () => {

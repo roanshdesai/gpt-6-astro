@@ -74,6 +74,14 @@ export const SOURCE_FILES = {
     "data/raw/sources/sciencecasts.txt",
   "https://www.nasa.gov/humans-in-space/space-stations-quest-for-the-secrets-of-fire/":
     "data/raw/sources/sciencecasts-related-quest-for-fire.txt",
+  // The Apollo pages and the video that NASA's challenge page lists as resources
+  // (saved Nov 15; see data/raw/sources/html/SOURCES.txt).
+  "https://sma.nasa.gov/sma-disciplines/accllp/apollo-1":
+    "data/raw/sources/sma-apollo-1.txt",
+  "https://sma.nasa.gov/sma-disciplines/accllp/apollo-13":
+    "data/raw/sources/sma-apollo-13.txt",
+  "https://images-assets.nasa.gov/video/264_StudyingCombustionOnTheISS/metadata.json":
+    "data/raw/sources/sciencecasts-power-of-combustion-metadata.json",
 };
 
 const PSI_FIELDS = new Set([

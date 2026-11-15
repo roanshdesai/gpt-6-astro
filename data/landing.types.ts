@@ -7,7 +7,7 @@
 //   const landing = raw as Landing;
 
 export interface Incident {
-  id: "apollo-1" | "apollo-13" | "mir" | string;
+  id: "apollo-1" | "mir" | string;
   year: string;
   name: string;
   /** One or two plain sentences for the card. Written, backed by quote + support. */
@@ -25,12 +25,13 @@ export interface Incident {
 
 export interface LandingVideo {
   title: string;
-  /** The video itself (YouTube), as linked from the NASA page. */
+  /** The video itself (YouTube), as linked from NASA's challenge page. */
   url: string;
-  /** The original NASA page (now returns 404; see source). */
+  /** The video's page in the NASA Image and Video Library. */
   nasaUrl: string;
+  /** NASA's description of the video, word for word. */
   quote: string;
-  /** Internet Archive copy of nasaUrl, which the quote is checked against. */
+  /** The library's record file for the video, which the quote is checked against. */
   source: string;
   sourceTitle: string;
 }

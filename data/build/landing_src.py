@@ -6,38 +6,34 @@ the card; the `quote` under it is NASA's own words and backs every fact in it.
 The incident cards are not ranked evidence and do not count toward strength.
 """
 
-A1_FIRE = "https://www.nasa.gov/history/55-years-ago-the-apollo-1-fire-and-its-aftermath/"
-A13_BOARD = "https://www.nasa.gov/history/50-years-ago-apollo-13-review-board-report/"
+# The Apollo 1 page is the one NASA's challenge page lists as a resource (its
+# Apollo, Challenger, Columbia Lessons Learned Program page).
+#
+# There is no Apollo 13 card. The Apollo 13 page the challenge lists
+# (https://sma.nasa.gov/sma-disciplines/accllp/apollo-13, saved as
+# data/raw/sources/sma-apollo-13.txt) says the oxygen tank blew up but never
+# says what set it off, so it cannot back a card in a list of fires.
+A1_LESSONS = "https://sma.nasa.gov/sma-disciplines/accllp/apollo-1"
 MIR_FIRE = "https://www.nasa.gov/history/25-years-ago-fire-aboard-space-station-mir/"
-STRANGE_FLAMES = "http://web.archive.org/web/20230602193621id_/https://science.nasa.gov/science-news/science-at-nasa/2013/18jun_strangeflames/"
+# NASA's own record of the video the challenge page lists. The library page a
+# person opens is drawn by script, so the quote is checked against this file.
+COMBUSTION_VIDEO_RECORD = "https://images-assets.nasa.gov/video/264_StudyingCombustionOnTheISS/metadata.json"
 
 INCIDENTS = [
     {
         "id": "apollo-1",
         "year": "1967",
         "name": "Apollo 1",
-        "text": "During a launch pad test, a flash fire broke out in the sealed cabin, filled with pure oxygen. All three astronauts died.",
-        "quote": "Because of the pure oxygen atmosphere, pressurized to 16.7 psi – two pounds above atmospheric pressure and a larger-than-allowable amount of flammable material in the spacecraft – the fire spread very rapidly.",
-        "source": A1_FIRE,
-        "sourceTitle": "NASA History: 55 Years Ago: The Apollo 1 Fire and its Aftermath",
+        "text": "During a test on the launch pad, with the hatches closed and the cabin filled with pure oxygen, a flash fire swept through the spacecraft. All three astronauts died.",
+        "quote": "Because of the pure oxygen atmosphere, the fire spread quickly, causing a rapid rise in temperature and pressure that led to the rupture of the Command Module pressure vessel.",
+        "source": A1_LESSONS,
+        "sourceTitle": "NASA Safety and Mission Assurance: Apollo 1",
         # Facts in `text` that the quote does not carry, each word for word on the same page.
         "support": [
-            "At 6:31 p.m., a flash fire broke out inside the cabin.",
-            "By the time they opened the hatches, the crew had already perished.",
-        ],
-    },
-    {
-        "id": "apollo-13",
-        "year": "1970",
-        "name": "Apollo 13",
-        "text": "On the way to the Moon, an oxygen tank with likely damaged wiring insulation shorted, a spark set off combustion inside the tank, and the tank burst. The crew made it home.",
-        "quote": "They had stirred the oxygen tanks on two previous occasions during the mission with only erratic pressure readings, but this time, likely due to the damaged Teflon insulation, a short-circuit occurred triggering a spark resulting in a combustion event.",
-        "source": A13_BOARD,
-        "sourceTitle": "NASA History: 50 Years Ago: Apollo 13 Review Board Report",
-        "support": [
-            "The pressure tank lost integrity and the oxygen escaping at high velocity caused the panel covering bay 4 to be blown off.",
-            "while traveling 205,000 miles from Earth toward the Moon, an explosion rocked the Apollo 13 spacecraft",
-            "successfully splashed down in the Pacific Ocean on April 17",
+            "On Jan. 27, Grissom, White and Chaffee were scheduled to conduct a key test on the launch pad",
+            "The astronauts would be wearing spacesuits with the spacecraft’s hatches closed and the cabin pressurized with 100% oxygen.",
+            "During the test, a flash fire swept through the spacecraft so quickly, there was no time to open the hatches.",
+            "By the time the pad crew was able to open the hatches, the crew had already perished.",
         ],
     },
     {
@@ -56,14 +52,14 @@ INCIDENTS = [
     },
 ]
 
-# The landing's video link. The original NASA page now returns 404, so the
-# quote is checked against the Internet Archive copy (snapshot June 2, 2023);
-# `nasaUrl` is the original address, `url` is the video it links to.
+# The landing's video link: the ScienceCasts video NASA's challenge page lists.
+# `url` is the video itself, `nasaUrl` its page in the NASA Image and Video
+# Library, and the quote is NASA's description of it, from the library's record.
 VIDEO = {
-    "title": "Strange Flames on the ISS",
-    "url": "https://www.youtube.com/watch?v=BxxqCLxxY3M",
-    "nasaUrl": "https://science.nasa.gov/science-news/science-at-nasa/2013/18jun_strangeflames/",
-    "quote": 'A new ScienceCast video explores the surprising behavior of "cool flames" on the International Space Station.',
-    "source": STRANGE_FLAMES,
-    "sourceTitle": "NASA Science: Strange Flames on the ISS (archived copy)",
+    "title": "The Power of Studying Combustion on the ISS",
+    "url": "https://www.youtube.com/watch?v=W1oXykoz9zg",
+    "nasaUrl": "https://images.nasa.gov/details/264_StudyingCombustionOnTheISS",
+    "quote": "Scientists are learning more about combustion through a series of experiments on the International Space Station.",
+    "source": COMBUSTION_VIDEO_RECORD,
+    "sourceTitle": "NASA Image and Video Library: The Power of Studying Combustion on the ISS",
 }
