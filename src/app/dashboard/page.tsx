@@ -2,12 +2,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 import { CoverageMatrix } from "@/components/dashboard/coverage-matrix";
+import { Brackets } from "@/components/dashboard/hud";
 import { KindLegend } from "@/components/dashboard/kind-mark";
+import { Overview } from "@/components/dashboard/overview";
 import { Panel } from "@/components/dashboard/panel";
 import { QuestionReach } from "@/components/dashboard/question-reach";
 import { RankedBars } from "@/components/dashboard/ranked-bars";
 import { ResultGrid } from "@/components/dashboard/result-grid";
-import { StatTiles } from "@/components/dashboard/stat-tiles";
 import { YearColumns } from "@/components/dashboard/year-columns";
 import { SiteHeader } from "@/components/shell/site-header";
 import { BlurFade } from "@/components/ui/blur-fade";
@@ -71,7 +72,7 @@ export default function DashboardPage() {
   const half = Math.ceil(papers.length / 2);
 
   return (
-    <main className="relative z-20 min-h-svh pb-24">
+    <main className="relative z-20 min-h-svh pb-12">
       <SiteHeader current="dashboard" />
 
       <div className="mx-auto flex max-w-[96rem] flex-col gap-6 px-[3vw] pt-10">
@@ -86,12 +87,14 @@ export default function DashboardPage() {
         </header>
 
         <BlurFade inView>
-          <StatTiles />
+          <Overview />
         </BlurFade>
 
         <div className="grid grid-cols-1 gap-6 xl:grid-cols-12">
           <BlurFade inView className="xl:col-span-7">
             <Panel
+              id="evidence"
+              label="01 · Evidence"
               className="h-full"
               question="How much evidence is behind each fire-safety question?"
               answer={reachAnswer()}
@@ -104,6 +107,8 @@ export default function DashboardPage() {
           <div className="flex flex-col gap-6 xl:col-span-5">
             <BlurFade inView delay={0.05}>
               <Panel
+                id="results"
+                label="02 · Results"
                 question={`How many of the ${totals.investigations} experiments have a result quoted on this site?`}
                 answer={standingAnswer()}
                 note="Results are quoted word for word from the NASA PSI records and from NASA's Researcher's Guide to combustion. An experiment without a quoted result may still have results in its published papers, which this site does not read. NASA prints some result sentences on both the BASS and BASS-II records, so both count."
@@ -113,7 +118,14 @@ export default function DashboardPage() {
             </BlurFade>
 
             <BlurFade inView delay={0.1} className="flex-1">
-              <Panel className="h-full" question="When did the experiments run?" answer={yearsAnswer()} note={yearsNote()}>
+              <Panel
+                id="years"
+                label="03 · Years"
+                className="h-full"
+                question="When did the experiments run?"
+                answer={yearsAnswer()}
+                note={yearsNote()}
+              >
                 <YearColumns />
               </Panel>
             </BlurFade>
@@ -122,18 +134,21 @@ export default function DashboardPage() {
 
         <BlurFade inView>
           <Panel
+            id="papers"
+            label="04 · Papers"
             question="Which experiments have the most published papers?"
             answer={papersAnswer()}
             note={`Titles listed under Publications on each NASA record. A paper listed on two records counts for both here, so the bars add up to more than ${totals.papers}.`}
           >
             <div className="grid grid-cols-1 gap-x-14 xl:grid-cols-2">
-              <RankedBars rows={papers.slice(0, half)} max={most} label="Published papers listed per experiment" />
+              <RankedBars rows={papers.slice(0, half)} max={most} lit={3} label="Published papers listed per experiment" />
               <RankedBars rows={papers.slice(half)} max={most} label="Published papers listed per experiment, continued" />
             </div>
           </Panel>
         </BlurFade>
 
-        <details className="group border border-hairline bg-surface-1">
+        <details className="group relative border border-flame/20 bg-surface-1/80 backdrop-blur-md">
+          <Brackets />
           <summary className="flex cursor-pointer flex-wrap items-baseline justify-between gap-x-6 gap-y-1 p-6 sm:px-8">
             <span className="text-xl font-semibold tracking-[-0.015em]">
               The full table: every question against all {totals.investigations} experiments
@@ -143,7 +158,7 @@ export default function DashboardPage() {
               <span className="hidden group-open:inline">Hide</span>
             </span>
           </summary>
-          <div className="flex flex-col gap-6 border-t border-hairline p-6 sm:p-8">
+          <div className="flex flex-col gap-6 border-t border-flame/15 p-6 sm:p-8">
             <p className="max-w-[44rem] text-[15px] leading-relaxed text-ink-muted">
               Each column is one experiment and each row one question. A mark means the experiment is
               listed as evidence for that question. Its shape is the strongest kind of quote it gives.
@@ -153,8 +168,9 @@ export default function DashboardPage() {
           </div>
         </details>
 
-        <nav aria-label="Where next" className="grid grid-cols-1 gap-px border border-hairline bg-hairline sm:grid-cols-2">
-          <Link href="/board" className="group flex flex-col gap-2 bg-surface-1 p-6 transition-colors duration-150 hover:bg-surface-2 sm:p-8">
+        <nav aria-label="Where next" className="relative grid grid-cols-1 gap-px border border-flame/20 bg-flame/15 backdrop-blur-md sm:grid-cols-2">
+          <Brackets />
+          <Link href="/board" className="group flex flex-col gap-2 bg-surface-1/90 p-6 transition-colors duration-150 hover:bg-surface-2 sm:p-8">
             <span className="text-2xl font-semibold tracking-[-0.02em]">
               <span className="link-draw">Read the answers</span>
             </span>
@@ -162,7 +178,7 @@ export default function DashboardPage() {
               {totals.questions} fire-safety questions, each with its evidence ranked and quoted.
             </span>
           </Link>
-          <Link href="/investigations" className="group flex flex-col gap-2 bg-surface-1 p-6 transition-colors duration-150 hover:bg-surface-2 sm:p-8">
+          <Link href="/investigations" className="group flex flex-col gap-2 bg-surface-1/90 p-6 transition-colors duration-150 hover:bg-surface-2 sm:p-8">
             <span className="text-2xl font-semibold tracking-[-0.02em]">
               <span className="link-draw">Look up an experiment</span>
             </span>

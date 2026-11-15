@@ -19,7 +19,7 @@ export function YearColumns() {
           <div
             key={tick}
             aria-hidden
-            className="absolute inset-x-0 border-t border-hairline"
+            className="absolute inset-x-0 border-t border-flame/15"
             style={{ bottom: `${(tick / top) * 100}%` }}
           >
             <span className="absolute -left-7 -top-2 w-5 text-right text-[12px] tabular-nums text-ink-subtle">
@@ -46,7 +46,12 @@ export function YearColumns() {
                   <Grow
                     up
                     delay={index * 0.012}
-                    className={cn("h-full rounded-t-[4px]", busiest ? "bg-ink" : "bg-ink-subtle/70")}
+                    className={cn(
+                      "h-full rounded-t-[3px]",
+                      busiest
+                        ? "bg-ink shadow-[0_0_14px_rgb(111_155_255/0.75)]"
+                        : "bg-gradient-to-t from-ink-subtle/25 to-ink-subtle/80",
+                    )}
                   />
                 </span>
               </li>
@@ -54,7 +59,11 @@ export function YearColumns() {
           })}
         </ol>
       </div>
-      <ol aria-hidden className="ml-7 flex gap-0.5">
+      {/* A floor running back from the baseline, so the columns stand on something. Framing only. */}
+      <div aria-hidden className="ml-7 h-7 overflow-hidden [perspective:220px]">
+        <div className="hud-grid h-24 origin-top [background-size:22px_14px] [transform:rotateX(68deg)] [mask-image:linear-gradient(to_bottom,black,transparent_70%)]" />
+      </div>
+      <ol aria-hidden className="ml-7 -mt-5 flex gap-0.5">
         {activity.map((entry) => (
           <li key={entry.year} className="relative h-5 min-w-0 flex-1">
             {entry.year % 5 === 0 && (

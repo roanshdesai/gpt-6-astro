@@ -5,7 +5,8 @@ import { reach } from "@/lib/stats";
 import { cn } from "@/lib/utils";
 
 const SQUARE = "block size-4 rounded-[3px]";
-const RESULT = "bg-mark-found";
+// A lit cell glows a little, like an indicator lamp.
+const RESULT = "bg-mark-found shadow-[0_0_8px_rgb(64_173_96/0.55)]";
 const NO_RESULT = "border-[1.5px] border-ink-subtle";
 
 /**
@@ -31,10 +32,10 @@ export function QuestionReach() {
       {/* The rows share out whatever height the panel has, so the list always fills it. */}
       <ol className="flex flex-1 flex-col">
         {reach.map((row) => (
-          <li key={row.question.id} className="flex flex-1 border-t border-hairline">
+          <li key={row.question.id} className="flex flex-1 border-t border-flame/15">
             <Link
               href={`/board/${row.question.id}`}
-              className="group -mx-3 grid flex-1 grid-cols-1 items-center gap-x-6 gap-y-3 px-3 py-3.5 transition-colors duration-150 hover:bg-surface-2 focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-ink sm:grid-cols-[minmax(0,1fr)_auto]"
+              className="group -mx-3 grid flex-1 grid-cols-1 items-center gap-x-6 gap-y-3 px-3 py-3.5 transition-colors duration-150 hover:bg-flame/[0.07] focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-ink sm:grid-cols-[minmax(0,1fr)_auto]"
             >
               <span className="flex flex-col gap-0.5">
                 <span className="text-[13px] text-ink-subtle">{pillarName(row.question.pillar)}</span>

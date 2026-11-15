@@ -3,8 +3,9 @@
  *
  * The page is black because the subject is. The backdrop is a real photograph
  * of the Milky Way over Earth's horizon, taken from the space station, and the
- * type is white over it. There is no accent colour in the interface: the only
- * colour on screen comes from the flame, the sky and NASA's photographs.
+ * type is white over it. Text and data marks carry no accent colour. One blue,
+ * taken from the freefall flame, is used only for instrument framing on the
+ * dashboard: brackets, hairlines, glow and the turning guide rings.
  */
 
 @theme inline {
@@ -17,6 +18,8 @@
   --color-ink-muted: #bcb9b0;
   --color-ink-subtle: #8c8981;
   --color-accent: #f2f0ea;
+  /* The blue of the freefall flame. Frames and glow only, never text or a data mark. */
+  --color-flame: #6f9bff;
   --color-tag-found: #9be5b4;
   --color-tag-tested: #5dbbc6;
   --color-tag-expected: #d98a8b;
@@ -86,5 +89,64 @@ h3 {
 @media (prefers-reduced-motion: reduce) {
   .link-draw {
     transition: none;
+  }
+}
+
+/* ---------- Dashboard instrument frame ---------- */
+
+/* A faint drafting grid over the sky, so the panels sit on something measured. */
+.hud-grid {
+  background-image:
+    linear-gradient(to right, rgb(111 155 255 / 0.055) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(111 155 255 / 0.055) 1px, transparent 1px);
+  background-size: 72px 72px;
+}
+
+/* The same grid, bright: shown only in the pool of light around the cursor. */
+.hud-grid-bright {
+  background-image:
+    linear-gradient(to right, rgb(111 155 255 / 0.46) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(111 155 255 / 0.46) 1px, transparent 1px);
+  background-size: 72px 72px;
+}
+
+/* Guide rings turn slowly behind a gauge. They are decoration and carry no data. */
+@keyframes hud-turn {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.hud-turn {
+  transform-origin: 50% 50%;
+  transform-box: view-box;
+  animation: hud-turn 80s linear infinite;
+}
+.hud-turn-back {
+  transform-origin: 50% 50%;
+  transform-box: view-box;
+  animation: hud-turn 46s linear infinite reverse;
+}
+.hud-sweep {
+  transform-origin: 50% 50%;
+  transform-box: view-box;
+  animation: hud-turn 12s linear infinite;
+}
+
+/* Gauge segments light up one after another the first time they are drawn. */
+@keyframes hud-light {
+  from {
+    opacity: 0;
+  }
+}
+.hud-seg {
+  animation: hud-light 0.5s ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hud-turn,
+  .hud-turn-back,
+  .hud-sweep,
+  .hud-seg {
+    animation: none;
   }
 }
