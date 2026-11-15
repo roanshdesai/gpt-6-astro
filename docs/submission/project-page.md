@@ -3,7 +3,7 @@
 Text for the Space Apps project submission form. Copy each section into the
 matching field. Lines in **[brackets]** need filling or deciding before you
 paste. Every number below was checked against the repo's data files on
-Nov 14, 2026; if the data changes, re-run `pnpm run check:data` and update the
+Nov 15, 2026; if the data changes, re-run `pnpm run check:data` and update the
 numbers here.
 
 ---
@@ -14,7 +14,7 @@ numbers here.
 
 ## Challenge
 
-Flame in Freefall: AI-Powered Fire Safety Insights from Microgravity Combustion Data
+Flame in Freefall: SI-Powered Fire Safety Insights from Microgravity Combustion Data
 
 ## Links
 
@@ -87,7 +87,7 @@ and where the gaps are, with a link back to every source.
 - Next.js (App Router), TypeScript, Tailwind CSS, shadcn/ui components,
   Motion for animation, three.js with React Three Fiber for the flame, Lenis
   for smooth scrolling. Hosted on Vercel.
-- The data lives in three JSON files in the repo. The site reads them at
+- The data lives in JSON files in the repo (`data/`). The site reads them at
   build time; there is no server database and no live model call.
 - A Node script (`data/check/honesty.mjs`) runs before every build. It fails
   the build if any quote is not word for word in its saved NASA source, if
@@ -124,12 +124,13 @@ and where the gaps are, with a link back to every source.
 
 [Keep this section word for word or edit it, but keep it accurate.]
 
-- **Data files.** Rehaan used Claude (Anthropic), through a Claude
-  subscription, to read the saved NASA PSI records and the NASA resources
-  listed above, and to write the three data files: the 24 investigation
-  cards, the 11 questions with their answers, ranking and "not yet known"
-  lines, and the incident cards and "On Earth" lines. Claude used only that
-  saved NASA text.
+- **Data files.** The team used Claude (Anthropic) to read the saved NASA
+  PSI records and the NASA resources listed above, and to write the data
+  files: the 24 investigation cards, the 11 questions with their answers,
+  ranking and "not yet known" lines, and the incident cards and "On Earth"
+  lines. Claude used only that saved NASA text. **[Rehaan: Claude
+  subscription for the data files; Roansh: confirm what you used for the
+  Home incident cards and video line.]**
 - **Checks on that output.** Every quote Claude chose is checked by a script
   to appear word for word in its NASA source, and the build fails otherwise.
   The script cannot tell whether a quote supports the sentence above it, so
@@ -142,7 +143,8 @@ and where the gaps are, with a link back to every source.
   generated ahead of time and is saved in the repository.
 - **Images and video.** **[If any image or video in the site or demo was made
   with an SI tool, say which, and make sure it carries a visible watermark.
-  The 3D flame is drawn by code (a shader), not generated.]**
+  The 3D flame and the Dashboard's 3D chamber are drawn by code and labelled
+  "simulation" on the site; Home's sky is labelled a NASA photograph.]**
 
 ## Team
 
