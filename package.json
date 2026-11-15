@@ -4,9 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "node data/check/honesty.mjs --quiet && next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "check:data": "node data/check/honesty.mjs && node --test data/check/honesty.test.mjs"
   },
   "dependencies": {
     "@base-ui/react": "^1.9.0",
