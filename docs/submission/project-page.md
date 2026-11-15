@@ -45,9 +45,8 @@ the site is built, and every quote is labelled as what NASA **tested**,
 The site has four tabs.
 
 - **Home:** a 3D flame with an Earth / Freefall switch (a tall teardrop on
-  Earth, a dim blue sphere in freefall), three real incidents (Apollo 1,
-  Apollo 13, Mir) and a link to NASA's "Strange Flames on the ISS"
-  ScienceCast.
+  Earth, a dim blue sphere in freefall), two real fires (Apollo 1 and Mir)
+  and a link to NASA's video "The Power of Studying Combustion on the ISS".
 - **Dashboard:** what NASA's open combustion data holds, counted from the
   site's data files. 24 experiments: 19 flew in space (16 on the space
   station, 3 on Cygnus cargo ships) and 5 are ground studies, with 293
@@ -69,7 +68,7 @@ The site has four tabs.
     gravity, so those answers say they are bounded by microgravity and Earth
     results instead of claiming measured values;
   - where it applies (spacecraft, station, Moon base, Mars base, pressurized
-    rover) and, for 5 questions, an "On Earth" line from a NASA Spinoff page.
+    rover) and, for 3 questions, an "On Earth" line from a NASA Spinoff page.
 - **Investigations:** all 24 as pages with the attributes the brief asks
   for: objective, fuel, oxygen, airflow and pressure, what varied between
   tests, what was measured, and the hardware. Where NASA's record does not
@@ -105,21 +104,21 @@ and where the gaps are, with a link back to every source.
   https://www.nasa.gov/sites/default/files/atoms/files/np-2015-10-034-jsc_combustion_in_reduced_gravity-iss-mini-book-011116-508.pdf
 - **NASA Glenn, Combustion Science page.**
   https://www.nasa.gov/glenn/glenn-expertise-space-exploration/physical-sciences-program/combustion-science/
-- **NASA History articles** for the incident cards:
-  https://www.nasa.gov/history/55-years-ago-the-apollo-1-fire-and-its-aftermath/,
-  https://www.nasa.gov/history/50-years-ago-apollo-13-review-board-report/,
+- **Incident cards:** NASA Safety and Mission Assurance, Apollo 1,
+  https://sma.nasa.gov/sma-disciplines/accllp/apollo-1, and NASA History,
+  "25 Years Ago: Fire Aboard Space Station Mir",
   https://www.nasa.gov/history/25-years-ago-fire-aboard-space-station-mir/
 - **NASA Spinoff** for the "On Earth" lines:
-  https://spinoff.nasa.gov/node/9407 (Fire Detector),
+  https://spinoff.nasa.gov/node/9407 (Fire Detector, smoke or dust),
   https://spinoff.nasa.gov/node/9918 (Fire Attire),
   https://spinoff.nasa.gov/node/9582 (Fireman's Air Tanks)
 - **NASA Space Apps Challenge, "Flame in Freefall" challenge page**, for
   the Home line on Moon Base oxygen.
   https://www.spaceappschallenge.org/2026/challenges/flame-in-freefall/
-  **[Not yet saved in the repo or checked word for word; see the thread.]**
-- **NASA ScienceCasts, "Strange Flames on the ISS"** (video):
-  https://www.youtube.com/watch?v=BxxqCLxxY3M. The original NASA page has
-  been removed; its text was checked against the Internet Archive copy.
+  Saved Nov 15 as `data/raw/sources/pdf/space-apps-flame-in-freefall.pdf`.
+- **NASA video, "The Power of Studying Combustion on the ISS"**:
+  https://www.youtube.com/watch?v=W1oXykoz9zg, described in the NASA Image
+  and Video Library: https://images.nasa.gov/details/264_StudyingCombustionOnTheISS
 
 ## Use of SI tools
 

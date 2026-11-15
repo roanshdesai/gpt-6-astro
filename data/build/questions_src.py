@@ -251,11 +251,7 @@ QUESTIONS = [
             "How smoke behaves at Moon or Mars gravity, which none of the 24 tested.",
         ],
         "habitats": ["spacecraft", "station", "moon-base", "mars-base", "rover"],
-        "earth": EARTH(
-            SPINOFF_FIRE_DETECTOR,
-            'On Earth, a fire detector from the space shuttle works by sampling the air for combustion particles.',
-            'Sensor operates by sampling air to determine the presence of combustion particles',
-        ),
+        "earth": None,  # B13: the spinoff line answered a different question (Nov 15)
     },
     {
         "id": "smoke-or-dust",
@@ -315,11 +311,7 @@ QUESTIONS = [
             "Flame shape at Moon or Mars gravity, which none of the 24 tested.",
         ],
         "habitats": ["spacecraft", "station", "moon-base", "mars-base", "rover"],
-        "earth": EARTH(
-            SPINOFF_FIRE_DETECTOR,
-            'On Earth, that shuttle fire detector signals a fire before any flame or smoke appears.',
-            'Fire detector represents an advancement over commercially available smoke detectors in that it senses and signals the presence of a fire condition before appearance of flame and smoke.',
-        ),
+        "earth": None,  # B13: the spinoff line answered a different question (Nov 15)
     },
     # ----------------------------------------------------------------- SUPPRESS
     {
@@ -358,7 +350,7 @@ QUESTIONS = [
         "pillar": "suppress",
         "question": "Does switching off the fans stop it?",
         "answer": [
-            S("Not reliably. NASA lists \"a fire will self-extinguish if ventilation is shut off\" among the misconceptions its microgravity research showed to be false.", basis=[G_MISCONCEPTIONS, G_FALLACY]),
+            S("Not reliably. NASA's Guide lists \"A fire will self-extinguish if ventilation is shut off\" among the misconceptions that its research \"demonstrates the fallacy of\".", basis=[G_MISCONCEPTIONS, G_FALLACY]),
             S("NASA found that a gas burner set up to behave like PMMA and Nylon kept burning with no airflow in elevated-oxygen air, though the same flames went out quickly in normal 21% oxygen.", ["PSI-20"]),
             S("NASA also found in BASS that a local jet of suppressant pulled in air and kept the flame going even with the ambient airflow turned off.", ["PSI-26", "PSI-25"]),
             S("A candle flown on Mir burned in some tests for over 45 minutes in still air before running out of fuel.", basis=[G_CANDLE]),

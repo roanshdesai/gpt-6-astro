@@ -137,7 +137,7 @@ CARDS = {
     ),
     "PSI-159": dict(
         pillars=["suppress"],
-        summary="ACME CFI-G fed gas through a small spherical burner aboard the space station to create steady cool flames from gaseous fuels for the first time, and to see what makes them go out or turn into hot flames.",
+        summary="ACME CFI-G fed gas through a small spherical burner aboard the space station, aiming to show steady cool flames from gaseous fuels for the first time, and to see what makes them go out or turn into hot flames.",
         objective="Determine the conditions for which cool diffusion flames occur for propane, n-butane, and n-pentane",
         fuel=dict(state="gas", detail="propane, n-butane, and n-pentane", size=NS),
         conditions=dict(oxygen=NS, airflow=NS, pressure=NS),

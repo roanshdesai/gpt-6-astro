@@ -125,3 +125,13 @@ test("an edited video quote fails", () => {
   d.landing.video.quote = d.landing.video.quote.replace("combustion", "cooking");
   fails(d, /landing video quote: not word for word/);
 });
+
+test("NASA's challenge page backs the Home Moon Base oxygen line word for word", () => {
+  const page = load().pages["https://www.spaceappschallenge.org/2026/challenges/flame-in-freefall/"];
+  assert.ok(page, "challenge page text copy is missing");
+  for (const s of [
+    "The intermediate oxygen concentration used on the Moon will likely be 30% or greater, with a corresponding pressure of 10.2 psi or less.",
+    "making materials much more flammable",
+  ])
+    assert.ok(page.includes(s), s);
+});

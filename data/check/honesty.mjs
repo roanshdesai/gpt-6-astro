@@ -46,6 +46,10 @@ export const FILES = {
 };
 
 export const SOURCE_FILES = {
+  // Nov 15: NASA's challenge page, printed to PDF by Rehaan (data/raw/sources/pdf/). Backs the Home
+  // Moon Base oxygen line; no data file quotes it yet.
+  "https://www.spaceappschallenge.org/2026/challenges/flame-in-freefall/":
+    "data/raw/sources/space-apps-flame-in-freefall.txt",
   "https://www.nasa.gov/sites/default/files/atoms/files/np-2015-10-034-jsc_combustion_in_reduced_gravity-iss-mini-book-011116-508.pdf":
     "data/raw/sources/researchers-guide-combustion.txt",
   "https://www.nasa.gov/glenn/glenn-expertise-space-exploration/physical-sciences-program/combustion-science/":
