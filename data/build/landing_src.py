@@ -40,7 +40,7 @@ INCIDENTS = [
         "id": "mir",
         "year": "1997",
         "name": "Mir",
-        "text": "An oxygen generator caught fire, blocked the way to an escape craft and filled the station with smoke. The crew put it out, with no lasting harm.",
+        "text": "An oxygen generator caught fire, blocked the way to an escape craft and filled the station with smoke. The crew fought it until it went out, with no lasting harm to the crew.",
         "quote": "On Feb. 24, 1997, the six crew members aboard the Russian space station Mir faced significant danger when a fire ignited in an oxygen generating system.",
         "source": MIR_FIRE,
         "sourceTitle": "NASA History: 25 Years Ago: Fire Aboard Space Station Mir",

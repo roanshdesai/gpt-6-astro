@@ -19,10 +19,9 @@ node data/check/links.mjs                                   # every NASA source 
 node data/check/links.mjs --site https://YOUR-SITE.vercel.app  # plus every page of the live site (tabs, 11 answers, 24 investigations)
 ```
 
-Every line must say `ok`. The one expected failure is handled for you: the
-original ScienceCasts page on science.nasa.gov answers 404 and is listed as
-expected, so the UI must not link to `video.nasaUrl`. A made-up id such as
-`/investigations/PSI-0` must answer 404.
+Every line must say `ok`. A made-up id such as `/investigations/PSI-0` must
+answer 404. (The old ScienceCasts page on science.nasa.gov is gone, and is
+listed as an expected 404 in case it comes back into the data.)
 
 Then by hand, **in a private browser window** (no logins, no cache):
 

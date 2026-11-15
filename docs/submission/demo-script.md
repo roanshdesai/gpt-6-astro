@@ -16,7 +16,7 @@ The 3D flame and the Earth / Freefall switch are on Home only.
 | Time | On screen | Voice-over or caption |
 |---|---|---|
 | 0:00–0:05 | **Home.** Flip the Earth / Freefall switch: the flame changes between a tall teardrop and a dim blue sphere, and the headline letters fall or drift back. | "In space, fire has no up." |
-| 0:05–0:09 | Scroll Home past the incident cards (Apollo 1, Apollo 13, Mir). | "Fire has threatened crews before. NASA has run 24 experiments to understand it." |
+| 0:05–0:09 | Scroll Home past the incident cards (Apollo 1, Mir). | "Fire has threatened crews before. NASA has run 24 experiments to understand it." |
 | 0:09–0:14 | **Dashboard** tab. Hold on the top numbers: **24** experiments, **19** flew in space, then the panel "9 of the 11 questions have a result from at least one of the 24 experiments". | "We counted what NASA's open data actually holds." |
 | 0:14–0:21 | **Questions** tab: the 11 questions in Prevent, Detect, Suppress and Across all three. Open **"Does switching off the fans stop it?"**: the answer "Not reliably", its FOUND quote, and "4 of 24 investigations speak to this · 4 with a stated result". Click a citation chip; the page jumps to that investigation's evidence row. | "Each answer is ranked by evidence, with NASA's exact words, tagged tested, expected or found." |
 | 0:21–0:25 | Scroll to **Not yet known** on the same page, or open **"What about Moon and Mars gravity?"** and show the line that none of the 24 burned anything at Moon or Mars gravity. | "And it says what is still unknown." |

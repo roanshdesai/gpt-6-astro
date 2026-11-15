@@ -580,12 +580,7 @@
       "mars-base",
       "rover"
     ],
-    "earth": {
-      "text": "On Earth, a fire detector from the space shuttle works by sampling the air for combustion particles.",
-      "quote": "Sensor operates by sampling air to determine the presence of combustion particles",
-      "source": "https://spinoff.nasa.gov/node/9407",
-      "sourceTitle": "NASA Spinoff: Fire Detector (1978)"
-    }
+    "earth": null
   },
   {
     "id": "smoke-or-dust",
@@ -820,12 +815,7 @@
       "mars-base",
       "rover"
     ],
-    "earth": {
-      "text": "On Earth, that shuttle fire detector signals a fire before any flame or smoke appears.",
-      "quote": "Fire detector represents an advancement over commercially available smoke detectors in that it senses and signals the presence of a fire condition before appearance of flame and smoke.",
-      "source": "https://spinoff.nasa.gov/node/9407",
-      "sourceTitle": "NASA Spinoff: Fire Detector (1978)"
-    }
+    "earth": null
   },
   {
     "id": "put-it-out",
@@ -978,7 +968,7 @@
     "question": "Does switching off the fans stop it?",
     "answer": [
       {
-        "text": "Not reliably. NASA lists \"a fire will self-extinguish if ventilation is shut off\" among the misconceptions its microgravity research showed to be false.",
+        "text": "Not reliably. NASA's Guide lists \"A fire will self-extinguish if ventilation is shut off\" among the misconceptions that its research \"demonstrates the fallacy of\".",
         "cites": [],
         "basis": [
           {
