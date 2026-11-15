@@ -1,4 +1,5 @@
 import { Hero } from "@/components/landing/hero";
+import { SectionSnap } from "@/components/landing/section-snap";
 import { Story } from "@/components/landing/story";
 import { PILLARS, investigations, questions } from "@/lib/data";
 
@@ -17,6 +18,7 @@ export default function Home() {
 
   return (
     <main className="relative">
+      <SectionSnap />
       <Hero />
       <Story
         flights={flights}
