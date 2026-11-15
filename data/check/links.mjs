@@ -14,9 +14,9 @@
 // Known exceptions are listed in EXPECTED below with the status we expect and
 // why, so a known 404 does not hide a new one.
 //
-// Site mode checks the routes a judge can open: /, /investigations, each
-// /investigations/<id>, /compare (empty and with two ids), and that a made-up
-// id answers 404. Node standard library only (Node 18+ for fetch).
+// Site mode checks the routes a judge can open: /, /dashboard, /board, each
+// /board/<question id>, /investigations, each /investigations/<id>, /compare
+// (empty and with two ids), and that a made-up investigation id answers 404. Node standard library only (Node 18+ for fetch).
 
 import { readFileSync, readdirSync, existsSync } from "node:fs";
 import { fileURLToPath } from "node:url";
@@ -86,11 +86,14 @@ export function collectSourceLinks(root = ROOT) {
   return [...byUrl].map(([url, wheres]) => ({ url, where: [...wheres].join(", ") }));
 }
 
-export function siteLinks(base, investigations) {
+export function siteLinks(base, investigations, questions = []) {
   const b = base.replace(/\/+$/, "");
   const ids = investigations.map((i) => i.id);
   const rows = [
     { url: `${b}/`, where: "site" },
+    { url: `${b}/dashboard`, where: "site" },
+    { url: `${b}/board`, where: "site" },
+    ...questions.map((q) => ({ url: `${b}/board/${q.id}`, where: "site" })),
     { url: `${b}/investigations`, where: "site" },
     ...ids.map((id) => ({ url: `${b}/investigations/${id}`, where: "site" })),
     { url: `${b}/compare`, where: "site" },
@@ -139,7 +142,8 @@ async function main() {
   const rows = flag("--no-sources") ? [] : collectSourceLinks();
   if (site) {
     const inv = JSON.parse(readFileSync(path.join(ROOT, "data/investigations.json"), "utf8"));
-    rows.push(...siteLinks(site, inv));
+    const qs = JSON.parse(readFileSync(path.join(ROOT, "data/questions.json"), "utf8"));
+    rows.push(...siteLinks(site, inv, qs));
   }
   if (rows.length === 0) {
     console.error("Nothing to check.");

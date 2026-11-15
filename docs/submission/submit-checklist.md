@@ -16,7 +16,7 @@ Run from a laptop, not the cloud (nasa.gov blocks the cloud sandbox):
 
 ```bash
 node data/check/links.mjs                                   # every NASA source URL in the data
-node data/check/links.mjs --site https://YOUR-SITE.vercel.app  # plus every page of the live site
+node data/check/links.mjs --site https://YOUR-SITE.vercel.app  # plus every page of the live site (tabs, 11 answers, 24 investigations)
 ```
 
 Every line must say `ok`. The one expected failure is handled for you: the
@@ -29,8 +29,9 @@ Then by hand, **in a private browser window** (no logins, no cache):
 - [ ] Live site opens with no login.
 - [ ] Landing: flame loads; gravity switch works; page still readable if
       WebGL fails (try another browser or turn off hardware acceleration).
-- [ ] Every board question opens its answer.
-- [ ] A citation chip opens or shows its NASA quote.
+- [ ] All four tabs open: Home, Dashboard, Questions, Investigations.
+- [ ] Every question on the Questions tab opens its answer page.
+- [ ] A citation chip jumps to its evidence row.
 - [ ] `/investigations`, one investigation page, `/compare` with two picks.
 - [ ] On a phone: no sideways scrolling.
 - [ ] Demo video link opens with no login and is 30 seconds or less.

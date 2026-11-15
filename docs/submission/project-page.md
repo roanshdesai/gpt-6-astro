@@ -42,31 +42,40 @@ the site is built, and every quote is labelled as what NASA **tested**,
 
 **What it does**
 
-- **11 questions** across prevention, detection and suppression, plus two
-  that cut across all three: Moon and Mars gravity, and what this research
-  has done for Earth.
-- Each answer sentence carries citation chips to the investigations it rests
-  on. An answer only says "NASA found" when a quoted NASA source states a
-  result.
-- **Evidence strength** for each question: how many of the 24 investigations
-  speak to it, and how many of those have a stated result. For example, "Is a
-  30% oxygen Moon Base safe?" draws on 5 investigations, 4 with stated
-  results; the two smoke-detection questions have none with stated results,
-  and the site says so.
-- **"Not yet known"** on every answer. None of the 24 investigations burned
-  anything at Moon or Mars gravity, so those answers say they are bounded by
-  microgravity and Earth results instead of claiming measured values.
-- **All 24 investigations** as pages with the attributes the brief asks for:
-  objective, fuel, oxygen, airflow and pressure, what varied between tests,
-  what was measured, and the hardware. Where NASA's record does not state a
-  value, the page says "Not stated in the NASA record" rather than guessing.
-- **Compare** any two investigations side by side, and browse them grouped by
-  the hardware they ran on (ACME burners and the droplet apparatus in the
-  Combustion Integrated Rack, the Microgravity Science Glovebox, Saffire in a
-  Cygnus cargo ship, ground studies).
-- **Landing:** a 3D flame with a gravity switch (tall orange teardrop on
-  Earth, dim blue sphere in freefall), three real incidents (Apollo 1,
-  Apollo 13, Mir) and NASA's "Strange Flames on the ISS" ScienceCast.
+The site has four tabs.
+
+- **Home:** a 3D flame with an Earth / Freefall switch (a tall teardrop on
+  Earth, a dim blue sphere in freefall), three real incidents (Apollo 1,
+  Apollo 13, Mir) and a link to NASA's "Strange Flames on the ISS"
+  ScienceCast.
+- **Dashboard:** what NASA's open combustion data holds, counted from the
+  site's data files. 24 experiments: 19 flew in space (16 on the space
+  station, 3 on Cygnus cargo ships) and 5 are ground studies, with 293
+  distinct paper titles across their records. 9 of the 11 questions have a
+  stated result from at least one experiment; the 2 that do not are both
+  about detecting a fire. 5 of the 24 experiments have a result quoted on the
+  site. It also charts experiments per year and papers per experiment.
+- **Questions:** 11 fire-safety questions grouped as Prevent, Detect,
+  Suppress, plus two across all three (Moon and Mars gravity, and what this
+  research has done for Earth). Each answer page has:
+  - a short answer whose sentences carry citation chips; a chip jumps to
+    that investigation's evidence row;
+  - the investigations that speak to the question, ranked, with NASA's exact
+    sentences tagged **tested**, **expected** or **found**. An answer only
+    says "NASA found" when a quoted NASA source states a result;
+  - evidence strength in words, for example "4 of 24 investigations speak to
+    this · 4 with a stated result";
+  - **Not yet known**. None of the 24 burned anything at Moon or Mars
+    gravity, so those answers say they are bounded by microgravity and Earth
+    results instead of claiming measured values;
+  - where it applies (spacecraft, station, Moon base, Mars base, pressurized
+    rover) and, for 5 questions, an "On Earth" line from a NASA Spinoff page.
+- **Investigations:** all 24 as pages with the attributes the brief asks
+  for: objective, fuel, oxygen, airflow and pressure, what varied between
+  tests, what was measured, and the hardware. Where NASA's record does not
+  state a value, the page says "Not stated in the NASA record". They are
+  grouped by the hardware they ran on, and **Compare** puts any two side by
+  side.
 
 **Benefits**
 
@@ -104,6 +113,10 @@ and where the gaps are, with a link back to every source.
   https://spinoff.nasa.gov/node/9407 (Fire Detector),
   https://spinoff.nasa.gov/node/9918 (Fire Attire),
   https://spinoff.nasa.gov/node/9582 (Fireman's Air Tanks)
+- **NASA Space Apps Challenge, "Flame in Freefall" challenge page**, for
+  the Home line on Moon Base oxygen.
+  https://www.spaceappschallenge.org/2026/challenges/flame-in-freefall/
+  **[Not yet saved in the repo or checked word for word; see the thread.]**
 - **NASA ScienceCasts, "Strange Flames on the ISS"** (video):
   https://www.youtube.com/watch?v=BxxqCLxxY3M. The original NASA page has
   been removed; its text was checked against the Internet Archive copy.

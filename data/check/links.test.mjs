@@ -21,6 +21,13 @@ test("markdown links lose trailing punctuation and placeholders are skipped", ()
   assert.deepEqual(got.map((r) => r.url), ["https://x.test/a", "https://x.test/b"]);
 });
 
+test("site mode visits the dashboard, the board and every question page", () => {
+  const rows = siteLinks("https://x.test", [{ id: "PSI-10" }, { id: "PSI-20" }], [{ id: "fans-off" }, { id: "moon-mars" }]);
+  const urls = rows.map((r) => r.url);
+  for (const u of ["/dashboard", "/board", "/board/fans-off", "/board/moon-mars", "/investigations/PSI-20", "/compare"])
+    assert.ok(urls.includes(`https://x.test${u}`), u);
+});
+
 test("site mode expects 404 for a made-up id", () => {
   const rows = siteLinks("http://localhost:3000/", [{ id: "PSI-10" }, { id: "PSI-20" }]);
   const madeUp = rows.find((r) => r.url.endsWith("/investigations/PSI-0"));
