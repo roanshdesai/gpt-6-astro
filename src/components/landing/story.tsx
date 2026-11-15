@@ -101,7 +101,7 @@ type StoryProps = {
 
 function ChapterSection({ chapter }: { chapter: Chapter }) {
   return (
-    <section className="relative z-20 flex min-h-svh items-center px-[3vw] py-24">
+    <section data-snap className="relative z-20 flex min-h-svh items-center px-[3vw] py-24">
       <div className={cn("flex w-full max-w-[36rem] flex-col gap-7", chapter.side === "right" && "lg:ml-auto")}>
         <p className={cn("font-mono text-[13px] text-ink-muted", SHADOW)}>{chapter.label}</p>
         <h2
@@ -143,7 +143,7 @@ export function Story({ flights, pillars, total, ground }: StoryProps) {
       ))}
 
       {/* It has already happened */}
-      <section id="happened" className="relative z-20 flex min-h-svh items-center px-[3vw] py-24">
+      <section id="happened" data-snap className="relative z-20 flex min-h-svh items-center px-[3vw] py-24">
         <div className="flex w-full max-w-[40rem] flex-col gap-10">
           <p className={cn("font-mono text-[13px] text-ink-muted", SHADOW)}>06 · Record</p>
           <h2

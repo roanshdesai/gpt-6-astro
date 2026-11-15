@@ -31,17 +31,21 @@ export function Hero() {
   const still = useReducedMotion();
 
   return (
-    <section className="relative min-h-svh">
+    <section data-snap className="relative min-h-svh">
       <ScrollProgress className="z-[60] bg-none bg-ink" />
 
       {/*
         The headline obeys the switch too. On Earth its letters fall to the floor
         of the page; in freefall they drift back into place.
+
+        Its size follows the window's width, and on a short window its height
+        too, so the three lines always end above the caption and buttons below.
       */}
       <h1
         aria-label={HEADLINE.join(" ")}
+        style={{ fontSize: "max(2.75rem, min(8.6vw, 10.5rem, calc(25.5svh - 106px)))" }}
         className={cn(
-          "pointer-events-none absolute inset-x-0 top-[11svh] bottom-0 z-10 transition-opacity duration-300 text-[clamp(2.75rem,8.6vw,10.5rem)] font-bold leading-[0.9] tracking-[-0.045em] text-ink",
+          "pointer-events-none absolute inset-x-0 top-[11svh] bottom-0 z-10 transition-opacity duration-300 font-bold leading-[0.9] tracking-[-0.045em] text-ink",
           still && onEarth && "opacity-0",
         )}
       >
