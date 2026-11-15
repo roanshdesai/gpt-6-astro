@@ -1,0 +1,1461 @@
+[
+  {
+    "id": "moon-base-oxygen",
+    "pillar": "prevent",
+    "question": "Is a 30% oxygen Moon Base safe?",
+    "answer": [
+      {
+        "text": "NASA found that flames which went out quickly in normal 21% oxygen kept burning with no airflow at all in the elevated-oxygen atmospheres being considered for future spacecraft.",
+        "cites": [
+          "PSI-20"
+        ]
+      },
+      {
+        "text": "NASA also found that materials can burn at lower oxygen levels in microgravity than on Earth, so the standard Earth screening test is not conservative.",
+        "cites": [
+          "PSI-26",
+          "PSI-25",
+          "PSI-69"
+        ]
+      },
+      {
+        "text": "None of the 24 investigations burned anything at Moon gravity, so this answer is bounded by microgravity and Earth results, not measured for a Moon Base.",
+        "cites": [],
+        "scope": true
+      }
+    ],
+    "evidence": [
+      {
+        "investigation": "PSI-20",
+        "rank": 1,
+        "why": "Burned fuels set up to act like real materials in the exact raised-oxygen, low-pressure cabin air NASA is considering.",
+        "quotes": [
+          {
+            "kind": "tested",
+            "text": "NASA - considered atmosphere for human space missions will be examined: 14.7 psia, 21 % oxygen: 10.2 psia, 26.5 %; and 8.2 psia, 34 % oxygen.",
+            "source": "Objectives"
+          },
+          {
+            "kind": "found",
+            "text": "The ongoing combustion without air flow was notably seen in elevated-oxygen atmospheres which are being considered for use in future spacecraft, whereas such flames in a normal atmosphere of 21% oxygen self-extinguished in a short time.",
+            "source": "Research Impacts/Earth Benefits"
+          },
+          {
+            "kind": "found",
+            "text": "While BRE’s results are still preliminary, they suggest that NASA may want to increase use of its alternative flammability Test 2, with the cone calorimeter, where that test can measure material properties corresponding to the microgravity flames observed with the BRE burner.",
+            "source": "Research Impacts/Earth Benefits"
+          }
+        ]
+      },
+      {
+        "investigation": "PSI-26",
+        "rank": 2,
+        "why": "Showed in orbit that materials burn at lower oxygen than Earth tests predict.",
+        "quotes": [
+          {
+            "kind": "found",
+            "text": "Recent results from the BASS experiment currently running on the ISS indicate that NASA-STD-6001 Test 1 is not conservative, and materials can burn at lower oxygen levels in microgravity than on Earth.",
+            "source": "https://www.nasa.gov/sites/default/files/atoms/files/np-2015-10-034-jsc_combustion_in_reduced_gravity-iss-mini-book-011116-508.pdf",
+            "page": "31"
+          },
+          {
+            "kind": "expected",
+            "text": "BASS experiments were based on the hypothesis that materials in microgravity, with adequate ventilation, burn as well if not better than the same material in normal gravity with other conditions being identical (pressure, oxygen concentration, temperature, etc.)",
+            "source": "Hypothesis"
+          }
+        ]
+      },
+      {
+        "investigation": "PSI-69",
+        "rank": 3,
+        "why": "Found the lowest oxygen level that supports burning fuel droplets is far lower in microgravity.",
+        "quotes": [
+          {
+            "kind": "found",
+            "text": "To date, these experiments have identified both the radiative and diffusive extinction limits for heptane and methanol droplets and identified an LOI that is both significantly lower than in normal gravity and lower than previously predicted and anticipated.",
+            "source": "https://www.nasa.gov/sites/default/files/atoms/files/np-2015-10-034-jsc_combustion_in_reduced_gravity-iss-mini-book-011116-508.pdf",
+            "page": "36"
+          }
+        ]
+      },
+      {
+        "investigation": "PSI-25",
+        "rank": 4,
+        "why": "Varied oxygen and airflow over solid samples to test whether Earth's screening test holds in space.",
+        "quotes": [
+          {
+            "kind": "tested",
+            "text": "Main variables are airflow speed and oxygen concentration (oxygen varied below 21% by adding nitrogen).",
+            "source": "Approach"
+          },
+          {
+            "kind": "found",
+            "text": "Recent results from the BASS experiment currently running on the ISS indicate that NASA-STD-6001 Test 1 is not conservative, and materials can burn at lower oxygen levels in microgravity than on Earth.",
+            "source": "https://www.nasa.gov/sites/default/files/atoms/files/np-2015-10-034-jsc_combustion_in_reduced_gravity-iss-mini-book-011116-508.pdf",
+            "page": "31"
+          },
+          {
+            "kind": "expected",
+            "text": "NASA tests and controls materials from a flammability perspective using an upward burning test in normal gravity, which is considered to be the worst-case geometry for flammability of the material on Earth. However, it may not be conservative for flammability in space.",
+            "source": "Hypothesis"
+          }
+        ]
+      },
+      {
+        "investigation": "PSI-98",
+        "rank": 5,
+        "why": "Set out to compare large-fire flammability limits in low gravity with NASA's Earth screening test.",
+        "quotes": [
+          {
+            "kind": "tested",
+            "text": "The objectives of this investigation were to: (1) determine how rapidly a large scale fire grows in low-gravity and (2) investigate the low-g flammability limits compared to those obtained in NASA’s normal gravity material flammability screening test.",
+            "source": "Objectives"
+          },
+          {
+            "kind": "expected",
+            "text": "This investigation hypothesizes that due to large differences between fire behavior in normal and reduced gravity, the use of terrestrial fires and fire standards to design spacecraft fire safety systems presents an inherent risk to the vehicle because of the significant level of uncertainty.",
+            "source": "Hypothesis"
+          }
+        ]
+      }
+    ],
+    "strength": {
+      "count": 5,
+      "withFindings": 4,
+      "of": 24
+    },
+    "unknown": [
+      "How materials burn at Moon gravity (1/6 g): none of the 24 investigations tested partial gravity.",
+      "Whether 30% oxygen in particular is safe: BRE examined 26.5% and 34% oxygen at reduced pressure, not 30%.",
+      "BRE's own record calls its results preliminary."
+    ],
+    "habitats": [
+      "moon-base",
+      "mars-base",
+      "spacecraft"
+    ],
+    "earth": null
+  },
+  {
+    "id": "cabin-airflow",
+    "pillar": "prevent",
+    "question": "Does cabin airflow feed a fire?",
+    "answer": [
+      {
+        "text": "Yes: NASA found that the safety margin seen in still air may not hold in spacecraft, where ventilation flow strongly enhances flames.",
+        "cites": [],
+        "basis": [
+          {
+            "kind": "found",
+            "text": "Microgravity experiments demonstrated that the assumed margin of safety of reduced flammability in microgravity, based on quiescent test results, may not be valid for most spacecraft environments where ventilation flow strongly enhances flames.",
+            "source": "https://www.nasa.gov/sites/default/files/atoms/files/np-2015-10-034-jsc_combustion_in_reduced_gravity-iss-mini-book-011116-508.pdf",
+            "page": "18"
+          }
+        ]
+      },
+      {
+        "text": "NASA found that flames over solids can survive at the lowest oxygen, and spread fastest, at an airflow of about 10 cm/s, which is typical of spacecraft ventilation.",
+        "cites": [],
+        "basis": [
+          {
+            "kind": "found",
+            "text": "For flame spread across solid materials, the characteristic gas velocity of the minimum in the curve is on the order of 10 cm/s and also corresponds to a maximum in the flame spread rate. To give perspective, this is the velocity typical of that of spacecraft ventilation systems.",
+            "source": "https://www.nasa.gov/sites/default/files/atoms/files/np-2015-10-034-jsc_combustion_in_reduced_gravity-iss-mini-book-011116-508.pdf",
+            "page": "31"
+          }
+        ]
+      },
+      {
+        "text": "BASS, BASS-II and the three SAFFIRE fires burned materials in airflows of 20 to 40 cm/s to study this.",
+        "cites": [
+          "PSI-26",
+          "PSI-25",
+          "PSI-98",
+          "PSI-99",
+          "PSI-100"
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "investigation": "PSI-26",
+        "rank": 1,
+        "why": "Burned fabrics and plastics in a fan-driven flow up to 40 cm/s, with stated results on the flow effect.",
+        "quotes": [
+          {
+            "kind": "tested",
+            "text": "Airflow was controlled using a variable speed fan, with airflow speeds reaching as high as 40 cm/s.",
+            "source": "Approach"
+          },
+          {
+            "kind": "found",
+            "text": "The tests have yielded useful results on the flow-velocity effect and flame suppression (by nitrogen), and the quick return of the test results has helped to guide the next, more complete flight experiments.",
+            "source": "https://www.nasa.gov/sites/default/files/atoms/files/np-2015-10-034-jsc_combustion_in_reduced_gravity-iss-mini-book-011116-508.pdf",
+            "page": "19"
+          },
+          {
+            "kind": "expected",
+            "text": "BASS experiments were based on the hypothesis that materials in microgravity, with adequate ventilation, burn as well if not better than the same material in normal gravity with other conditions being identical (pressure, oxygen concentration, temperature, etc.)",
+            "source": "Hypothesis"
+          }
+        ]
+      },
+      {
+        "investigation": "PSI-25",
+        "rank": 2,
+        "why": "Varied airflow speed directly in a small wind tunnel in the glovebox.",
+        "quotes": [
+          {
+            "kind": "tested",
+            "text": "Fuel samples were mounted inside a small wind tunnel which could impose airflow speeds up to 40 cm/s.",
+            "source": "Approach"
+          },
+          {
+            "kind": "found",
+            "text": "The tests have yielded useful results on the flow-velocity effect and flame suppression (by nitrogen), and the quick return of the test results has helped to guide the next, more complete flight experiments.",
+            "source": "https://www.nasa.gov/sites/default/files/atoms/files/np-2015-10-034-jsc_combustion_in_reduced_gravity-iss-mini-book-011116-508.pdf",
+            "page": "19"
+          },
+          {
+            "kind": "expected",
+            "text": "BASS–II tests the hypothesis that materials in microgravity, with adequate ventilation, burn as well if not better than the same material in normal gravity with other conditions being identical (pressure, O2 concentration, temperature, etc.).",
+            "source": "Hypothesis"
+          }
+        ]
+      },
+      {
+        "investigation": "PSI-99",
+        "rank": 3,
+        "why": "Large-scale fires in a cargo ship, run at two airflow speeds and both flow directions.",
+        "quotes": [
+          {
+            "kind": "tested",
+            "text": "Depending on the sample material, the Saffire-II was conducted at an air flow velocity of either 20 or 30 cm/s, the flow being either concurrent or opposed.",
+            "source": "Approach"
+          },
+          {
+            "kind": "tested",
+            "text": "The objectives of SAFFIRE-II are to determine how rapidly a large scale fire grows in low-gravity and to investigate the low-g flammability limits compared to those obtained in NASA’s normal gravity material flammability screening test.",
+            "source": "Objectives"
+          }
+        ]
+      },
+      {
+        "investigation": "PSI-100",
+        "rank": 4,
+        "why": "Repeated the SAFFIRE-I fabric at a faster airflow.",
+        "quotes": [
+          {
+            "kind": "tested",
+            "text": "However, the experiments were conducted at a flow velocity of 30 cm/s compared to 20 cm/s during Saffire I.",
+            "source": "Approach"
+          }
+        ]
+      },
+      {
+        "investigation": "PSI-98",
+        "rank": 5,
+        "why": "First large-scale fire in a cargo ship, at one cabin-like airflow.",
+        "quotes": [
+          {
+            "kind": "tested",
+            "text": "Saffire-I was conducted at an air flow velocity of 20 cm/s.",
+            "source": "Approach"
+          },
+          {
+            "kind": "expected",
+            "text": "This investigation hypothesizes that due to large differences between fire behavior in normal and reduced gravity, the use of terrestrial fires and fire standards to design spacecraft fire safety systems presents an inherent risk to the vehicle because of the significant level of uncertainty.",
+            "source": "Hypothesis"
+          }
+        ]
+      },
+      {
+        "investigation": "PSI-62",
+        "rank": 6,
+        "why": "Ground model of flame spread built against BASS images, aimed at the flow range where flames survive best.",
+        "quotes": [
+          {
+            "kind": "tested",
+            "text": "The evaluation metrics included flame geometry, temperature distribution, soot volume fraction, and flame spread rate, with special emphasis on reproducing the “Goldilocks” flammability zone reported by Olson and Ferkul.",
+            "source": "Approach"
+          }
+        ]
+      }
+    ],
+    "strength": {
+      "count": 6,
+      "withFindings": 2,
+      "of": 24
+    },
+    "unknown": [
+      "How fast the SAFFIRE fires grew: the saved PSI text and the Researcher's Guide do not state the results.",
+      "Airflow effects at Moon or Mars gravity, which none of the 24 tested."
+    ],
+    "habitats": [
+      "spacecraft",
+      "station",
+      "moon-base",
+      "mars-base",
+      "rover"
+    ],
+    "earth": null
+  },
+  {
+    "id": "materials",
+    "pillar": "prevent",
+    "question": "Which materials burn differently up there?",
+    "answer": [
+      {
+        "text": "NASA found that materials can burn at lower oxygen levels in microgravity than on Earth, so the upward-burning Earth screening test is not conservative.",
+        "cites": [
+          "PSI-26",
+          "PSI-25"
+        ]
+      },
+      {
+        "text": "NASA also found materials are easier to ignite in low gravity, with the heat needed for ignition as low as half the Earth value.",
+        "cites": [],
+        "basis": [
+          {
+            "kind": "found",
+            "text": "Materials are easier to ignite in low gravity because of reduced natural convective cooling from the fuel surface.",
+            "source": "https://www.nasa.gov/sites/default/files/atoms/files/np-2015-10-034-jsc_combustion_in_reduced_gravity-iss-mini-book-011116-508.pdf",
+            "page": "18"
+          },
+          {
+            "kind": "found",
+            "text": "By developing a theoretical model for the ignition time, it was also shown that the critical heat flux for ignition in microgravity can be as short as half the value measured in normal gravity.",
+            "source": "https://www.nasa.gov/sites/default/files/atoms/files/np-2015-10-034-jsc_combustion_in_reduced_gravity-iss-mini-book-011116-508.pdf",
+            "page": "24"
+          }
+        ]
+      },
+      {
+        "text": "A gas burner set up to behave like PMMA and Nylon kept burning steadily in microgravity with no airflow.",
+        "cites": [
+          "PSI-20"
+        ]
+      },
+      {
+        "text": "Materials burned in orbit include a cotton and fiberglass fabric, Nomex, Ultem, silicone and several forms of PMMA.",
+        "cites": [
+          "PSI-26",
+          "PSI-99"
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "investigation": "PSI-26",
+        "rank": 1,
+        "why": "Burned real spacecraft fabrics and plastics in orbit and found Earth's test is not conservative.",
+        "quotes": [
+          {
+            "kind": "tested",
+            "text": "Custom-made fabric samples consisting of 75% cotton and 25% fiberglass (by mass) measuring were used as a fuel source as well as Nomex fabric and Ultem.",
+            "source": "Approach"
+          },
+          {
+            "kind": "found",
+            "text": "Recent results from the BASS experiment currently running on the ISS indicate that NASA-STD-6001 Test 1 is not conservative, and materials can burn at lower oxygen levels in microgravity than on Earth.",
+            "source": "https://www.nasa.gov/sites/default/files/atoms/files/np-2015-10-034-jsc_combustion_in_reduced_gravity-iss-mini-book-011116-508.pdf",
+            "page": "31"
+          }
+        ]
+      },
+      {
+        "investigation": "PSI-20",
+        "rank": 2,
+        "why": "Emulated the burning of real solids with a gas burner, with a stated result for PMMA and Nylon.",
+        "quotes": [
+          {
+            "kind": "found",
+            "text": "Quasi-steady burning corresponding to various condensed-phase materials (such as PMMA and Nylon) was observed in microgravity despite the absence of air flow, where the cessation of ventilation is an established step in putting out spacecraft fires.",
+            "source": "Research Impacts/Earth Benefits"
+          },
+          {
+            "kind": "found",
+            "text": "While BRE’s results are still preliminary, they suggest that NASA may want to increase use of its alternative flammability Test 2, with the cone calorimeter, where that test can measure material properties corresponding to the microgravity flames observed with the BRE burner.",
+            "source": "Research Impacts/Earth Benefits"
+          }
+        ]
+      },
+      {
+        "investigation": "PSI-25",
+        "rank": 3,
+        "why": "Burned thicker, realistic fuel shapes rather than thin sheets.",
+        "quotes": [
+          {
+            "kind": "tested",
+            "text": "Practical, realistic (thicker) fuels in typical geometries will be examined, including slabs, cylinders, and spherical sections.",
+            "source": "Objectives"
+          },
+          {
+            "kind": "found",
+            "text": "Recent results from the BASS experiment currently running on the ISS indicate that NASA-STD-6001 Test 1 is not conservative, and materials can burn at lower oxygen levels in microgravity than on Earth.",
+            "source": "https://www.nasa.gov/sites/default/files/atoms/files/np-2015-10-034-jsc_combustion_in_reduced_gravity-iss-mini-book-011116-508.pdf",
+            "page": "31"
+          },
+          {
+            "kind": "expected",
+            "text": "NASA tests and controls materials from a flammability perspective using an upward burning test in normal gravity, which is considered to be the worst-case geometry for flammability of the material on Earth. However, it may not be conservative for flammability in space.",
+            "source": "Hypothesis"
+          }
+        ]
+      },
+      {
+        "investigation": "PSI-99",
+        "rank": 4,
+        "why": "Burned nine samples of five materials in one large-scale run.",
+        "quotes": [
+          {
+            "kind": "tested",
+            "text": "As a follow on to the Saffire-I investigation, the Saffire-II investigation added more samples including SIBAL, silicone, structure PMMA, flat PMMA, and PMMA with Nomex.",
+            "source": "Approach"
+          }
+        ]
+      },
+      {
+        "investigation": "PSI-98",
+        "rank": 5,
+        "why": "Burned a near-metre-long piece of fabric, far larger than glovebox samples.",
+        "quotes": [
+          {
+            "kind": "tested",
+            "text": "The sample was approximately 0.94 meters long and 0.4 meters wide, simulating a large piece of flammable fabric.",
+            "source": "Approach"
+          }
+        ]
+      },
+      {
+        "investigation": "PSI-62",
+        "rank": 6,
+        "why": "Ground model meant to screen new materials' flammability limits.",
+        "quotes": [
+          {
+            "kind": "expected",
+            "text": "This research provides predictive tools for screening new materials’ flammability limits, which can lead to the design of safer spacecrafts.",
+            "source": "Research Impacts/Earth Benefits"
+          }
+        ]
+      }
+    ],
+    "strength": {
+      "count": 6,
+      "withFindings": 3,
+      "of": 24
+    },
+    "unknown": [
+      "A ranking of which material is worst: the saved text names the materials tested but does not say which burned most readily.",
+      "Whether the BRE result holds for real PMMA and Nylon, not the gas burner emulating them."
+    ],
+    "habitats": [
+      "spacecraft",
+      "station",
+      "moon-base",
+      "mars-base",
+      "rover"
+    ],
+    "earth": null
+  },
+  {
+    "id": "alarm-no-rising-smoke",
+    "pillar": "detect",
+    "question": "Will an alarm catch a fire with no rising smoke?",
+    "answer": [
+      {
+        "text": "Not necessarily: NASA found that flames in microgravity make particles of a vastly different size, so particle-sensing fire detectors would need different signatures in space.",
+        "cites": [],
+        "basis": [
+          {
+            "kind": "found",
+            "text": "Fundamental research in microgravity highlighted the vastly different particulate size associated with flames in microgravity. Since many fire detectors operate by sensing fire-generated particulates, they would need to use different signatures to detect fires in microgravity.",
+            "source": "https://www.nasa.gov/sites/default/files/atoms/files/np-2015-10-034-jsc_combustion_in_reduced_gravity-iss-mini-book-011116-508.pdf",
+            "page": "35"
+          }
+        ]
+      },
+      {
+        "text": "SAME and SAME-R overheated spacecraft materials in orbit and recorded how smoke detectors responded, expecting larger smoke particles that might keep some detectors from alarming.",
+        "cites": [
+          "PSI-102",
+          "PSI-101"
+        ]
+      },
+      {
+        "text": "A ground study using SAME data modelled how the loss of buoyancy changes the smoke that forms.",
+        "cites": [
+          "PSI-115"
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "investigation": "PSI-102",
+        "rank": 1,
+        "why": "Measured smoke from overheated spacecraft materials in orbit and checked two smoke detectors against it.",
+        "quotes": [
+          {
+            "kind": "tested",
+            "text": "The operator then ran the self diagnostic procedures on the two smoke detectors and activated the video cameras, turned on the igniter for a predefined period of time (15 to 60 seconds), and initiated the thermophoretic soot samplers to sample the smoke.",
+            "source": "Approach"
+          },
+          {
+            "kind": "expected",
+            "text": "In particular, it is hypothesized that liquid aerosol smokes produced in microgravity will exhibit substantially larger droplet sizes than under the same conditions in normal gravity (with a corresponding decrease in the particle number density for the same mass of smoke).",
+            "source": "Hypothesis"
+          },
+          {
+            "kind": "expected",
+            "text": "The change in the size distribution and number density will, in turn, affect the response of the smoke detectors and possibly result in some detectors not producing an alarm when exposed to this smoke.",
+            "source": "Hypothesis"
+          }
+        ]
+      },
+      {
+        "investigation": "PSI-101",
+        "rank": 2,
+        "why": "Repeated SAME with a fire-retardant foam, hotter tests and a new instrument.",
+        "quotes": [
+          {
+            "kind": "tested",
+            "text": "SAME-R flight tests were conducted from July 16, to September 9, 2010, successfully completing 66 test points.",
+            "source": "Approach"
+          },
+          {
+            "kind": "expected",
+            "text": "The change in the size distribution and number density will, in turn, affect the response of the smoke detectors and possibly result in some detectors not producing an alarm when exposed to this smoke.",
+            "source": "Hypothesis"
+          }
+        ]
+      },
+      {
+        "investigation": "PSI-115",
+        "rank": 3,
+        "why": "Ground simulation of how smoke particles grow with and without gravity.",
+        "quotes": [
+          {
+            "kind": "tested",
+            "text": "The intention of this effort is to quantify the differences between microgravity and Earth gravity smoke, and to identify the fluid dynamic mechanisms that cause the differences.",
+            "source": "Objectives"
+          },
+          {
+            "kind": "expected",
+            "text": "Without buoyancy, mixing and heat transfer are reduced, the time-temperature history of the combustion vapors (or particle precursors) and particle trajectories are significantly altered, changing the composition of the smoke.",
+            "source": "Hypothesis"
+          }
+        ]
+      },
+      {
+        "investigation": "PSI-47",
+        "rank": 4,
+        "why": "Checked that the particle counter SAME relied on would work in microgravity.",
+        "quotes": [
+          {
+            "kind": "tested",
+            "text": "DAFT / DAFT-2 tests that a modified P-Trak particulate counter would be accurate in microgravity.",
+            "source": "Objectives"
+          }
+        ]
+      }
+    ],
+    "strength": {
+      "count": 4,
+      "withFindings": 0,
+      "of": 24
+    },
+    "unknown": [
+      "SAME's measured particle sizes and whether its detectors alarmed: the saved text gives the method and hypothesis, not the results.",
+      "How smoke behaves at Moon or Mars gravity, which none of the 24 tested."
+    ],
+    "habitats": [
+      "spacecraft",
+      "station",
+      "moon-base",
+      "mars-base",
+      "rover"
+    ],
+    "earth": null
+  },
+  {
+    "id": "smoke-or-dust",
+    "pillar": "detect",
+    "question": "Can a detector tell smoke from dust?",
+    "answer": [
+      {
+        "text": "NASA reports a new device that monitors particles and chemical species at the same time to better detect the onset of a fire, and that can be tuned to the particles of fires in microgravity.",
+        "cites": [],
+        "basis": [
+          {
+            "kind": "found",
+            "text": "One of the achievements in this area is a new device that monitors particulates and chemical species simultaneously to better detect the onset of a fire.",
+            "source": "https://www.nasa.gov/sites/default/files/atoms/files/np-2015-10-034-jsc_combustion_in_reduced_gravity-iss-mini-book-011116-508.pdf",
+            "page": "35"
+          },
+          {
+            "kind": "found",
+            "text": "The new device can be “tuned” to examine particulates and species characteristics associated with fires in microgravity.",
+            "source": "https://www.nasa.gov/sites/default/files/atoms/files/np-2015-10-034-jsc_combustion_in_reduced_gravity-iss-mini-book-011116-508.pdf",
+            "page": "35"
+          }
+        ]
+      },
+      {
+        "text": "DAFT measured the background dust on the ISS and checked that a modified particle counter works in microgravity, using Arizona Red Dust as a test standard.",
+        "cites": [
+          "PSI-47"
+        ]
+      },
+      {
+        "text": "None of the 24 records states whether a detector in orbit actually told smoke from dust.",
+        "cites": [],
+        "scope": true
+      }
+    ],
+    "evidence": [
+      {
+        "investigation": "PSI-47",
+        "rank": 1,
+        "why": "The only investigation that measured dust in the station's air.",
+        "quotes": [
+          {
+            "kind": "tested",
+            "text": "The Dust Aerosol measurement Feasibility Test examined the background aerosol particulate levels on the ISS.",
+            "source": "https://www.nasa.gov/sites/default/files/atoms/files/np-2015-10-034-jsc_combustion_in_reduced_gravity-iss-mini-book-011116-508.pdf",
+            "page": "26"
+          },
+          {
+            "kind": "tested",
+            "text": "Arizona Red Dust (ARD) was chosen as an aerosol standard due to its ease of dispersion.",
+            "source": "Approach"
+          },
+          {
+            "kind": "expected",
+            "text": "Extended duration space flight missions with larger vessels will require fire detection systems with increased reliability and sensitivity.",
+            "source": "Research Impacts/Earth Benefits"
+          }
+        ]
+      },
+      {
+        "investigation": "PSI-102",
+        "rank": 2,
+        "why": "Measured the particle sizes of smoke from spacecraft materials, the other half of the comparison.",
+        "quotes": [
+          {
+            "kind": "tested",
+            "text": "The Smoke Aerosol Measurement Experiment (SAME) examined the particle-size distribution of the smoke from spacecraft materials.",
+            "source": "https://www.nasa.gov/sites/default/files/atoms/files/np-2015-10-034-jsc_combustion_in_reduced_gravity-iss-mini-book-011116-508.pdf",
+            "page": "26"
+          },
+          {
+            "kind": "expected",
+            "text": "In particular, it is hypothesized that liquid aerosol smokes produced in microgravity will exhibit substantially larger droplet sizes than under the same conditions in normal gravity (with a corresponding decrease in the particle number density for the same mass of smoke).",
+            "source": "Hypothesis"
+          }
+        ]
+      },
+      {
+        "investigation": "PSI-101",
+        "rank": 3,
+        "why": "Added a new instrument to the SAME hardware.",
+        "quotes": [
+          {
+            "kind": "tested",
+            "text": "3) a new instrument, M-pass, developed in-house GRC, was used to replace one of the two Commercial Diagnostic Enclosures that includes a DustTrak and an ionization detector used in SAME.",
+            "source": "Approach"
+          }
+        ]
+      }
+    ],
+    "strength": {
+      "count": 3,
+      "withFindings": 0,
+      "of": 24
+    },
+    "unknown": [
+      "False-alarm rates for dust in orbit: NASA says spacecraft need rapid detection with limited false alarms, but no record gives a measured rate.",
+      "Lunar or Martian dust, which none of the 24 used."
+    ],
+    "habitats": [
+      "spacecraft",
+      "station",
+      "moon-base",
+      "mars-base",
+      "rover"
+    ],
+    "earth": null
+  },
+  {
+    "id": "early-fire-look",
+    "pillar": "detect",
+    "question": "What does an early space fire look like?",
+    "answer": [
+      {
+        "text": "In space, fuels burn as oval balls rather than the upward-pointed cone seen on Earth.",
+        "cites": [
+          "PSI-25"
+        ]
+      },
+      {
+        "text": "NASA found that in low airflow a flame on a thin fuel spreads upstream into the oncoming air, the opposite of Earth, where it always spreads downstream.",
+        "cites": [],
+        "basis": [
+          {
+            "kind": "found",
+            "text": "Completely contrary to normal-gravity behavior, the flame spreads upstream, into the oncoming airflow, in space when the forced-flow velocities are low (Figure 9); whereas, the flame always spreads downstream, in the buoyant flow direction, in normal gravity, even in the absence of forced flow.",
+            "source": "https://www.nasa.gov/sites/default/files/atoms/files/np-2015-10-034-jsc_combustion_in_reduced_gravity-iss-mini-book-011116-508.pdf",
+            "page": "31"
+          }
+        ]
+      },
+      {
+        "text": "It can also be close to invisible: FLEX found a cool flame that keeps burning after the visible flame goes out.",
+        "cites": [
+          "PSI-69"
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "investigation": "PSI-25",
+        "rank": 1,
+        "why": "Its record states the basic shape difference between space and Earth flames.",
+        "quotes": [
+          {
+            "kind": "found",
+            "text": "In outer space, fuels burn as oval balls rather than with an upward pointed cone flame as they do on Earth.",
+            "source": "Research Impacts/Earth Benefits"
+          }
+        ]
+      },
+      {
+        "investigation": "PSI-69",
+        "rank": 2,
+        "why": "Discovered cool flames that burn on after the visible flame is out.",
+        "quotes": [
+          {
+            "kind": "found",
+            "text": "This vaporization, we now know, is supported by a lower-temperature cool flame that forms after visible flame extinction.",
+            "source": "https://www.nasa.gov/sites/default/files/atoms/files/np-2015-10-034-jsc_combustion_in_reduced_gravity-iss-mini-book-011116-508.pdf",
+            "page": "33"
+          },
+          {
+            "kind": "found",
+            "text": "The FLEX tests showed that the cool flame can burn for a prolonged period of time.",
+            "source": "https://www.nasa.gov/sites/default/files/atoms/files/np-2015-10-034-jsc_combustion_in_reduced_gravity-iss-mini-book-011116-508.pdf",
+            "page": "34"
+          }
+        ]
+      },
+      {
+        "investigation": "PSI-26",
+        "rank": 3,
+        "why": "Filmed burning fabric from two angles and recorded flame size, shape and colour.",
+        "quotes": [
+          {
+            "kind": "tested",
+            "text": "Flames were observed in the top and edge profiles and data was collected on flame size, shape, color, spread rate, and potential flame quenching.",
+            "source": "Approach"
+          }
+        ]
+      },
+      {
+        "investigation": "PSI-60",
+        "rank": 4,
+        "why": "Ground analysis of SPICE images, expecting longer, dimmer, sootier flames in microgravity.",
+        "quotes": [
+          {
+            "kind": "expected",
+            "text": "Microgravity conditions would produce longer, more diffuse flames with lower temperatures and increased soot concentrations compared to normal gravity, and that careful integration of experimental temperature fields into the simulations would reduce discrepancies between measured and predicted soot distributions.",
+            "source": "Hypothesis"
+          }
+        ]
+      },
+      {
+        "investigation": "PSI-107",
+        "rank": 5,
+        "why": "Studied 526 gas jet flames to see when they start to give off soot.",
+        "quotes": [
+          {
+            "kind": "tested",
+            "text": "In total 526 flames were studied.",
+            "source": "Approach"
+          },
+          {
+            "kind": "expected",
+            "text": "Flame properties are expected to differ significantly from those observed under normal gravity.",
+            "source": "Hypothesis"
+          }
+        ]
+      }
+    ],
+    "strength": {
+      "count": 5,
+      "withFindings": 2,
+      "of": 24
+    },
+    "unknown": [
+      "What an early fire looks like in a real cabin, with clutter and changing airflow.",
+      "Flame shape at Moon or Mars gravity, which none of the 24 tested."
+    ],
+    "habitats": [
+      "spacecraft",
+      "station",
+      "moon-base",
+      "mars-base",
+      "rover"
+    ],
+    "earth": null
+  },
+  {
+    "id": "put-it-out",
+    "pillar": "suppress",
+    "question": "What puts a fire out without gravity?",
+    "answer": [
+      {
+        "text": "NASA found that the flammability limit is lower in reduced gravity, so inert-gas suppressants designed to Earth standards do not give the same margin of safety in space.",
+        "cites": [
+          "PSI-69"
+        ]
+      },
+      {
+        "text": "NASA also found that spraying suppressant locally is not enough: the jet pulls in air and keeps the flame going, and nitrogen applied to a flame can even strengthen it.",
+        "cites": [
+          "PSI-26"
+        ]
+      },
+      {
+        "text": "The ISS began replacing its CO2 extinguishers with water-mist units in December 2015.",
+        "cites": [],
+        "basis": [
+          {
+            "kind": "found",
+            "text": "The first two of the planned nine water-mist portable fire extinguishers were sent to the ISS in December 2015 to replace CO2 units that are currently onboard.",
+            "source": "https://www.nasa.gov/sites/default/files/atoms/files/np-2015-10-034-jsc_combustion_in_reduced_gravity-iss-mini-book-011116-508.pdf",
+            "page": "26"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "investigation": "PSI-69",
+        "rank": 1,
+        "why": "Measured how well CO2, helium and SF6 suppress burning fuel, with a stated result on safety margins.",
+        "quotes": [
+          {
+            "kind": "tested",
+            "text": "The FLEX (Flame Extinguishment Experiment) investigation aims to map the flammability limits of liquid fuels in microgravity environments, measure the effectiveness of various gaseous fire suppressants such as CO2, He, and SF6, and develop reliable predictive models for combustion limits under reduced gravity conditions.",
+            "source": "Objectives"
+          },
+          {
+            "kind": "found",
+            "text": "The research to date has shown that the flammability limit is lower in reduced gravity. The implication is that terrestrial standards for inert gas suppressants in low gravity do not offer the same margin of safety as in normal gravity.",
+            "source": "https://www.nasa.gov/sites/default/files/atoms/files/np-2015-10-034-jsc_combustion_in_reduced_gravity-iss-mini-book-011116-508.pdf",
+            "page": "12"
+          },
+          {
+            "kind": "found",
+            "text": "To date, these experiments have identified both the radiative and diffusive extinction limits for heptane and methanol droplets and identified an LOI that is both significantly lower than in normal gravity and lower than previously predicted and anticipated.",
+            "source": "https://www.nasa.gov/sites/default/files/atoms/files/np-2015-10-034-jsc_combustion_in_reduced_gravity-iss-mini-book-011116-508.pdf",
+            "page": "36"
+          }
+        ]
+      },
+      {
+        "investigation": "PSI-26",
+        "rank": 2,
+        "why": "Tested an ISS-style inert gas on burning solids, with stated results.",
+        "quotes": [
+          {
+            "kind": "tested",
+            "text": "2.) Assess the effectiveness of an inert, gaseous extinguishing agent (similar to that used on ISS) in putting out flames over different materials, geometries, preheating, and flow.",
+            "source": "Objectives"
+          },
+          {
+            "kind": "found",
+            "text": "Also, current findings show that local application of suppressant is not adequate for flame extinguishment. The local jet entrains air and sustains the flame even when the ambient airflow is turned off.",
+            "source": "https://www.nasa.gov/sites/default/files/atoms/files/np-2015-10-034-jsc_combustion_in_reduced_gravity-iss-mini-book-011116-508.pdf",
+            "page": "31"
+          },
+          {
+            "kind": "found",
+            "text": "Early results have demonstrated that nitrogen applied to the flame can actually strengthen it because of this effect.",
+            "source": "https://www.nasa.gov/sites/default/files/atoms/files/np-2015-10-034-jsc_combustion_in_reduced_gravity-iss-mini-book-011116-508.pdf",
+            "page": "22"
+          }
+        ]
+      },
+      {
+        "investigation": "PSI-25",
+        "rank": 3,
+        "why": "Studied extinction limits of solid fuels in slow airflow.",
+        "quotes": [
+          {
+            "kind": "tested",
+            "text": "1) Study the ignition, flame growth, flame spread, and extinction limits for solid fuels burning in low-velocity forced flows in microgravity.",
+            "source": "Objectives"
+          },
+          {
+            "kind": "found",
+            "text": "Also, current findings show that local application of suppressant is not adequate for flame extinguishment. The local jet entrains air and sustains the flame even when the ambient airflow is turned off.",
+            "source": "https://www.nasa.gov/sites/default/files/atoms/files/np-2015-10-034-jsc_combustion_in_reduced_gravity-iss-mini-book-011116-508.pdf",
+            "page": "31"
+          }
+        ]
+      },
+      {
+        "investigation": "PSI-68",
+        "rank": 4,
+        "why": "Extended FLEX to fuel mixtures, including when and how flames go out.",
+        "quotes": [
+          {
+            "kind": "tested",
+            "text": "3. Study flame extinction mechanisms and their boundaries.",
+            "source": "Objectives"
+          }
+        ]
+      },
+      {
+        "investigation": "PSI-10",
+        "rank": 5,
+        "why": "Measured when spherical gas flames go out as nitrogen and pressure change.",
+        "quotes": [
+          {
+            "kind": "tested",
+            "text": "C. Obtain extinction limits as functions of Zst, amount of N2, and pressure for normal and inverse spherical C2H4 and CH4 flames.",
+            "source": "Objectives"
+          },
+          {
+            "kind": "expected",
+            "text": "2. Microgravity spherical diffusion flames extinguish when the peak temperature first decreases below 1130 K.",
+            "source": "Hypothesis"
+          }
+        ]
+      }
+    ],
+    "strength": {
+      "count": 5,
+      "withFindings": 3,
+      "of": 24
+    },
+    "unknown": [
+      "Which suppressant works best on a real cabin fire: the saved text gives no numbers for FLEX's suppressant tests.",
+      "How water mist performs in microgravity: none of the 24 tested it."
+    ],
+    "habitats": [
+      "spacecraft",
+      "station",
+      "moon-base",
+      "mars-base",
+      "rover"
+    ],
+    "earth": null
+  },
+  {
+    "id": "fans-off",
+    "pillar": "suppress",
+    "question": "Does switching off the fans stop it?",
+    "answer": [
+      {
+        "text": "Not reliably. NASA lists \"a fire will self-extinguish if ventilation is shut off\" among the misconceptions its microgravity research showed to be false.",
+        "cites": [],
+        "basis": [
+          {
+            "kind": "found",
+            "text": "This resulted in several critical misconceptions about potential fires in spacecraft: 1. A steady fire cannot exist in a quiescent microgravity environment. 2. A fire will self-extinguish if ventilation is shut off.",
+            "source": "https://www.nasa.gov/sites/default/files/atoms/files/np-2015-10-034-jsc_combustion_in_reduced_gravity-iss-mini-book-011116-508.pdf",
+            "page": "35"
+          },
+          {
+            "kind": "found",
+            "text": "Research at NASA GRC in both ground-based laboratories and microgravity facilities and space-based microgravity experiments (summarized by Friedman and Ross, 2001 and Ruff et al., 2009) demonstrates the fallacy of these assumptions",
+            "source": "https://www.nasa.gov/sites/default/files/atoms/files/np-2015-10-034-jsc_combustion_in_reduced_gravity-iss-mini-book-011116-508.pdf",
+            "page": "35"
+          }
+        ]
+      },
+      {
+        "text": "NASA found that a gas burner set up to behave like PMMA and Nylon kept burning with no airflow in elevated-oxygen air, though the same flames went out quickly in normal 21% oxygen.",
+        "cites": [
+          "PSI-20"
+        ]
+      },
+      {
+        "text": "NASA also found in BASS that a local jet of suppressant pulled in air and kept the flame going even with the ambient airflow turned off.",
+        "cites": [
+          "PSI-26",
+          "PSI-25"
+        ]
+      },
+      {
+        "text": "A candle flown on Mir burned in some tests for over 45 minutes in still air before running out of fuel.",
+        "cites": [],
+        "basis": [
+          {
+            "kind": "found",
+            "text": "Contrary to published speculation, the microgravity flame burned in some tests for over 45 minutes before extinguishing from a lack of fuel.",
+            "source": "https://www.nasa.gov/sites/default/files/atoms/files/np-2015-10-034-jsc_combustion_in_reduced_gravity-iss-mini-book-011116-508.pdf",
+            "page": "30"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "investigation": "PSI-20",
+        "rank": 1,
+        "why": "Directly observed steady burning with no airflow, in the cabin air NASA is considering.",
+        "quotes": [
+          {
+            "kind": "found",
+            "text": "Quasi-steady burning corresponding to various condensed-phase materials (such as PMMA and Nylon) was observed in microgravity despite the absence of air flow, where the cessation of ventilation is an established step in putting out spacecraft fires.",
+            "source": "Research Impacts/Earth Benefits"
+          },
+          {
+            "kind": "found",
+            "text": "The ongoing combustion without air flow was notably seen in elevated-oxygen atmospheres which are being considered for use in future spacecraft, whereas such flames in a normal atmosphere of 21% oxygen self-extinguished in a short time.",
+            "source": "Research Impacts/Earth Benefits"
+          },
+          {
+            "kind": "found",
+            "text": "While BRE’s results are still preliminary, they suggest that NASA may want to increase use of its alternative flammability Test 2, with the cone calorimeter, where that test can measure material properties corresponding to the microgravity flames observed with the BRE burner.",
+            "source": "Research Impacts/Earth Benefits"
+          }
+        ]
+      },
+      {
+        "investigation": "PSI-26",
+        "rank": 2,
+        "why": "Saw a flame survive with the ambient airflow turned off.",
+        "quotes": [
+          {
+            "kind": "found",
+            "text": "Also, current findings show that local application of suppressant is not adequate for flame extinguishment. The local jet entrains air and sustains the flame even when the ambient airflow is turned off.",
+            "source": "https://www.nasa.gov/sites/default/files/atoms/files/np-2015-10-034-jsc_combustion_in_reduced_gravity-iss-mini-book-011116-508.pdf",
+            "page": "31"
+          }
+        ]
+      },
+      {
+        "investigation": "PSI-69",
+        "rank": 3,
+        "why": "Burned fuel droplets in still air and found cool flames that last a long time.",
+        "quotes": [
+          {
+            "kind": "found",
+            "text": "Recent spaceflight experiments (FLEX) involving single alkane droplets burning in a quiescent ambient uncovered unexplained and unexpected behavior.",
+            "source": "https://www.nasa.gov/sites/default/files/atoms/files/np-2015-10-034-jsc_combustion_in_reduced_gravity-iss-mini-book-011116-508.pdf",
+            "page": "33"
+          },
+          {
+            "kind": "found",
+            "text": "The FLEX tests showed that the cool flame can burn for a prolonged period of time.",
+            "source": "https://www.nasa.gov/sites/default/files/atoms/files/np-2015-10-034-jsc_combustion_in_reduced_gravity-iss-mini-book-011116-508.pdf",
+            "page": "34"
+          }
+        ]
+      },
+      {
+        "investigation": "PSI-25",
+        "rank": 4,
+        "why": "Built to test whether ventilation makes materials burn as well as on Earth or better.",
+        "quotes": [
+          {
+            "kind": "found",
+            "text": "Also, current findings show that local application of suppressant is not adequate for flame extinguishment. The local jet entrains air and sustains the flame even when the ambient airflow is turned off.",
+            "source": "https://www.nasa.gov/sites/default/files/atoms/files/np-2015-10-034-jsc_combustion_in_reduced_gravity-iss-mini-book-011116-508.pdf",
+            "page": "31"
+          },
+          {
+            "kind": "expected",
+            "text": "BASS–II tests the hypothesis that materials in microgravity, with adequate ventilation, burn as well if not better than the same material in normal gravity with other conditions being identical (pressure, O2 concentration, temperature, etc.).",
+            "source": "Hypothesis"
+          }
+        ]
+      }
+    ],
+    "strength": {
+      "count": 4,
+      "withFindings": 4,
+      "of": 24
+    },
+    "unknown": [
+      "BRE calls its results preliminary, and its fuel was a gas burner emulating solids.",
+      "How long a real cabin fire keeps burning with the fans off at 21% oxygen."
+    ],
+    "habitats": [
+      "spacecraft",
+      "station",
+      "moon-base",
+      "mars-base",
+      "rover"
+    ],
+    "earth": null
+  },
+  {
+    "id": "comes-back",
+    "pillar": "suppress",
+    "question": "Can a fire come back after it looks out?",
+    "answer": [
+      {
+        "text": "Yes, for some fuels: FLEX found that after the visible flame went out, a cool flame kept burning the fuel for a prolonged time.",
+        "cites": [
+          "PSI-69"
+        ]
+      },
+      {
+        "text": "NASA's Guide says low gravity favours very weak but persistent flames, invisible to the unaided eye, that will spontaneously re-ignite long after the visible flame is out.",
+        "cites": [
+          "PSI-69"
+        ]
+      },
+      {
+        "text": "Ground work built on FLEX data found that a \"warm flame\" plays a critical role in the switch between cool and hot flames.",
+        "cites": [
+          "PSI-142"
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "investigation": "PSI-69",
+        "rank": 1,
+        "why": "Discovered the cool flames that keep burning after the visible flame is out.",
+        "quotes": [
+          {
+            "kind": "found",
+            "text": "This vaporization, we now know, is supported by a lower-temperature cool flame that forms after visible flame extinction.",
+            "source": "https://www.nasa.gov/sites/default/files/atoms/files/np-2015-10-034-jsc_combustion_in_reduced_gravity-iss-mini-book-011116-508.pdf",
+            "page": "33"
+          },
+          {
+            "kind": "found",
+            "text": "The FLEX tests showed that the cool flame can burn for a prolonged period of time.",
+            "source": "https://www.nasa.gov/sites/default/files/atoms/files/np-2015-10-034-jsc_combustion_in_reduced_gravity-iss-mini-book-011116-508.pdf",
+            "page": "34"
+          },
+          {
+            "kind": "found",
+            "text": "This research also has significant impact on spacecraft fire safety concerns; reduced-gravity environments have been shown to be particularly conducive to a low-temperature combustion regime marked by very weak but persistent flames, invisible to the unaided eye, that will spontaneously re-ignite long after the visible flame has been extinguished.",
+            "source": "https://www.nasa.gov/sites/default/files/atoms/files/np-2015-10-034-jsc_combustion_in_reduced_gravity-iss-mini-book-011116-508.pdf",
+            "page": "41-42"
+          }
+        ]
+      },
+      {
+        "investigation": "PSI-142",
+        "rank": 2,
+        "why": "Ground study using FLEX data, with stated results on cool, warm and hot flame transitions.",
+        "quotes": [
+          {
+            "kind": "found",
+            "text": "The results showed that the warm flame has a double reaction zone structure and plays a critical role in the transition between cool flames and hot flames.",
+            "source": "Research Impacts/Earth Benefits"
+          }
+        ]
+      },
+      {
+        "investigation": "PSI-159",
+        "rank": 3,
+        "why": "Flew gas cool flames, expecting them to flip between cool and hot as fuel flow changes.",
+        "quotes": [
+          {
+            "kind": "expected",
+            "text": "5. Cool diffusion flames for which a decrease in fluent flow rate will cause extinction, whereas an increase will cause a transition to a hot diffusion flame, with oscillation possible between hot and cool flames.",
+            "source": "Hypothesis"
+          }
+        ]
+      },
+      {
+        "investigation": "PSI-117",
+        "rank": 4,
+        "why": "Ground model of what pushes an existing cool flame to go out or turn into a hot flame.",
+        "quotes": [
+          {
+            "kind": "tested",
+            "text": "Focusing on both small and large droplets, the work mapped stability windows for ignition, sustained oscillation, transitions to hot ignition and warm-flame behavior, and extinction under microgravity.",
+            "source": "Objectives"
+          }
+        ]
+      },
+      {
+        "investigation": "PSI-39",
+        "rank": 5,
+        "why": "Followed FLEX with more cool-flame droplet tests over a range of pressures.",
+        "quotes": [
+          {
+            "kind": "tested",
+            "text": "1) Examine the combustion behavior of n-dodecane and mixtures of n-dodecane/iso-dodecane at pressures ranging from 0.25 atm to 5 atm.",
+            "source": "Objectives"
+          }
+        ]
+      },
+      {
+        "investigation": "PSI-68",
+        "rank": 6,
+        "why": "Continued FLEX with fuel mixtures.",
+        "quotes": [
+          {
+            "kind": "tested",
+            "text": "2. Examine the steady and unsteady liquid and gas-phase phenomena in pure fuel combustion.",
+            "source": "Objectives"
+          }
+        ]
+      }
+    ],
+    "strength": {
+      "count": 6,
+      "withFindings": 2,
+      "of": 24
+    },
+    "unknown": [
+      "Whether solid cabin materials re-ignite this way: the cool flame results are for fuel droplets and gas flames.",
+      "How long after the visible flame a re-ignition can happen in a real cabin."
+    ],
+    "habitats": [
+      "spacecraft",
+      "station",
+      "moon-base",
+      "mars-base",
+      "rover"
+    ],
+    "earth": null
+  },
+  {
+    "id": "moon-mars",
+    "pillar": "across",
+    "question": "What about Moon and Mars gravity?",
+    "answer": [
+      {
+        "text": "None of the 24 investigations burned anything at Moon or Mars gravity, so everything here is bounded by microgravity and Earth results, not measured.",
+        "cites": [],
+        "scope": true
+      },
+      {
+        "text": "NASA's Guide states that in the low-flow conditions of microgravity or partial gravity, some materials are flammable at lower oxygen concentrations than in normal gravity.",
+        "cites": [],
+        "basis": [
+          {
+            "kind": "found",
+            "text": "In the low-flow conditions of microgravity or partial gravity, some materials are flammable at lower oxygen concentrations than in normal gravity (Figure 8).",
+            "source": "https://www.nasa.gov/sites/default/files/atoms/files/np-2015-10-034-jsc_combustion_in_reduced_gravity-iss-mini-book-011116-508.pdf",
+            "page": "18"
+          }
+        ]
+      },
+      {
+        "text": "BRE was set up in part to check whether existing flammability tests still apply in low- and partial-gravity environments.",
+        "cites": [
+          "PSI-20"
+        ]
+      },
+      {
+        "text": "NASA's first burn tests on the Moon itself (FM2) are a separate experiment, not one of the 24.",
+        "cites": [],
+        "basis": [
+          {
+            "kind": "tested",
+            "text": "FM2 investigates burning materials on the Moon at its 1/6 reduced gravity level.",
+            "source": "https://www.nasa.gov/glenn/glenn-expertise-space-exploration/physical-sciences-program/combustion-science/"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "investigation": "PSI-26",
+        "rank": 1,
+        "why": "Microgravity result on oxygen limits that a Moon or Mars answer is bounded by.",
+        "quotes": [
+          {
+            "kind": "found",
+            "text": "Recent results from the BASS experiment currently running on the ISS indicate that NASA-STD-6001 Test 1 is not conservative, and materials can burn at lower oxygen levels in microgravity than on Earth.",
+            "source": "https://www.nasa.gov/sites/default/files/atoms/files/np-2015-10-034-jsc_combustion_in_reduced_gravity-iss-mini-book-011116-508.pdf",
+            "page": "31"
+          }
+        ]
+      },
+      {
+        "investigation": "PSI-20",
+        "rank": 2,
+        "why": "The only one of the 24 whose stated purpose includes partial gravity.",
+        "quotes": [
+          {
+            "kind": "expected",
+            "text": "Since this study controls the inherent fuel properties that affect various fire scenarios, it will ascertain the relevance of existing flammability test methods for low- and partial-gravity environments.",
+            "source": "https://www.nasa.gov/sites/default/files/atoms/files/np-2015-10-034-jsc_combustion_in_reduced_gravity-iss-mini-book-011116-508.pdf",
+            "page": "15"
+          },
+          {
+            "kind": "tested",
+            "text": "NASA - considered atmosphere for human space missions will be examined: 14.7 psia, 21 % oxygen: 10.2 psia, 26.5 %; and 8.2 psia, 34 % oxygen.",
+            "source": "Objectives"
+          }
+        ]
+      },
+      {
+        "investigation": "PSI-98",
+        "rank": 3,
+        "why": "Frames the risk of relying on Earth standards as missions go further from Earth.",
+        "quotes": [
+          {
+            "kind": "expected",
+            "text": "While this approach has been successful thus far, the uncertainty and risk will increase as exploration missions venture further from earth with considerably longer transit times for a safe return.",
+            "source": "Hypothesis"
+          }
+        ]
+      }
+    ],
+    "strength": {
+      "count": 3,
+      "withFindings": 1,
+      "of": 24
+    },
+    "unknown": [
+      "Any measured result at Moon (1/6 g) or Mars gravity: none of the 24 investigations tested it.",
+      "Mars is not mentioned in the saved NASA text at all."
+    ],
+    "habitats": [
+      "moon-base",
+      "mars-base",
+      "rover"
+    ],
+    "earth": null
+  },
+  {
+    "id": "earth-benefits",
+    "pillar": "across",
+    "question": "What has this done for Earth?",
+    "answer": [
+      {
+        "text": "Mostly groundwork so far: the records say this research feeds cleaner, more efficient engines and power plants.",
+        "cites": [
+          "PSI-10",
+          "PSI-39",
+          "PSI-159"
+        ]
+      },
+      {
+        "text": "Fire and smoke research for sealed spacecraft is aimed at similar places on Earth, such as submarines, mines and airplanes.",
+        "cites": [
+          "PSI-98",
+          "PSI-102"
+        ]
+      },
+      {
+        "text": "One stated result: at high pressures like those in real engines, cool and warm flames burn over a wider range of conditions.",
+        "cites": [
+          "PSI-142"
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "investigation": "PSI-142",
+        "rank": 1,
+        "why": "The only Earth-relevant line among the 24 that states a result.",
+        "quotes": [
+          {
+            "kind": "found",
+            "text": "At elevated pressures, it was found that the flammable region of warm flames and cool flames expands due to the increase in low-temperature and intermediate-temperature reactivity with pressure.",
+            "source": "Research Impacts/Earth Benefits"
+          },
+          {
+            "kind": "expected",
+            "text": "Since many real engines operate in the 20-40 atm pressure range, therefore, cool flames and warm flames are relevant and important flame regimes for high-pressure near-limit combustion applications.",
+            "source": "Research Impacts/Earth Benefits"
+          }
+        ]
+      },
+      {
+        "investigation": "PSI-10",
+        "rank": 2,
+        "why": "Names a concrete use: future coal power plant designs.",
+        "quotes": [
+          {
+            "kind": "expected",
+            "text": "For example, it is contributing to novel designs of future coal power plants.",
+            "source": "Research Impacts/Earth Benefits"
+          }
+        ]
+      },
+      {
+        "investigation": "PSI-39",
+        "rank": 3,
+        "why": "Ties cool flames to new fuels and clean, efficient engines.",
+        "quotes": [
+          {
+            "kind": "expected",
+            "text": "Cool flames play a key role in the development and selection of new fuels and the design of advanced engines such as clean, high-efficiency Homogeneous Charge Compression Ignition (HCCI) engines.",
+            "source": "Research Impacts/Earth Benefits"
+          }
+        ]
+      },
+      {
+        "investigation": "PSI-98",
+        "rank": 4,
+        "why": "Sealed-cabin fire research aimed at mines, airplanes and submarines.",
+        "quotes": [
+          {
+            "kind": "expected",
+            "text": "Studying fire in small, sealed environments such as the Cygnus cargo supply vehicle benefits fire safety and prevention efforts on Earth, including inside mines, airplanes, or submarines.",
+            "source": "Research Impacts/Earth Benefits"
+          }
+        ]
+      },
+      {
+        "investigation": "PSI-102",
+        "rank": 5,
+        "why": "Smoke detectors for other closed environments on Earth.",
+        "quotes": [
+          {
+            "kind": "expected",
+            "text": "The smoke detectors developed from the results of SAME can also be useful in other extreme environments on Earth, such as submarines or underwater laboratories.",
+            "source": "Research Impacts/Earth Benefits"
+          }
+        ]
+      },
+      {
+        "investigation": "PSI-159",
+        "rank": 6,
+        "why": "Links cool flame chemistry to more efficient car engines.",
+        "quotes": [
+          {
+            "kind": "expected",
+            "text": "This should facilitate the development of more efficient internal combustion engines.",
+            "source": "Research Impacts/Earth Benefits"
+          }
+        ]
+      },
+      {
+        "investigation": "PSI-25",
+        "rank": 7,
+        "why": "Models checked in space are used for wildfires and building fires.",
+        "quotes": [
+          {
+            "kind": "expected",
+            "text": "These models can then be used to more accurately study flames on Earth, such as in wildfires, building fires, energy recapture from waste recycling, and other combustion problems.",
+            "source": "Research Impacts/Earth Benefits"
+          }
+        ]
+      }
+    ],
+    "strength": {
+      "count": 7,
+      "withFindings": 1,
+      "of": 24
+    },
+    "unknown": [
+      "Products already on the market from these 24: the PSI records describe expected benefits, not delivered ones (the spinoff pages come in a later step)."
+    ],
+    "habitats": [
+      "spacecraft",
+      "station",
+      "moon-base",
+      "mars-base",
+      "rover"
+    ],
+    "earth": null
+  }
+]
